@@ -6,11 +6,11 @@ V {}
 S {}
 E {}
 N 520 -490 560 -490 {
-lab=out}
+lab=dac_out}
 N 560 -490 560 -390 {
-lab=out}
+lab=dac_out}
 N 520 -390 560 -390 {
-lab=out}
+lab=dac_out}
 C {nooverlap_clk.sym} 370 -600 0 0 {name=x1}
 C {tg_sw.sym} 370 -480 0 0 {name=x2}
 C {dac_sw.sym} 370 -350 0 0 {name=x3}

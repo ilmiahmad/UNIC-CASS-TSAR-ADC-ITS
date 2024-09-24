@@ -75,3 +75,4 @@ C {ipin.sym} 220 -880 0 0 {name=p54 lab=vcm}
 C {ipin.sym} 220 -840 0 0 {name=p55 lab=swn[0:11]}
 C {iopin.sym} 200 -820 0 0 {name=p56 lab=vcp}
 C {iopin.sym} 200 -800 0 0 {name=p57 lab=vcn}
+C {param.sym} 270 -960 0 0 {name=s1 value="dim_unit=2u"}
