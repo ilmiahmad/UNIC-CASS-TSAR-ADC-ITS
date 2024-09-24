@@ -1,0 +1,115 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1727206406
+<< viali >>
+rect 79 458 633 492
+rect -17 138 17 396
+rect 97 237 131 297
+rect 225 237 259 297
+rect 453 237 487 297
+rect 581 237 615 297
+rect 64 -440 98 -200
+rect 178 -350 212 -290
+rect 266 -350 300 -290
+rect 494 -350 528 -290
+rect 582 -350 616 -290
+rect 160 -536 634 -502
+<< metal1 >>
+rect -53 492 765 528
+rect -53 458 79 492
+rect 633 458 765 492
+rect -53 452 765 458
+rect -23 396 23 452
+rect -23 138 -17 396
+rect 17 309 23 396
+rect 143 350 213 406
+rect 499 350 569 406
+rect 581 309 662 313
+rect 17 297 137 309
+rect 17 237 97 297
+rect 131 237 137 297
+rect 17 225 137 237
+rect 219 297 493 309
+rect 219 237 225 297
+rect 259 237 453 297
+rect 487 237 493 297
+rect 219 225 493 237
+rect 575 297 662 309
+rect 575 237 581 297
+rect 615 237 662 297
+rect 575 225 662 237
+rect 17 138 23 225
+rect 581 221 662 225
+rect -23 126 23 138
+rect 143 80 213 184
+rect -53 30 213 80
+rect 143 -20 272 30
+rect 499 20 569 184
+rect 628 20 662 221
+rect 58 -200 104 -188
+rect 58 -440 64 -200
+rect 98 -278 104 -200
+rect 206 -246 272 -20
+rect 477 -80 487 20
+rect 587 -80 597 20
+rect 628 -80 761 20
+rect 522 -246 588 -80
+rect 628 -274 662 -80
+rect 582 -278 662 -274
+rect 98 -290 218 -278
+rect 98 -350 178 -290
+rect 212 -350 218 -290
+rect 98 -362 218 -350
+rect 260 -290 534 -278
+rect 260 -350 266 -290
+rect 300 -350 494 -290
+rect 528 -350 534 -290
+rect 260 -362 534 -350
+rect 576 -290 662 -278
+rect 576 -350 582 -290
+rect 616 -350 662 -290
+rect 576 -362 662 -350
+rect 98 -440 104 -362
+rect 582 -366 662 -362
+rect 58 -496 104 -440
+rect 206 -450 272 -394
+rect 522 -450 588 -394
+rect -52 -502 766 -496
+rect -52 -536 160 -502
+rect 634 -536 766 -502
+rect -52 -572 766 -536
+<< via1 >>
+rect 487 -80 587 20
+<< metal2 >>
+rect 487 20 587 30
+rect -53 -80 487 -40
+rect -53 -90 587 -80
+use sky130_fd_pr__pfet_01v8_lvt_A33RKA  XM1
+timestamp 1727206406
+transform 1 0 178 0 1 267
+box -231 -261 231 261
+use sky130_fd_pr__pfet_01v8_lvt_A33RKA  XM2
+timestamp 1727206406
+transform 1 0 534 0 1 267
+box -231 -261 231 261
+use sky130_fd_pr__nfet_01v8_lvt_BK97Z7  XM3
+timestamp 1727201987
+transform 1 0 239 0 1 -320
+box -211 -252 211 252
+use sky130_fd_pr__nfet_01v8_lvt_BK97Z7  XM4
+timestamp 1727201987
+transform 1 0 555 0 1 -320
+box -211 -252 211 252
+<< labels >>
+flabel metal1 -31 468 5 518 0 FreeSans 400 0 0 0 VDD
+port 0 nsew
+flabel metal1 -31 -559 5 -509 0 FreeSans 400 0 0 0 VSS
+port 1 nsew
+flabel metal1 -53 30 -17 80 0 FreeSans 400 0 0 0 VIN
+port 2 nsew
+flabel metal2 -53 -90 -17 -40 0 FreeSans 400 0 0 0 IN
+port 3 nsew
+flabel metal1 717 -56 753 -6 0 FreeSans 400 0 0 0 OUT
+port 5 nsew
+<< end >>
