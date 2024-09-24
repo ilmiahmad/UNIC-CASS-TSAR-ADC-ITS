@@ -24,7 +24,7 @@
 /*                                                          	*/
 /*--------------------------------------------------------------*/
 
-`include "user_defines.v"
+`include "defines.v"
 `define USE_POWER_PINS
 
 `ifdef GL

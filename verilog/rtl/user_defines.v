@@ -15,6 +15,7 @@
 
 `default_nettype none
 
+
 `ifndef __USER_DEFINES_H
 // User GPIO initial configuration parameters
 `define __USER_DEFINES_H
