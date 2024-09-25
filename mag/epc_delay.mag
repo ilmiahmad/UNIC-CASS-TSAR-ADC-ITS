@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1727206406
+timestamp 1727241002
 << viali >>
 rect 79 458 633 492
 rect -17 138 17 396
@@ -95,11 +95,11 @@ transform 1 0 534 0 1 267
 box -231 -261 231 261
 use sky130_fd_pr__nfet_01v8_lvt_BK97Z7  XM3
 timestamp 1727201987
-transform 1 0 239 0 1 -320
+transform 1 0 555 0 1 -320
 box -211 -252 211 252
 use sky130_fd_pr__nfet_01v8_lvt_BK97Z7  XM4
 timestamp 1727201987
-transform 1 0 555 0 1 -320
+transform 1 0 239 0 1 -320
 box -211 -252 211 252
 << labels >>
 flabel metal1 -31 468 5 518 0 FreeSans 400 0 0 0 VDD
