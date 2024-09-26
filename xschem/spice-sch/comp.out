@@ -1,0 +1,44 @@
+
+Subcircuit summary:
+Circuit 1: all                             |Circuit 2: epc                             
+-------------------------------------------|-------------------------------------------
+epc_delay_line (2)                         |epc_delay_line (2)                         
+sky130_fd_sc_hd__nand2_1 (2)               |sky130_fd_sc_hd__nand2_1 (2)               
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 23                         |Number of nets: 23                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: all                             |Circuit 2: epc                             
+
+---------------------------------------------------------------------------------------
+Net: START                                 |Net: START                                 
+  sky130_fd_sc_hd__nand2_1/B = 2           |  sky130_fd_sc_hd__nand2_1/2 = 2           
+                                           |                                           
+Net: VN                                    |(no matching net)                          
+  epc_delay_line/VN = 2                    |                                           
+                                           |                                           
+Net: VP                                    |(no matching net)                          
+  epc_delay_line/VP = 2                    |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSSA                                  |Net: VDD                                   
+  epc_delay_line/VSS = 2                   |  sky130_fd_sc_hd__nand2_1/5 = 2           
+  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
+  sky130_fd_sc_hd__nand2_1/VNB = 2         |  epc_delay_line/vdd = 2                   
+                                           |                                           
+Net: VDDA                                  |Net: VSS                                   
+  epc_delay_line/VDD = 2                   |  sky130_fd_sc_hd__nand2_1/3 = 2           
+  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
+  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  epc_delay_line/vss = 2                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: all                             |Circuit 2: epc                             
+-------------------------------------------|-------------------------------------------
+START                                      |START                                      
+Cell pin lists are equivalent.
+Device classes all and epc are equivalent.
+
+Final result: Netlists do not match.

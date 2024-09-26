@@ -1,0 +1,38 @@
+** sch_path: /home/yohanes/gits/UNIC-CASS-TSAR-ADC-ITS/xschem/epc.sch
+.subckt epc VDD OUTP VP OUTN VN START VSS
+*.PININFO VDD:I VP:I VN:I VSS:I OUTP:O START:I OUTN:O
+x9 OUTP START VSS VSS VDD VDD net2 sky130_fd_sc_hd__nand2_1
+x10 OUTN START VSS VSS VDD VDD net1 sky130_fd_sc_hd__nand2_1
+x1 VDD net1 VP VN VSS OUTP epc_delay_line
+x2 VDD net2 VN VP VSS OUTN epc_delay_line
+.ends
+
+* expanding   symbol:  epc_delay_line.sym # of pins=6
+** sym_path: /home/yohanes/gits/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay_line.sym
+** sch_path: /home/yohanes/gits/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay_line.sch
+.subckt epc_delay_line vdd in vp vn vss out
+*.PININFO vdd:I in:I vp:I vn:I vss:I out:O
+x1 vdd in net1 vp vss epc_delay
+x2 vdd net1 net3 vn vss epc_delay
+x3 vdd net3 net2 vp vss epc_delay
+x4 vdd net2 net7 vn vss epc_delay
+x5 vdd net7 net4 vp vss epc_delay
+x6 vdd net4 net6 vn vss epc_delay
+x7 vdd net6 net5 vp vss epc_delay
+x8 vdd net5 out vn vss epc_delay
+.ends
+
+
+* expanding   symbol:  epc_delay.sym # of pins=5
+** sym_path: /home/yohanes/gits/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay.sym
+** sch_path: /home/yohanes/gits/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay.sch
+.subckt epc_delay VDD IN OUT VIN VSS
+*.PININFO VDD:I VIN:I IN:I VSS:I OUT:O
+.param W_N=0.5 L_N=0.5 W_P=1.0 L_P=0.5
+XM1 net2 VIN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=L_P W=W_P nf=1 m=1
+XM2 OUT IN net2 VDD sky130_fd_pr__pfet_01v8_lvt L=L_P W=W_P nf=1 m=1
+XM3 OUT IN net1 VSS sky130_fd_pr__nfet_01v8_lvt L=L_N W=W_N nf=1 m=1
+XM4 net1 VIN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=L_N W=W_N nf=1 m=1
+.ends
+
+.end

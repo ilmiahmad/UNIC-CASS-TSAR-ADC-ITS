@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1727317746
+timestamp 1727310995
 << nwell >>
 rect 234 2695 699 3216
 rect 7422 2695 7867 3216
@@ -107,20 +107,20 @@ rect 5692 1661 5794 1668
 rect 1424 1310 1434 1390
 rect 1514 1310 1526 1390
 rect 1424 1300 1526 1310
-use epc_delay_line  x1
-timestamp 1727241376
+use epc_delay_line  x1 ~/gits/UNIC-CASS-TSAR-ADC-ITS/mag
+timestamp 1727310907
 transform 1 0 628 0 1 1904
 box 53 212 6795 1312
 use epc_delay_line  x2
-timestamp 1727241376
+timestamp 1727310907
 transform -1 0 7477 0 1 776
 box 53 212 6795 1312
 use sky130_fd_sc_hd__nand2_1  x9 /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1710522493
+timestamp 1727310907
 transform 1 0 369 0 1 1306
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  x10
-timestamp 1710522493
+timestamp 1727310907
 transform -1 0 7736 0 1 2433
 box -38 -48 314 592
 << labels >>
