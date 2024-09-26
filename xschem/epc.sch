@@ -22,13 +22,13 @@ lab=#net2}
 N 810 -380 1080 -380 {
 lab=#net2}
 N 470 -570 540 -570 {
-lab=VP}
+lab=#net3}
 N 490 -550 540 -550 {
-lab=VN}
+lab=#net4}
 N 810 -360 850 -360 {
-lab=VN}
+lab=#net5}
 N 810 -340 840 -340 {
-lab=VP}
+lab=#net6}
 C {sky130_stdcells/nand2_1.sym} 1020 -590 0 0 {name=x9 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 360 -380 0 1 {name=x10 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 420 -360 0 1 {name=p25 sig_type=std_logic lab=START}
@@ -50,7 +50,7 @@ C {epc_delay_line.sym} 660 -360 0 1 {name=x2}
 C {devices/lab_wire.sym} 540 -610 0 0 {name=p4 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 540 -530 0 0 {name=p8 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 900 -610 0 1 {name=p9 sig_type=std_logic lab=OUTP}
-C {lab_wire.sym} 470 -570 0 0 {name=p3 sig_type=std_logic lab=VP}
-C {lab_wire.sym} 840 -340 0 1 {name=p5 sig_type=std_logic lab=VP}
-C {lab_wire.sym} 850 -360 0 1 {name=p6 sig_type=std_logic lab=VN}
-C {lab_wire.sym} 490 -550 0 0 {name=p7 sig_type=std_logic lab=VN}
+C {devices/lab_wire.sym} 470 -570 0 0 {name=p3 sig_type=std_logic lab=VP}
+C {devices/lab_wire.sym} 840 -340 0 1 {name=p5 sig_type=std_logic lab=VP}
+C {devices/lab_wire.sym} 850 -360 0 1 {name=p6 sig_type=std_logic lab=VN}
+C {devices/lab_wire.sym} 490 -550 0 0 {name=p7 sig_type=std_logic lab=VN}

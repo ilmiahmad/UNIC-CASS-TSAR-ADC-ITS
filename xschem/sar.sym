@@ -1,0 +1,50 @@
+v {xschem version=3.4.5 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -31.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 80 130 80 {}
+L 4 -130 -80 -130 80 {}
+L 4 130 -80 130 80 {}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=VDDD sig_type=std_logic dir=in}
+L 4 -150 -70 -130 -70 {}
+T {VDDD} -125 -74 0 0 0.2 0.2 {}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=CLK sig_type=std_logic dir=in}
+L 4 -150 -50 -130 -50 {}
+T {CLK} -125 -54 0 0 0.2 0.2 {}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=COMP_P sig_type=std_logic dir=in}
+L 4 -150 -30 -130 -30 {}
+T {COMP_P} -125 -34 0 0 0.2 0.2 {}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=COMP_N sig_type=std_logic dir=in}
+L 4 -150 -10 -130 -10 {}
+T {COMP_N} -125 -14 0 0 0.2 0.2 {}
+B 5 -152.5 7.5 -147.5 12.5 {name=VSSD sig_type=std_logic dir=in}
+L 4 -150 10 -130 10 {}
+T {VSSD} -125 6 0 0 0.2 0.2 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=CLKS sig_type=std_logic dir=out}
+L 4 130 -70 150 -70 {}
+T {CLKS} 125 -74 0 1 0.2 0.2 {}
+B 5 147.5 -52.5 152.5 -47.5 {name=CLKSB sig_type=std_logic dir=out}
+L 4 130 -50 150 -50 {}
+T {CLKSB} 125 -54 0 1 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=CF[0:3] sig_type=std_logic dir=out}
+L 4 130 -30 150 -30 {}
+T {CF[0:3]} 125 -34 0 1 0.2 0.2 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=SWP[0:3] sig_type=std_logic dir=out}
+L 4 130 -10 150 -10 {}
+T {SWP[0:3]} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=SWN[0:3] sig_type=std_logic dir=out}
+L 4 130 10 150 10 {}
+T {SWN[0:3]} 125 6 0 1 0.2 0.2 {}
+B 5 147.5 27.5 152.5 32.5 {name=DOUT[0:3] sig_type=std_logic dir=out}
+L 4 130 30 150 30 {}
+T {DOUT[0:3]} 125 26 0 1 0.2 0.2 {}
+B 5 147.5 47.5 152.5 52.5 {name=CKO sig_type=std_logic dir=out}
+L 4 130 50 150 50 {}
+T {CKO} 125 46 0 1 0.2 0.2 {}
+B 5 147.5 67.5 152.5 72.5 {name=CLK_NS sig_type=std_logic dir=out}
+L 4 130 70 150 70 {}
+T {CLK_NS} 125 66 0 1 0.2 0.2 {}

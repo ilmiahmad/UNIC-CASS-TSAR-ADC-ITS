@@ -105,15 +105,15 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 240 -350 0 0 {name=p1 sig_type=std_logic lab=in}
-C {lab_wire.sym} 420 -520 0 0 {name=p2 sig_type=std_logic lab=vdda}
-C {lab_wire.sym} 420 -180 0 0 {name=p3 sig_type=std_logic lab=vssa}
-C {lab_wire.sym} 540 -350 0 0 {name=p4 sig_type=std_logic lab=out}
-C {lab_wire.sym} 360 -390 0 0 {name=p5 sig_type=std_logic lab=ckb}
-C {lab_wire.sym} 360 -310 0 0 {name=p6 sig_type=std_logic lab=ck}
-C {ipin.sym} 120 -460 0 0 {name=p7 lab=vdda}
-C {ipin.sym} 120 -420 0 0 {name=p8 lab=in}
-C {ipin.sym} 120 -380 0 0 {name=p9 lab=ck}
-C {ipin.sym} 120 -340 0 0 {name=p10 lab=ckb}
-C {ipin.sym} 120 -300 0 0 {name=p11 lab=vssa}
-C {opin.sym} 100 -260 0 0 {name=p12 lab=out}
+C {devices/lab_wire.sym} 240 -350 0 0 {name=p1 sig_type=std_logic lab=in}
+C {devices/lab_wire.sym} 420 -520 0 0 {name=p2 sig_type=std_logic lab=vdda}
+C {devices/lab_wire.sym} 420 -180 0 0 {name=p3 sig_type=std_logic lab=vssa}
+C {devices/lab_wire.sym} 540 -350 0 0 {name=p4 sig_type=std_logic lab=out}
+C {devices/lab_wire.sym} 360 -390 0 0 {name=p5 sig_type=std_logic lab=ckb}
+C {devices/lab_wire.sym} 360 -310 0 0 {name=p6 sig_type=std_logic lab=ck}
+C {devices/ipin.sym} 120 -460 0 0 {name=p7 lab=vdda}
+C {devices/ipin.sym} 120 -420 0 0 {name=p8 lab=in}
+C {devices/ipin.sym} 120 -380 0 0 {name=p9 lab=ck}
+C {devices/ipin.sym} 120 -340 0 0 {name=p10 lab=ckb}
+C {devices/ipin.sym} 120 -300 0 0 {name=p11 lab=vssa}
+C {devices/opin.sym} 100 -260 0 0 {name=p12 lab=out}
