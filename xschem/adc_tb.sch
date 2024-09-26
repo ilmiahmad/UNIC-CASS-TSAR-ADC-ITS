@@ -12,23 +12,20 @@ lab=#net1}
 N 220 -120 220 -100 {
 lab=#net1}
 C {4b_adc.sym} 590 -390 0 0 {name=x1}
-C {devices/vsource.sym} 400 -150 0 0 {name=VSS value=0 savecurrent=false}
-C {devices/vsource.sym} 480 -150 0 0 {name=VDDA value=1.8 savecurrent=false}
-C {devices/vsource.sym} 680 -150 0 0 {name=VDDD value=1.8 savecurrent=false}
-C {devices/vsource.sym} 780 -150 0 0 {name=CLK value="PULSE(0 1.8 50n 50p 50p 1u 2u)" savecurrent=false}
+C {devices/vsource.sym} 400 -150 0 0 {name=VS value=0 savecurrent=false}
+C {devices/vsource.sym} 480 -150 0 0 {name=VDA value=1.8 savecurrent=false}
+C {devices/vsource.sym} 680 -150 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 400 -120 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} 400 -180 0 0 {name=p1 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 480 -120 2 1 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 680 -120 2 1 {name=p3 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 780 -120 2 1 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 440 -320 0 0 {name=p6 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 480 -180 0 0 {name=p7 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 440 -460 0 0 {name=p8 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 440 -440 0 0 {name=p9 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 680 -180 0 0 {name=p10 sig_type=std_logic lab=VDDD}
-C {devices/lab_wire.sym} 780 -180 0 0 {name=p11 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 440 -400 0 0 {name=p12 sig_type=std_logic lab=CLK}
-C {devices/vsource.sym} 580 -150 0 0 {name=VCM value=0.9 savecurrent=false}
+C {devices/vsource.sym} 580 -150 0 0 {name=VC value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 580 -120 2 1 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 580 -180 0 0 {name=p14 sig_type=std_logic lab=VCM}
 C {devices/vsource.sym} 100 -150 0 0 {name=VSS1 value="SIN(0 0.9 1k)" savecurrent=false}
@@ -59,3 +56,6 @@ C {devices/code.sym} 235 -385 0 0 {name=s2 only_toplevel=false value="
 tran 1n 1m
 plot DOUT[0:3]
 .endc"}
+C {devices/vsource.sym} 760 -150 0 0 {name=V2 value="PULSE(0 1.8 50n 50p 50p 1u 2u)" savecurrent=false}
+C {devices/lab_wire.sym} 760 -180 0 0 {name=p23 sig_type=std_logic lab=CLK}
+C {devices/lab_wire.sym} 760 -120 2 0 {name=p24 sig_type=std_logic lab=VSS}
