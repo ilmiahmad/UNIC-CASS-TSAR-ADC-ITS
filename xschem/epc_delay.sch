@@ -21,16 +21,6 @@ N 200 -400 320 -400 {
 lab=VDD}
 N 200 -320 320 -320 {
 lab=VDD}
-N 530 -340 570 -340 {
-lab=VDD}
-N 530 -280 570 -280 {
-lab=VIN}
-N 530 -310 570 -310 {
-lab=IN}
-N 530 -250 570 -250 {
-lab=VSS}
-N 670 -300 710 -300 {
-lab=OUT}
 C {devices/lab_wire.sym} 200 -430 1 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 200 -120 3 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 160 -280 0 0 {name=p3 sig_type=std_logic lab=IN}
@@ -41,16 +31,11 @@ C {devices/lab_wire.sym} 300 -150 2 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 300 -230 2 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 320 -400 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 320 -320 2 0 {name=p10 sig_type=std_logic lab=VDD}
-C {devices/ipin.sym} 530 -340 0 0 {name=p11 lab=VDD}
+C {devices/ipin.sym} 530 -250 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 530 -280 0 0 {name=p12 lab=VIN}
-C {devices/ipin.sym} 530 -310 0 0 {name=p13 lab=IN}
-C {devices/ipin.sym} 530 -250 0 0 {name=p14 lab=VSS}
-C {devices/lab_wire.sym} 570 -340 2 0 {name=p15 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 570 -250 2 0 {name=p16 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 570 -280 2 0 {name=p17 sig_type=std_logic lab=VIN}
-C {devices/lab_wire.sym} 570 -310 2 0 {name=p18 sig_type=std_logic lab=IN}
-C {devices/opin.sym} 710 -300 0 0 {name=p19 lab=OUT}
-C {devices/lab_wire.sym} 670 -300 2 1 {name=p20 sig_type=std_logic lab=OUT}
+C {devices/ipin.sym} 530 -340 0 0 {name=p13 lab=IN}
+C {devices/ipin.sym} 530 -220 0 0 {name=p14 lab=VSS}
+C {devices/opin.sym} 510 -310 0 0 {name=p19 lab=OUT}
 C {devices/param.sym} 430 -370 0 0 {name=s1 value="W_N=0.5 L_N=0.5 W_P=1.0 L_P=0.5"}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 180 -400 0 0 {name=M1
 L=L_P

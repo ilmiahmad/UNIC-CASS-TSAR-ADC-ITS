@@ -1,0 +1,57 @@
+** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/epc.sch
+.subckt all VDDA OUTP VP OUTN VN START VSSA
+*.ipin VDDA
+*.ipin VP
+*.ipin VN
+*.ipin VSSA
+*.opin OUTP
+*.ipin START
+*.opin OUTN
+x9 OUTP START VSSA VSSA VDDA VDDA net2 sky130_fd_sc_hd__nand2_1
+x10 OUTN START VSSA VSSA VDDA VDDA net1 sky130_fd_sc_hd__nand2_1
+x1 VDDA net1 VP VN VSSA OUTP epc_delay_line
+x2 VDDA net2 VN VP VSSA OUTN epc_delay_line
+.ends
+
+* expanding   symbol:  epc_delay_line.sym # of pins=6
+** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay_line.sym
+** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay_line.sch
+.subckt epc_delay_line vdd in vp vn vss out
+*.ipin vdd
+*.ipin in
+*.ipin vp
+*.ipin vn
+*.ipin vss
+*.opin out
+x1 in net1 vp vdd vss epc_delay
+x2 net1 net2 vn vdd vss epc_delay
+x3 net2 net3 vp vdd vss epc_delay
+x4 net3 net4 vn vdd vss epc_delay
+x5 net4 net5 vp vdd vss epc_delay
+x6 net5 net6 vn vdd vss epc_delay
+x7 net6 net7 vp vdd vss epc_delay
+x8 net7 out vn vdd vss epc_delay
+.ends
+
+
+* expanding   symbol:  epc_delay.sym # of pins=5
+** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay.sym
+** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/epc_delay.sch
+.subckt epc_delay IN OUT VIN VDD VSS
+*.ipin VDD
+*.ipin VIN
+*.ipin IN
+*.ipin VSS
+*.opin OUT
+.param W_N=0.5 L_N=0.5 W_P=1.0 L_P=0.5
+XM1 net2 VIN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=L_P W=W_P nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT IN net2 VDD sky130_fd_pr__pfet_01v8_lvt L=L_P W=W_P nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT IN net1 VSS sky130_fd_pr__nfet_01v8_lvt L=L_N W=W_N nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 VIN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=L_N W=W_N nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
