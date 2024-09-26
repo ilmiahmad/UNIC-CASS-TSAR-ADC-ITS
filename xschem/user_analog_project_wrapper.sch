@@ -150,8 +150,8 @@ C {devices/lab_pin.sym} 4130 940 0 0 {name=l32 sig_type=std_logic lab=vssd1}
 C {epc.sym} 3850 -90 0 0 {name=x3}
 C {devices/lab_pin.sym} 3700 -130 0 0 {name=l33 sig_type=std_logic lab=vdda1}
 C {devices/lab_pin.sym} 3700 -50 0 0 {name=l34 sig_type=std_logic lab=vssa1}
-C {devices/lab_pin.sym} 3700 -70 0 0 {name=l35 sig_type=std_logic lab=io_out[12]}
-C {devices/lab_pin.sym} 4000 -130 0 1 {name=l36 sig_type=std_logic lab=io_out[15]}
-C {devices/lab_pin.sym} 4000 -110 0 1 {name=l37 sig_type=std_logic lab=io_out[16]}
-C {devices/lab_pin.sym} 3700 -110 0 0 {name=l38 sig_type=std_logic lab=io_analog[4]}
-C {devices/lab_pin.sym} 3700 -90 0 0 {name=l39 sig_type=std_logic lab=io_analog[5]}
+C {devices/lab_pin.sym} 3700 -70 0 0 {name=l35 sig_type=std_logic lab=io_analog[3]}
+C {devices/lab_pin.sym} 4000 -110 0 1 {name=l38 sig_type=std_logic lab=io_analog[4]}
+C {devices/lab_pin.sym} 4000 -130 0 1 {name=l39 sig_type=std_logic lab=io_analog[5]}
+C {devices/lab_pin.sym} 3700 -110 0 0 {name=l1 sig_type=std_logic lab=io_analog[1]}
+C {devices/lab_pin.sym} 3700 -90 0 0 {name=l2 sig_type=std_logic lab=io_analog[2]}
