@@ -5,74 +5,87 @@ K {}
 V {}
 S {}
 E {}
-C {cap_cell.sym} 650 -880 0 0 {name=x1 dim=dim_unit num=1}
-C {cap_cell.sym} 650 -820 0 0 {name=x2 dim=dim_unit num=1}
-C {cap_cell.sym} 650 -760 0 0 {name=x3 dim=dim_unit num=2}
-C {cap_cell.sym} 650 -700 0 0 {name=x4 dim=dim_unit num=4}
-C {cap_cell.sym} 650 -640 0 0 {name=x5 dim=dim_unit num=8}
-C {cap_cell.sym} 650 -580 0 0 {name=x6 dim=dim_unit num=16}
-C {cap_cell.sym} 650 -520 0 0 {name=x7 dim=dim_unit num=32}
-C {cap_cell.sym} 650 -460 0 0 {name=x8 dim=dim_unit num=64}
-C {cap_cell.sym} 650 -400 0 0 {name=x9 dim=dim_unit num=128}
-C {cap_cell.sym} 650 -340 0 0 {name=x10 dim=dim_unit num=256}
-C {cap_cell.sym} 650 -280 0 0 {name=x11 dim=dim_unit num=512}
-C {cap_cell.sym} 650 -220 0 0 {name=x12 dim=dim_unit num=1024}
-C {cap_cell.sym} 650 -160 0 0 {name=x13 dim=dim_unit num=2048}
-C {lab_wire.sym} 500 -890 0 0 {name=p1 sig_type=std_logic lab=vcm}
-C {lab_wire.sym} 500 -870 0 0 {name=p2 sig_type=std_logic lab=vcm}
-C {lab_wire.sym} 500 -830 0 0 {name=p3 sig_type=std_logic lab=swp[0]}
-C {lab_wire.sym} 500 -810 0 0 {name=p4 sig_type=std_logic lab=swn[0]}
-C {lab_wire.sym} 500 -770 0 0 {name=p5 sig_type=std_logic lab=swp[1]}
-C {lab_wire.sym} 500 -750 0 0 {name=p6 sig_type=std_logic lab=swn[1]}
-C {lab_wire.sym} 500 -710 0 0 {name=p7 sig_type=std_logic lab=swp[2]}
-C {lab_wire.sym} 500 -690 0 0 {name=p8 sig_type=std_logic lab=swn[2]}
-C {lab_wire.sym} 500 -650 0 0 {name=p9 sig_type=std_logic lab=swp[3]}
-C {lab_wire.sym} 500 -630 0 0 {name=p10 sig_type=std_logic lab=swn[3]}
-C {lab_wire.sym} 500 -590 0 0 {name=p11 sig_type=std_logic lab=swp[4]}
-C {lab_wire.sym} 500 -570 0 0 {name=p12 sig_type=std_logic lab=swn[4]}
-C {lab_wire.sym} 500 -530 0 0 {name=p13 sig_type=std_logic lab=swp[5]}
-C {lab_wire.sym} 500 -510 0 0 {name=p14 sig_type=std_logic lab=swn[5]}
-C {lab_wire.sym} 500 -470 0 0 {name=p15 sig_type=std_logic lab=swp[6]}
-C {lab_wire.sym} 500 -450 0 0 {name=p16 sig_type=std_logic lab=swn[6]}
-C {lab_wire.sym} 500 -410 0 0 {name=p17 sig_type=std_logic lab=swp[7]}
-C {lab_wire.sym} 500 -390 0 0 {name=p18 sig_type=std_logic lab=swn[7]}
-C {lab_wire.sym} 500 -350 0 0 {name=p19 sig_type=std_logic lab=swp[8]}
-C {lab_wire.sym} 500 -330 0 0 {name=p20 sig_type=std_logic lab=swn[8]}
-C {lab_wire.sym} 500 -290 0 0 {name=p21 sig_type=std_logic lab=swp[9]}
-C {lab_wire.sym} 500 -270 0 0 {name=p22 sig_type=std_logic lab=swn[9]}
-C {lab_wire.sym} 500 -230 0 0 {name=p23 sig_type=std_logic lab=swp[10]}
-C {lab_wire.sym} 500 -210 0 0 {name=p24 sig_type=std_logic lab=swn[10]}
-C {lab_wire.sym} 500 -170 0 0 {name=p25 sig_type=std_logic lab=swp[11]}
-C {lab_wire.sym} 500 -150 0 0 {name=p26 sig_type=std_logic lab=swn[11]}
-C {lab_wire.sym} 800 -890 0 1 {name=p27 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -870 0 1 {name=p28 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -830 0 1 {name=p29 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -810 0 1 {name=p30 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -770 0 1 {name=p31 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -750 0 1 {name=p32 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -710 0 1 {name=p33 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -690 0 1 {name=p34 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -650 0 1 {name=p35 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -630 0 1 {name=p36 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -590 0 1 {name=p37 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -570 0 1 {name=p38 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -530 0 1 {name=p39 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -510 0 1 {name=p40 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -470 0 1 {name=p41 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -450 0 1 {name=p42 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -410 0 1 {name=p43 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -390 0 1 {name=p44 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -350 0 1 {name=p45 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -330 0 1 {name=p46 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -290 0 1 {name=p47 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -270 0 1 {name=p48 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -230 0 1 {name=p49 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -210 0 1 {name=p50 sig_type=std_logic lab=vcn}
-C {lab_wire.sym} 800 -170 0 1 {name=p51 sig_type=std_logic lab=vcp}
-C {lab_wire.sym} 800 -150 0 1 {name=p52 sig_type=std_logic lab=vcn}
-C {ipin.sym} 220 -860 0 0 {name=p53 lab=swp[0:11]}
-C {ipin.sym} 220 -880 0 0 {name=p54 lab=vcm}
-C {ipin.sym} 220 -840 0 0 {name=p55 lab=swn[0:11]}
-C {iopin.sym} 200 -820 0 0 {name=p56 lab=vcp}
-C {iopin.sym} 200 -800 0 0 {name=p57 lab=vcn}
-C {param.sym} 270 -960 0 0 {name=s1 value="dim_unit=2u"}
+C {devices/lab_wire.sym} 950 -70 2 0 {name=p1 sig_type=std_logic lab=vcm}
+C {devices/lab_wire.sym} 950 -170 2 0 {name=p3 sig_type=std_logic lab=swp[0]}
+C {devices/lab_wire.sym} 1490 -180 2 0 {name=p4 sig_type=std_logic lab=swn[0]}
+C {devices/lab_wire.sym} 950 -280 2 0 {name=p5 sig_type=std_logic lab=swp[1]}
+C {devices/lab_wire.sym} 1490 -290 2 0 {name=p6 sig_type=std_logic lab=swn[1]}
+C {devices/lab_wire.sym} 950 -390 2 0 {name=p7 sig_type=std_logic lab=swp[2]}
+C {devices/lab_wire.sym} 1490 -400 2 0 {name=p8 sig_type=std_logic lab=swn[2]}
+C {devices/lab_wire.sym} 950 -500 2 0 {name=p9 sig_type=std_logic lab=swp[3]}
+C {devices/lab_wire.sym} 1490 -510 2 0 {name=p10 sig_type=std_logic lab=swn[3]}
+C {devices/lab_wire.sym} 950 -610 2 0 {name=p11 sig_type=std_logic lab=swp[4]}
+C {devices/lab_wire.sym} 1490 -620 2 0 {name=p12 sig_type=std_logic lab=swn[4]}
+C {devices/lab_wire.sym} 950 -720 2 0 {name=p13 sig_type=std_logic lab=swp[5]}
+C {devices/lab_wire.sym} 1490 -730 2 0 {name=p14 sig_type=std_logic lab=swn[5]}
+C {devices/lab_wire.sym} 950 -830 2 0 {name=p15 sig_type=std_logic lab=swp[6]}
+C {devices/lab_wire.sym} 1490 -840 2 0 {name=p16 sig_type=std_logic lab=swn[6]}
+C {devices/lab_wire.sym} 950 -940 2 0 {name=p17 sig_type=std_logic lab=swp[7]}
+C {devices/lab_wire.sym} 1490 -950 2 0 {name=p18 sig_type=std_logic lab=swn[7]}
+C {devices/lab_wire.sym} 950 -1050 2 0 {name=p19 sig_type=std_logic lab=swp[8]}
+C {devices/lab_wire.sym} 1490 -1060 2 0 {name=p20 sig_type=std_logic lab=swn[8]}
+C {devices/lab_wire.sym} 950 -1160 2 0 {name=p21 sig_type=std_logic lab=swp[9]}
+C {devices/lab_wire.sym} 1490 -1170 2 0 {name=p22 sig_type=std_logic lab=swn[9]}
+C {devices/lab_wire.sym} 950 -1270 2 0 {name=p23 sig_type=std_logic lab=swp[10]}
+C {devices/lab_wire.sym} 1490 -1280 2 0 {name=p24 sig_type=std_logic lab=swn[10]}
+C {devices/lab_wire.sym} 950 -1380 2 0 {name=p25 sig_type=std_logic lab=swp[11]}
+C {devices/lab_wire.sym} 1490 -1390 2 0 {name=p26 sig_type=std_logic lab=swn[11]}
+C {devices/lab_wire.sym} 950 -1440 0 1 {name=p27 sig_type=std_logic lab=vcp}
+C {devices/ipin.sym} 220 -860 0 0 {name=p53 lab=swp[0:11]}
+C {devices/ipin.sym} 220 -880 0 0 {name=p54 lab=vcm}
+C {devices/ipin.sym} 220 -840 0 0 {name=p55 lab=swn[0:11]}
+C {devices/iopin.sym} 200 -820 0 0 {name=p56 lab=vcp}
+C {devices/iopin.sym} 200 -800 0 0 {name=p57 lab=vcn}
+C {devices/param.sym} 270 -960 0 0 {name=s1 value="dim_unit=2u"}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -1410 0 0 {name=C1 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=2048 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -1330 0 1 {name=p29 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -1300 0 0 {name=C2 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1024 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -1220 0 1 {name=p30 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -1190 0 0 {name=C3 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=512 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -1110 0 1 {name=p31 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -1080 0 0 {name=C4 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=256 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -1000 0 1 {name=p32 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -970 0 0 {name=C5 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=128 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -890 0 1 {name=p33 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -860 0 0 {name=C6 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=64 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -780 0 1 {name=p34 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -750 0 0 {name=C7 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=32 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -670 0 1 {name=p35 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -640 0 0 {name=C8 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=16 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -560 0 1 {name=p36 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -530 0 0 {name=C9 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=8 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -450 0 1 {name=p37 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -420 0 0 {name=C10 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=4 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -340 0 1 {name=p38 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -310 0 0 {name=C11 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=2 spiceprefix=X}
+C {devices/lab_wire.sym} 950 -230 0 1 {name=p39 sig_type=std_logic lab=vcp}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -200 0 0 {name=C12 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 950 -100 0 0 {name=C13 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -80 2 0 {name=p40 sig_type=std_logic lab=vcm}
+C {devices/lab_wire.sym} 1490 -1450 0 1 {name=p58 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -1420 0 0 {name=C14 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=2048 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -1340 0 1 {name=p59 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -1310 0 0 {name=C15 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1024 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -1230 0 1 {name=p60 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -1200 0 0 {name=C16 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=512 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -1120 0 1 {name=p61 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -1090 0 0 {name=C17 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=256 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -1010 0 1 {name=p62 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -980 0 0 {name=C18 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=128 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -900 0 1 {name=p63 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -870 0 0 {name=C19 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=64 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -790 0 1 {name=p64 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -760 0 0 {name=C20 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=32 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -680 0 1 {name=p65 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -650 0 0 {name=C21 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=16 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -570 0 1 {name=p66 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -540 0 0 {name=C22 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=8 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -460 0 1 {name=p67 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -430 0 0 {name=C23 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=4 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -350 0 1 {name=p68 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -320 0 0 {name=C24 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=2 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -240 0 1 {name=p69 sig_type=std_logic lab=vcn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -210 0 0 {name=C25 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -110 0 0 {name=C26 model=cap_mim_m3_1 W=dim_unit L=dim_unit MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 1490 -140 0 1 {name=p70 sig_type=std_logic lab=vcn}
+C {devices/lab_wire.sym} 950 -130 0 1 {name=p71 sig_type=std_logic lab=vcp}

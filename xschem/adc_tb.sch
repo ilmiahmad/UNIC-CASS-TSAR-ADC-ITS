@@ -45,17 +45,31 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+* .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 .include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
 C {devices/code.sym} 235 -385 0 0 {name=s2 only_toplevel=false value="
 .option wnflag=0
 .option savecurrents
+.options acct list
+.options method=gear
 .control
-tran 1n 1m
-plot DOUT[0:3]
+global netlist_dir .
+set wr_singlescale
+save
++ x1.vcp
++ x1.vcn
++ cko
+tran 100n 2m uic
+plot x1.vcp x1.vcn
+plot cko
+wrdata output.txt
++ x1.vcp
++ x1.vcn
++ cko
 .endc"}
-C {devices/vsource.sym} 760 -150 0 0 {name=V2 value="PULSE(0 1.8 50n 50p 50p 1u 2u)" savecurrent=false}
+C {devices/vsource.sym} 760 -150 0 0 {name=V2 value="PULSE(0 1.8 50n 50p 50p 0.25u 0.5u)" savecurrent=false}
 C {devices/lab_wire.sym} 760 -180 0 0 {name=p23 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 760 -120 2 0 {name=p24 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/corner.sym} -70 -390 0 0 {name=CORNER only_toplevel=false corner=tt}

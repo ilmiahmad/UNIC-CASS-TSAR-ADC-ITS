@@ -12,13 +12,13 @@ C {devices/lab_wire.sym} 380 -170 0 1 {name=p3 sig_type=std_logic lab=FB0}
 C {devices/lab_wire.sym} 380 -190 0 1 {name=p4 sig_type=std_logic lab=CLK_1}
 C {devices/lab_wire.sym} 200 -150 0 0 {name=p5 sig_type=std_logic lab=VDDD}
 C {sky130_stdcells/dfrbp_2.sym} 590 -290 0 0 {name=x2 VGND=VSSD VNB=VSSD VPB=VDDD VPWR=VDDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_wire.sym} 500 -310 0 0 {name=p6 sig_type=std_logic lab=CLK_1}
+C {devices/lab_wire.sym} 500 -190 0 0 {name=p6 sig_type=std_logic lab=FB0}
 C {devices/lab_wire.sym} 500 -290 0 0 {name=p7 sig_type=std_logic lab=CLK_S}
 C {devices/lab_wire.sym} 680 -290 0 1 {name=p8 sig_type=std_logic lab=CLK_S}
 C {devices/noconn.sym} 680 -310 0 1 {name=l9 sig_type=std_logic lab=CLK_1}
 C {devices/lab_wire.sym} 500 -270 0 0 {name=p10 sig_type=std_logic lab=VDDD}
 C {sky130_stdcells/dfrbp_2.sym} 590 -170 0 0 {name=x3 VGND=VSSD VNB=VSSD VPB=VDDD VPWR=VDDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_wire.sym} 500 -190 0 0 {name=p11 sig_type=std_logic lab=CLK_1}
+C {devices/lab_wire.sym} 500 -310 0 0 {name=p11 sig_type=std_logic lab=CLK_1}
 C {devices/lab_wire.sym} 500 -170 0 0 {name=p12 sig_type=std_logic lab=FB1}
 C {devices/lab_wire.sym} 680 -170 0 1 {name=p13 sig_type=std_logic lab=FB1}
 C {devices/lab_wire.sym} 680 -190 0 1 {name=p14 sig_type=std_logic lab=CLK_NS}

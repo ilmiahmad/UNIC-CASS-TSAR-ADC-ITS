@@ -50,7 +50,7 @@ lab=vssa}
 N 420 -200 500 -200 {
 lab=vssa}
 C {sky130_fd_pr/pfet_01v8.sym} 400 -470 0 0 {name=M1
-W=1
+W=9
 L=0.15
 nf=1
 mult=1
@@ -64,7 +64,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 400 -390 0 0 {name=M2
-W=1
+W=9
 L=0.15
 nf=1
 mult=1
@@ -78,7 +78,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 400 -310 0 0 {name=M3
-W=1
+W=3
 L=0.15
 nf=1 
 mult=1
@@ -92,7 +92,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 400 -230 0 0 {name=M4
-W=1
+W=3
 L=0.15
 nf=1 
 mult=1

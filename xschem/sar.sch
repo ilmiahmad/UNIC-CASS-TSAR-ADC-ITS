@@ -34,11 +34,11 @@ C {devices/lab_wire.sym} 380 -130 0 0 {name=p26 sig_type=std_logic lab=COMP_N}
 C {devices/lab_wire.sym} 680 -170 0 1 {name=p27 sig_type=std_logic lab=COMP}
 C {devices/lab_wire.sym} 680 -150 0 1 {name=p28 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 380 -290 0 0 {name=p29 sig_type=std_logic lab=RDY}
-C {devices/lab_wire.sym} 380 -270 0 0 {name=p30 sig_type=std_logic lab=CLKS}
+C {devices/lab_wire.sym} 380 -270 0 0 {name=p30 sig_type=std_logic lab=CLKSB}
 C {devices/lab_wire.sym} 680 -410 0 1 {name=p31 sig_type=std_logic lab=CLKS}
 C {auto_sampling.sym} 530 -390 0 0 {name=x1}
-C {devices/lab_wire.sym} 840 -250 0 0 {name=p32 sig_type=std_logic lab=CLKS}
-C {devices/lab_wire.sym} 840 -110 0 0 {name=p33 sig_type=std_logic lab=CLKS}
+C {devices/lab_wire.sym} 840 -250 0 0 {name=p32 sig_type=std_logic lab=CLKSB}
+C {devices/lab_wire.sym} 840 -110 0 0 {name=p33 sig_type=std_logic lab=CLKSB}
 C {devices/lab_wire.sym} 680 -290 0 1 {name=p34 sig_type=std_logic lab=FINAL}
 C {devices/lab_wire.sym} 840 -150 0 0 {name=p35 sig_type=std_logic lab=FINAL}
 C {devices/lab_wire.sym} 840 -290 0 0 {name=p36 sig_type=std_logic lab=COMP}

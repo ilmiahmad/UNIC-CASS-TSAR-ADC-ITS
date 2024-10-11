@@ -24,7 +24,7 @@ C {devices/ipin.sym} 80 -180 0 0 {name=p22 sig_type=std_logic lab=VSSD}
 C {devices/opin.sym} 60 -160 0 0 {name=p23 sig_type=std_logic lab=COMP}
 C {devices/opin.sym} 60 -140 0 0 {name=p24 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 560 -220 0 0 {name=p8 sig_type=std_logic lab=CLK_S}
-C {devices/lab_wire.sym} 560 -180 0 0 {name=p1 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 560 -180 0 0 {name=p1 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 740 -220 0 1 {name=p2 sig_type=std_logic lab=COMP}
 C {devices/lab_wire.sym} 260 -220 0 0 {name=p3 sig_type=std_logic lab=COMP_N}
 C {devices/lab_wire.sym} 260 -180 0 0 {name=p4 sig_type=std_logic lab=COMP_P}

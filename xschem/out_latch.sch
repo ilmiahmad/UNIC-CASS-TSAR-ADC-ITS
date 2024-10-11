@@ -8,7 +8,7 @@ E {}
 C {sky130_stdcells/dfrtp_2.sym} 390 -230 0 0 {name=x1[0:3] VGND=VSSD VNB=VSSD VPB=VDDD VPWR=VDDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 300 -230 0 0 {name=p2 sig_type=std_logic lab=SWP[0:3]}
 C {devices/lab_wire.sym} 480 -250 0 1 {name=p1 sig_type=std_logic lab=DOUT[0:3]}
-C {devices/lab_wire.sym} 300 -210 0 0 {name=p3 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 300 -210 0 0 {name=p3 sig_type=std_logic lab=VDDD}
 C {sky130_stdcells/or2_1.sym} 370 -110 0 0 {name=x2 VGND=VSSD VNB=VSSD VPB=VDDD VPWR=VDDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 300 -250 0 0 {name=p4 sig_type=std_logic lab=CK}
 C {devices/lab_wire.sym} 310 -130 0 0 {name=p5 sig_type=std_logic lab=FINAL}
