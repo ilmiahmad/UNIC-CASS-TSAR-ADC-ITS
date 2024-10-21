@@ -19,6 +19,8 @@ N 2260 -350 2300 -350 {
 lab=#net6}
 N 2600 -350 2640 -350 {
 lab=#net7}
+N 2940 -350 2980 -350 {
+lab=#net8}
 C {epc_delay.sym} 410 -320 0 0 {name=x1}
 C {devices/lab_wire.sym} 260 -310 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 260 -330 0 0 {name=p2 sig_type=std_logic lab=vp
@@ -69,11 +71,11 @@ C {devices/lab_wire.sym} 2640 -290 0 0 {name=p24 sig_type=std_logic lab=vss
 }
 C {devices/lab_wire.sym} 260 -350 0 0 {name=p25 sig_type=std_logic lab=in
 }
-C {devices/lab_wire.sym} 2940 -350 0 1 {name=p26 sig_type=std_logic lab=out
-}
 C {devices/ipin.sym} 120 -380 0 0 {name=p27 lab=vdd}
 C {devices/ipin.sym} 120 -360 0 0 {name=p28 lab=in}
 C {devices/ipin.sym} 120 -340 0 0 {name=p29 lab=vp}
 C {devices/ipin.sym} 120 -320 0 0 {name=p30 lab=vn}
 C {devices/ipin.sym} 120 -300 0 0 {name=p31 lab=vss}
 C {devices/opin.sym} 100 -280 0 0 {name=p32 lab=out}
+C {devices/lab_wire.sym} 2980 -350 0 1 {name=p58 sig_type=std_logic lab=out
+}
