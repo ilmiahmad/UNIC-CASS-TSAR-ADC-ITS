@@ -11,7 +11,6 @@ N 100 -100 220 -100 {
 lab=#net1}
 N 220 -120 220 -100 {
 lab=#net1}
-C {4b_adc.sym} 590 -390 0 0 {name=x1}
 C {devices/vsource.sym} 400 -150 0 0 {name=VS value=0 savecurrent=false}
 C {devices/vsource.sym} 480 -150 0 0 {name=VDA value=1.8 savecurrent=false}
 C {devices/vsource.sym} 680 -150 0 0 {name=VDD value=1.8 savecurrent=false}
@@ -38,7 +37,7 @@ C {devices/lab_wire.sym} 440 -380 0 0 {name=p18 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 440 -360 0 0 {name=p19 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} 440 -340 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 440 -420 0 0 {name=p20 sig_type=std_logic lab=VCM}
-C {devices/lab_wire.sym} 740 -460 0 1 {name=p21 sig_type=std_logic lab=DOUT[0:3]}
+C {devices/lab_wire.sym} 740 -460 0 1 {name=p21 sig_type=std_logic lab=DOUT[0:9]}
 C {devices/lab_wire.sym} 740 -440 0 1 {name=p22 sig_type=std_logic lab=CKO}
 C {devices/code.sym} 75 -385 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -58,18 +57,28 @@ C {devices/code.sym} 235 -385 0 0 {name=s2 only_toplevel=false value="
 global netlist_dir .
 set wr_singlescale
 save
++ clk
++ vip
++ vin
 + x1.vcp
 + x1.vcn
++ 'dout[0]'
++ 'dout[1]'
++ 'dout[2]'
++ 'dout[3]'
++ 'dout[4]'
++ 'dout[5]'
++ 'dout[6]'
++ 'dout[7]'
++ 'dout[8]'
++ 'dout[9]'
 + cko
 tran 100n 2m uic
-plot x1.vcp x1.vcn
-plot cko
-wrdata output.txt
-+ x1.vcp
-+ x1.vcn
-+ cko
+remzerovec
+write adc.raw
 .endc"}
-C {devices/vsource.sym} 760 -150 0 0 {name=V2 value="PULSE(0 1.8 50n 50p 50p 0.25u 0.5u)" savecurrent=false}
+C {devices/vsource.sym} 760 -150 0 0 {name=V2 value="PULSE(0 1.8 50n 50p 50p 1u 2u)" savecurrent=false}
 C {devices/lab_wire.sym} 760 -180 0 0 {name=p23 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 760 -120 2 0 {name=p24 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/corner.sym} -70 -390 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {10b_adc.sym} 590 -390 0 0 {name=x1}

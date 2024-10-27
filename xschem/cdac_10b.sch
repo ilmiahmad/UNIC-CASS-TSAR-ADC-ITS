@@ -26,9 +26,9 @@ C {devices/lab_wire.sym} 420 -450 0 0 {name=p15 sig_type=std_logic lab=swn_in[0:
 C {devices/lab_wire.sym} 720 -350 0 1 {name=p16 sig_type=std_logic lab=vcp}
 C {devices/lab_wire.sym} 720 -270 0 1 {name=p17 sig_type=std_logic lab=vcn}
 C {devices/ipin.sym} 180 -620 0 0 {name=p18 lab=vdref}
-C {devices/ipin.sym} 180 -590 0 0 {name=p19 lab=cf[0:11]}
-C {devices/ipin.sym} 180 -560 0 0 {name=p20 lab=swp_in[0:11]}
-C {devices/ipin.sym} 180 -530 0 0 {name=p21 lab=swn_in[0:11]}
+C {devices/ipin.sym} 180 -590 0 0 {name=p19 lab=cf[0:9]}
+C {devices/ipin.sym} 180 -560 0 0 {name=p20 lab=swp_in[0:9]}
+C {devices/ipin.sym} 180 -530 0 0 {name=p21 lab=swn_in[0:9]}
 C {devices/ipin.sym} 180 -500 0 0 {name=p22 lab=vcm}
 C {devices/ipin.sym} 180 -470 0 0 {name=p23 lab=vsref}
 C {devices/iopin.sym} 160 -440 0 0 {name=p24 lab=vcp}

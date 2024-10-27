@@ -21,9 +21,9 @@ T {CLKS} -125 6 0 0 0.2 0.2 {}
 B 5 -152.5 27.5 -147.5 32.5 {name=VSSD sig_type=std_logic dir=in}
 L 4 -150 30 -130 30 {}
 T {VSSD} -125 26 0 0 0.2 0.2 {}
-B 5 147.5 -32.5 152.5 -27.5 {name=CF[0:3] sig_type=std_logic dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=CF[0:9] sig_type=std_logic dir=out}
 L 4 130 -30 150 -30 {}
-T {CF[0:3]} 125 -34 0 1 0.2 0.2 {}
+T {CF[0:9]} 125 -34 0 1 0.2 0.2 {}
 B 5 147.5 -12.5 152.5 -7.5 {name=FINAL sig_type=std_logic dir=out}
 L 4 130 -10 150 -10 {}
 T {FINAL} 125 -14 0 1 0.2 0.2 {}

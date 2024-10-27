@@ -10,8 +10,8 @@ y1 = -0.028
 y2 = 1.9
 divy = 5
 subdivy=1
-x1=0.00028514204
-x2=0.00029279228
+x1=1.365e-11
+x2=0.0005
 divx=4
 subdivx=4
 node="vinp
@@ -21,14 +21,14 @@ outn"
 color="4 5 6 12" unity=1
 dataset=-1
 sim_type=tran
-hilight_wave=-1}
+hilight_wave=3}
 B 2 1490 30 2160 540 {flags=graph
 y1 = -0.26186578
 y2 = 1.9656782
 divy = 5
 subdivy=1
-x1=0.00028514204
-x2=0.00029279228
+x1=1.365e-11
+x2=0.0005
 divx=4
 subdivx=4
 node=rdy
@@ -41,8 +41,8 @@ y1 = 0.89356868
 y2 = 0.90538022
 divy = 5
 subdivy=1
-x1=0.00028514204
-x2=0.00029279228
+x1=1.365e-11
+x2=0.0005
 divx=4
 subdivx=4
 
@@ -57,17 +57,16 @@ y1 = -0.29394202
 y2 = 2.0667773
 divy = 5
 subdivy=1
-x1=0.00028514204
-x2=0.00029279228
+x1=1.365e-11
+x2=0.0005
 divx=4
 subdivx=4
-node="start
-x1.inn
-x1.inp"
-color="4 5 6" unity=1
+node="x1.net2
+x1.net1"
+color="4 5" unity=1
 dataset=-1
 sim_type=tran
-hilight_wave=1}
+hilight_wave=2}
 C {devices/vsource.sym} 1220 -50 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/vsource.sym} 920 -50 0 0 {name=V2 value="\{VDDA\}" savecurrent=false}
 C {devices/vsource.sym} 1220 -210 0 0 {name=V3 value="PULSE(0 \{VDDD\} 10n 50p 50p 1u 2u)" savecurrent=false}
@@ -95,6 +94,7 @@ spice_ignore=false}
 C {devices/code.sym} 625 -125 0 0 {name=s2 only_toplevel=false value="
 .option wnflag=1
 .option savecurrents
+.options chgtol=1e-11 abstol=10u
 .control
 tran 1n 0.5m uic
 remzerovec
@@ -124,3 +124,7 @@ C {devices/lab_wire.sym} 840 -390 0 1 {name=p43 sig_type=std_logic lab=outn}
 C {devices/lab_wire.sym} 540 -390 0 0 {name=p44 sig_type=std_logic lab=start}
 C {tdc.sym} 690 -370 0 0 {name=x1}
 C {devices/lab_wire.sym} 840 -370 0 1 {name=p3 sig_type=std_logic lab=rdy}
+C {devices/launcher.sym} 1775 -565 0 0 {name=h1 
+descr="load waves local" 
+tclcommand="xschem raw_read /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tcmp.spice tran"
+}
