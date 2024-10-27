@@ -54,13 +54,13 @@ lab=OUT}
 N 380 -220 920 -220 {
 lab=VSSA}
 N 960 -250 1040 -250 {
-lab=INN}
+lab=#net7}
 N 1040 -250 1060 -250 {
-lab=INN}
+lab=#net7}
 N 1060 -650 1060 -250 {
-lab=INN}
-C {sky130_stdcells/nand2_1.sym} 520 -580 3 0 {name=x1 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/nand2_1.sym} 780 -580 3 0 {name=x2 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
+lab=#net7}
+C {sky130_stdcells/nand2_1.sym} 520 -580 1 1 {name=x1 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 780 -580 1 1 {name=x2 VGND=VSSA VNB=VSSA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/pfet3_01v8.sym} 260 -770 0 0 {name=M1
 W=3
 L=0.15
@@ -214,9 +214,9 @@ spiceprefix=X
 C {devices/lab_wire.sym} 640 -800 0 0 {name=p1 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 640 -220 0 0 {name=p2 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 240 -770 0 0 {name=p3 sig_type=std_logic lab=INN}
-C {devices/lab_wire.sym} 1060 -450 0 1 {name=p4 sig_type=std_logic lab=INN}
+C {devices/lab_wire.sym} 1060 -470 0 1 {name=p4 sig_type=std_logic lab=INN}
 C {devices/lab_wire.sym} 1060 -770 0 1 {name=p5 sig_type=std_logic lab=INP}
-C {devices/lab_wire.sym} 240 -450 0 0 {name=p6 sig_type=std_logic lab=INP}
+C {devices/lab_wire.sym} 240 -470 0 0 {name=p6 sig_type=std_logic lab=INP}
 C {devices/ipin.sym} 120 -700 0 0 {name=p7 sig_type=std_logic lab=VDDA}
 C {devices/ipin.sym} 120 -680 0 0 {name=p8 sig_type=std_logic lab=INP}
 C {devices/ipin.sym} 120 -660 0 0 {name=p9 sig_type=std_logic lab=INN}
