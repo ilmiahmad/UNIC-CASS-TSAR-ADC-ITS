@@ -49,7 +49,6 @@ C {devices/ipin.sym} 80 -340 0 0 {name=p43 sig_type=std_logic lab=VSSA}
 C {devices/ipin.sym} 80 -320 0 0 {name=p44 sig_type=std_logic lab=VSSD}
 C {devices/opin.sym} 60 -240 0 0 {name=p45 sig_type=std_logic lab=DOUT[0:9]}
 C {devices/opin.sym} 60 -220 0 0 {name=p46 sig_type=std_logic lab=CKO}
-C {devices/lab_wire.sym} 1020 -420 0 1 {name=p47 sig_type=std_logic lab=RDY}
 C {cdac_10b.sym} 430 -230 0 0 {name=x1}
 C {tdc.sym} 870 -420 0 0 {name=x3}
 C {devices/ipin.sym} 80 -360 0 0 {name=p14 sig_type=std_logic lab=VSSR}
