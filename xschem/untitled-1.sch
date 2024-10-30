@@ -161,7 +161,7 @@ v_sp_f10 cf9 gnd  PULSE(1.8V 0 0 1ns 1ns 55us 200us)
 ic v(vin_p)=0.9V
 ic v(vin_n)=0.9V
 save all
-tran 0.1u 110u
+tran 0.1u 240u
 write untitled-1.raw
 plot Vin_n Vin_p+2
 .endc
@@ -210,9 +210,9 @@ C {devices/lab_wire.sym} 560 -390 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/noconn.sym} 560 -430 1 0 {name=l4}
 C {devices/lab_wire.sym} 560 -430 0 0 {name=l12 sig_type=std_logic lab=cf[0..9]
 }
-C {devices/lab_pin.sym} 860 -470 0 1 {name=l20 sig_type=std_logic lab=sw_p[0..1]
+C {devices/lab_pin.sym} 860 -490 0 1 {name=l20 sig_type=std_logic lab=sw_p[0..9]
 }
-C {devices/lab_pin.sym} 860 -450 0 1 {name=l23 sig_type=std_logic lab=sw_n[0..9]
+C {devices/lab_pin.sym} 860 -470 0 1 {name=l23 sig_type=std_logic lab=sw_n[0..9]
 }
 C {devices/launcher.sym} 1070 -450 0 0 {name=h5
 descr="load waves" 
