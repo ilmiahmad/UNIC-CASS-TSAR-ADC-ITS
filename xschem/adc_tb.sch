@@ -78,12 +78,12 @@ C {devices/gnd.sym} 590 -80 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} 590 -140 0 0 {name=p1 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 700 -230 2 1 {name=p2 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 780 -230 2 1 {name=p3 sig_type=std_logic lab=VSSD}
-C {devices/lab_wire.sym} 540 -430 0 0 {name=p6 sig_type=std_logic lab=VSSA}
+C {devices/lab_wire.sym} 540 -420 0 0 {name=p6 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 700 -290 0 0 {name=p7 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 540 -570 0 0 {name=p8 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 540 -550 0 0 {name=p9 sig_type=std_logic lab=VDDD}
+C {devices/lab_wire.sym} 540 -580 0 0 {name=p8 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 540 -560 0 0 {name=p9 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 780 -290 0 0 {name=p10 sig_type=std_logic lab=VDDD}
-C {devices/lab_wire.sym} 540 -510 0 0 {name=p12 sig_type=std_logic lab=CLK}
+C {devices/lab_wire.sym} 540 -500 0 0 {name=p12 sig_type=std_logic lab=CLK}
 C {devices/vsource.sym} 540 -260 0 0 {name=VC value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 540 -230 2 1 {name=p13 sig_type=std_logic lab=VSSR}
 C {devices/lab_wire.sym} 540 -290 0 0 {name=p14 sig_type=std_logic lab=VCM}
@@ -93,19 +93,19 @@ C {devices/vsource.sym} 260 -180 0 0 {name=VSS3 value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 200 -350 0 0 {name=p15 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 320 -350 0 0 {name=p16 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} 260 -150 2 0 {name=p17 sig_type=std_logic lab=VSSR}
-C {devices/lab_wire.sym} 540 -490 0 0 {name=p18 sig_type=std_logic lab=VIP}
-C {devices/lab_wire.sym} 540 -470 0 0 {name=p19 sig_type=std_logic lab=VIN}
-C {devices/lab_wire.sym} 540 -450 0 0 {name=p5 sig_type=std_logic lab=VSSR}
-C {devices/lab_wire.sym} 540 -530 0 0 {name=p20 sig_type=std_logic lab=VCM}
-C {devices/lab_wire.sym} 840 -590 0 1 {name=p21 sig_type=std_logic lab=DOUT[0:9]}
-C {devices/lab_wire.sym} 840 -570 0 1 {name=p22 sig_type=std_logic lab=CKO}
+C {devices/lab_wire.sym} 540 -480 0 0 {name=p18 sig_type=std_logic lab=VIP}
+C {devices/lab_wire.sym} 540 -460 0 0 {name=p19 sig_type=std_logic lab=VIN}
+C {devices/lab_wire.sym} 540 -440 0 0 {name=p5 sig_type=std_logic lab=VSSR}
+C {devices/lab_wire.sym} 540 -540 0 0 {name=p20 sig_type=std_logic lab=VCM}
+C {devices/lab_wire.sym} 840 -600 0 1 {name=p21 sig_type=std_logic lab=DOUT[0:9]}
+C {devices/lab_wire.sym} 840 -580 0 1 {name=p22 sig_type=std_logic lab=CKO}
 C {devices/code.sym} 185 -565 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 * .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hdll/spice/sky130_fd_sc_hdll.spice
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
 C {devices/code.sym} 345 -565 0 0 {name=s2 only_toplevel=false value="
@@ -172,5 +172,9 @@ C {devices/lab_wire.sym} 800 -140 0 0 {name=p11 sig_type=std_logic lab=VSSR}
 C {devices/vsource.sym} 620 -260 0 0 {name=VDR value=1.8 savecurrent=false}
 C {devices/lab_wire.sym} 620 -230 2 1 {name=p25 sig_type=std_logic lab=VSSR}
 C {devices/lab_wire.sym} 620 -290 0 0 {name=p26 sig_type=std_logic lab=VDDR}
-C {devices/lab_wire.sym} 540 -590 0 0 {name=p27 sig_type=std_logic lab=VDDR}
-C {devices/lab_wire.sym} 540 -410 0 0 {name=p28 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 540 -600 0 0 {name=p27 sig_type=std_logic lab=VDDR}
+C {devices/lab_wire.sym} 540 -400 0 0 {name=p28 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 540 -520 0 0 {name=p29 sig_type=std_logic lab=EN}
+C {devices/vsource.sym} 920 -110 0 0 {name=VCLK1 value="PWL(0 0, 10u 0, 10.01u 1.8)" savecurrent=false}
+C {devices/lab_wire.sym} 920 -140 0 0 {name=p30 sig_type=std_logic lab=EN}
+C {devices/lab_wire.sym} 920 -80 2 1 {name=p31 sig_type=std_logic lab=VSSD}
