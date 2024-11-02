@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 1110 -540 1910 -140 {flags=graph
-y1=-0.38039828
-y2=1.980259
+y1=0.81299661
+y2=0.97521985
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=7.986972e-06
-x2=6.1233452e-05
+x1=8.4552466e-05
+x2=8.8480703e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -29,7 +29,7 @@ color="9 6 7 12"
 node="x1.clks
 x1.vcn
 x1.vcp
-x1.comp_p"
+comp_p"
 hilight_wave=1}
 B 2 1950 -540 2750 -140 {flags=graph
 y1=0
@@ -39,8 +39,8 @@ ypos2=2.5739087
 divy=5
 subdivy=1
 unity=1
-x1=7.986972e-06
-x2=6.1233452e-05
+x1=8.4552466e-05
+x2=8.8480703e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -175,6 +175,8 @@ C {devices/lab_wire.sym} 620 -290 0 0 {name=p26 sig_type=std_logic lab=VDDR}
 C {devices/lab_wire.sym} 540 -600 0 0 {name=p27 sig_type=std_logic lab=VDDR}
 C {devices/lab_wire.sym} 540 -400 0 0 {name=p28 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 540 -520 0 0 {name=p29 sig_type=std_logic lab=EN}
-C {devices/vsource.sym} 920 -110 0 0 {name=VCLK1 value="PWL(0 0, 10u 0, 10.01u 1.8)" savecurrent=false}
+C {devices/vsource.sym} 920 -110 0 0 {name=VCLK1 value="PWL(0 0, 1u 0, 1.01u 1.8)" savecurrent=false}
 C {devices/lab_wire.sym} 920 -140 0 0 {name=p30 sig_type=std_logic lab=EN}
 C {devices/lab_wire.sym} 920 -80 2 1 {name=p31 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 840 -560 0 1 {name=p32 sig_type=std_logic lab=COMP_P}
+C {devices/lab_wire.sym} 840 -540 0 1 {name=p33 sig_type=std_logic lab=COMP_N}
