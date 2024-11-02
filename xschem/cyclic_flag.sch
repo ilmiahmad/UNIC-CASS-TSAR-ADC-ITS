@@ -73,7 +73,7 @@ C {devices/lab_wire.sym} 320 -330 0 0 {name=p1 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 560 -330 0 0 {name=p2 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 800 -330 0 0 {name=p3 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 1040 -330 0 0 {name=p4 sig_type=std_logic lab=RDY}
-C {devices/lab_wire.sym} 320 -310 0 0 {name=p5 sig_type=std_logic lab=VDDD}
+C {devices/lab_wire.sym} 320 -310 0 0 {name=p5 sig_type=std_logic lab=EN}
 C {devices/lab_wire.sym} 560 -310 0 0 {name=p6 sig_type=std_logic lab=CF[0]}
 C {devices/lab_wire.sym} 800 -310 0 0 {name=p7 sig_type=std_logic lab=CF[1]}
 C {devices/lab_wire.sym} 1040 -310 0 0 {name=p8 sig_type=std_logic lab=CF[2]}
@@ -83,8 +83,8 @@ C {devices/lab_wire.sym} 800 -290 0 0 {name=p12 sig_type=std_logic lab=CLKS}
 C {devices/lab_wire.sym} 1040 -290 0 0 {name=p13 sig_type=std_logic lab=CLKS}
 C {devices/ipin.sym} 140 -380 0 0 {name=p14 sig_type=std_logic lab=RDY}
 C {devices/ipin.sym} 140 -400 0 0 {name=p15 sig_type=std_logic lab=VDDD}
-C {devices/ipin.sym} 140 -360 0 0 {name=p16 sig_type=std_logic lab=CLKS}
-C {devices/ipin.sym} 140 -340 0 0 {name=p17 sig_type=std_logic lab=VSSD}
+C {devices/ipin.sym} 140 -340 0 0 {name=p16 sig_type=std_logic lab=CLKS}
+C {devices/ipin.sym} 140 -320 0 0 {name=p17 sig_type=std_logic lab=VSSD}
 C {sky130_stdcells/buf_8.sym} 1010 -110 0 0 {name=x5 VGND=VSSD VNB=VSSD VPB=VDDD VPWR=VDDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 1050 -110 0 1 {name=p18 sig_type=std_logic lab=FINAL}
 C {devices/opin.sym} 120 -300 0 0 {name=p19 sig_type=std_logic lab=CF[0:9]}
@@ -115,3 +115,4 @@ C {devices/lab_wire.sym} 2240 -290 0 0 {name=p36 sig_type=std_logic lab=CLKS}
 C {devices/lab_wire.sym} 2480 -290 0 0 {name=p37 sig_type=std_logic lab=CLKS}
 C {devices/lab_wire.sym} 2720 -310 0 0 {name=p39 sig_type=std_logic lab=CF[9]}
 C {devices/lab_wire.sym} 970 -110 0 0 {name=p38 sig_type=std_logic lab=CF[9]}
+C {devices/ipin.sym} 140 -360 0 0 {name=p40 sig_type=std_logic lab=EN}
