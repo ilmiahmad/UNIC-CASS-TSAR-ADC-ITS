@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.4726464e-05
-x2=0.00011290289
+x1=7.1632324e-06
+x2=8.8476203e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,7 +30,7 @@ node="x1.clks
 x1.vcn
 x1.vcp
 comp_p"
-hilight_wave=1}
+hilight_wave=3}
 B 2 1950 -540 2750 -140 {flags=graph
 y1=0
 y2=2
@@ -39,8 +39,8 @@ ypos2=2.5739087
 divy=5
 subdivy=1
 unity=1
-x1=1.4726464e-05
-x2=0.00011290289
+x1=7.1632324e-06
+x2=8.8476203e-05
 divx=5
 subdivx=1
 xlabmag=1.0
