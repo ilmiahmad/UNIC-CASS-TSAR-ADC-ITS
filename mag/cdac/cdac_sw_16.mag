@@ -1,0 +1,69 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1730626724
+<< metal1 >>
+rect 2216 -1361 2696 -1265
+rect 2216 -1485 2696 -1389
+rect -524 -1571 2696 -1513
+<< via1 >>
+rect 182 -1361 278 -1271
+rect -255 -1485 -159 -1395
+<< metal2 >>
+rect 958 7087 1014 7096
+rect -113 6959 -57 6968
+rect -255 -1395 -159 -1389
+rect -255 -1695 -159 -1485
+rect -113 -1655 -57 6903
+rect 958 3842 1014 7031
+rect 80 -1655 136 -1082
+rect 182 -1271 278 -1265
+rect 182 -1695 278 -1361
+rect 572 -1655 628 -1082
+rect 1450 -1655 1506 -1082
+rect 1942 -1655 1998 -1082
+<< via2 >>
+rect 164 7159 220 7215
+rect 1534 7159 1590 7215
+rect 958 7031 1014 7087
+rect -113 6903 -57 6959
+<< metal3 >>
+rect 159 7215 2696 7221
+rect 159 7159 164 7215
+rect 220 7159 1534 7215
+rect 1590 7159 2696 7215
+rect 159 7153 2696 7159
+rect 953 7087 2696 7093
+rect 953 7031 958 7087
+rect 1014 7031 2696 7087
+rect 953 7025 2696 7031
+rect -118 6959 2696 6965
+rect -118 6903 -113 6959
+rect -57 6903 2696 6959
+rect -118 6897 2696 6903
+use nooverlap_clk  x1
+timestamp 1730626724
+transform 1 0 0 0 1 -2000
+box -562 -783 2734 401
+use tg_sw_16  x2
+timestamp 1730624594
+transform 1 0 947 0 1 811
+box 285 -2382 1269 6702
+use dac_sw_16  x3
+timestamp 1730624594
+transform 1 0 118 0 1 845
+box -642 -2330 1114 6668
+<< labels >>
+flabel metal1 2600 -1361 2696 -1265 0 FreeSans 320 0 0 0 vdda
+port 1 nsew
+flabel metal1 2600 -1485 2696 -1389 0 FreeSans 320 0 0 0 vssa
+port 5 nsew
+flabel metal1 2638 -1571 2696 -1513 0 FreeSans 320 0 0 0 vcm
+port 4 nsew
+flabel metal3 2628 6897 2696 6965 0 FreeSans 320 0 0 0 cki
+port 2 nsew
+flabel metal3 2628 7025 2696 7093 0 FreeSans 320 0 0 0 bi
+port 3 nsew
+flabel metal3 2628 7153 2696 7221 0 FreeSans 320 0 0 0 dac_out
+port 6 nsew
+<< end >>
