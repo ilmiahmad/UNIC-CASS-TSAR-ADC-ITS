@@ -50,7 +50,7 @@ C {devices/lab_wire.sym} 2640 -610 2 0 {name=p67 sig_type=std_logic lab=swn[8:9]
 C {devices/lab_wire.sym} 2340 -550 0 0 {name=p70 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 2340 -590 0 0 {name=p71 sig_type=std_logic lab=cf[8:9]}
 C {devices/lab_wire.sym} 2340 -570 0 0 {name=p73 sig_type=std_logic lab=swn_in[8:9]}
-C {10b_cap_array.sym} 570 -700 0 0 {name=x2}
+C {x10b_cap_array.sym} 570 -700 0 0 {name=x2}
 C {cdac_sw_16.sym} 570 -810 0 0 {name=x1[0:1]}
 C {devices/lab_wire.sym} 420 -850 0 0 {name=p2 sig_type=std_logic lab=vdref}
 C {devices/lab_wire.sym} 420 -770 0 0 {name=p4 sig_type=std_logic lab=vsref}

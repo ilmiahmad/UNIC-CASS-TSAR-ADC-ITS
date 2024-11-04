@@ -16,7 +16,7 @@ C {devices/lab_wire.sym} 980 -840 2 0 {name=p15 sig_type=std_logic lab=sw[6]}
 C {devices/lab_wire.sym} 980 -950 2 0 {name=p17 sig_type=std_logic lab=sw[7]}
 C {devices/lab_wire.sym} 980 -1060 2 0 {name=p19 sig_type=std_logic lab=sw[8]}
 C {devices/lab_wire.sym} 980 -1170 2 0 {name=p21 sig_type=std_logic lab=sw[9]}
-C {devices/ipin.sym} 230 -680 0 0 {name=p53 lab=sw[9:0]}
+C {devices/ipin.sym} 230 -680 0 0 {name=p53 lab=sw[0:9]}
 C {devices/ipin.sym} 230 -700 0 0 {name=p54 lab=vcm}
 C {devices/iopin.sym} 210 -660 0 0 {name=p56 lab=vc
 
