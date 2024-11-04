@@ -4,7 +4,7 @@ tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use 10b_cap_array 10b_cap_array_0 -1 0 121209 0 -1 -40052
+use x10b_cap_array x10b_cap_array_0 -1 0 121209 0 -1 -40052
 use cdac_sw_1 cdac_sw_1_2 -1 0 106511 0 -1 -9874
 use cdac_sw_16 cdac_sw_16_0 1 0 103754 0 1 -14133
 use cdac_sw_16 x2[0] 1 0 106974 0 1 -14133
@@ -25,7 +25,7 @@ use cdac_sw_1 cdac_sw_1_1 1 0 128929 0 1 -11152
 use cdac_sw_16 x3[1] -1 0 131686 0 -1 -6893
 use cdac_sw_1 cdac_sw_1_0 1 0 132149 0 1 -11152
 use cdac_sw_16 x3[0] -1 0 134906 0 -1 -6893
-use 10b_cap_array 10b_cap_array_1 1 0 117451 0 1 19026
+use x10b_cap_array x10b_cap_array_1 1 0 117451 0 1 19026
 port "vcn" 35 118848 -40901 119032 -40717 m2
 port "vcp" 34 119628 19692 119812 19876 m2
 port "cf[2]" 4 102622 -10951 102718 -10855 m3
@@ -126,13 +126,13 @@ merge "x3[0]/x1/x2/VPB" "cdac_sw_1_0/vdda"
 merge "cdac_sw_1_0/vdda" "cdac_sw_1_0/x1/x12/VPWR"
 merge "cdac_sw_1_0/x1/x12/VPWR" "cdac_sw_1_0/x1/x13/VPWR"
 merge "cdac_sw_1_0/x1/x13/VPWR" "m1_135334_n16372#"
-merge "cdac_sw_8_1/dac_out" "10b_cap_array_0/m1_n14221_n21940#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/m1_n14221_n21940#" "m1_112416_n18210#"
+merge "cdac_sw_8_1/dac_out" "x10b_cap_array_0/m1_n14221_n21940#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/m1_n14221_n21940#" "m1_112416_n18210#"
 merge "cdac_sw_1_0/x1/vssa" "cdac_sw_1_1/x1/x13/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_1/x1/x13/VGND" "cdac_sw_1_1/x1/x12/VGND"
 merge "cdac_sw_1_1/x1/x12/VGND" "cdac_sw_1_1/x1/a_n562_n776#"
 merge "cdac_sw_1_1/x1/a_n562_n776#" "cdac_sw_1_1/x1/a_n562_360#"
-merge "10b_cap_array_1/VSUBS" "x8[6]/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/VSUBS" "x8[6]/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[6]/VSUBS" "x8[7]/VSUBS"
 merge "x8[7]/VSUBS" "x10[8]/VSUBS"
 merge "x10[8]/VSUBS" "cdac_sw_1_2/VSUBS"
@@ -152,10 +152,10 @@ merge "cdac_sw_4_1/VSUBS" "cdac_sw_8_0/VSUBS"
 merge "cdac_sw_8_0/VSUBS" "cdac_sw_8_1/VSUBS"
 merge "cdac_sw_8_1/VSUBS" "x2[0]/VSUBS"
 merge "x2[0]/VSUBS" "cdac_sw_16_0/VSUBS"
-merge "cdac_sw_16_0/VSUBS" "10b_cap_array_0/VSUBS"
-merge "10b_cap_array_0/VSUBS" "VSUBS"
-merge "cdac_sw_2_0/dac_out" "10b_cap_array_0/SW[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[7]" "m1_128516_n17390#"
+merge "cdac_sw_16_0/VSUBS" "x10b_cap_array_0/VSUBS"
+merge "x10b_cap_array_0/VSUBS" "VSUBS"
+merge "cdac_sw_2_0/dac_out" "x10b_cap_array_0/SW[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[7]" "m1_128516_n17390#"
 merge "x8[7]/vssa" "x10[8]/x3/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x10[8]/x3/vssa" "x10[8]/x1/vssa"
 merge "x10[8]/x1/vssa" "x10[8]/vssa"
@@ -163,6 +163,8 @@ merge "x10[8]/vssa" "x10[8]/x1/a_n562_360#"
 merge "x10[8]/x1/a_n562_360#" "cdac_sw_1_2/x3/vssa"
 merge "x2[0]/x3/vdda" "cdac_sw_16_0/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_1/bi" "swn_in[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/SW[4]" "x6[4]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x6[4]/dac_out" "m1_119712_n3236#"
 merge "x2[0]/bi" "swn_in[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[0]/vdda" "x3[1]/x3/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_2_1/x3/vdda" "cdac_sw_4_0/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -170,19 +172,23 @@ merge "x4[3]/bi" "swp_in[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x10[8]/x1/a_n562_n776#" "cdac_sw_1_2/x1/x3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_2/x1/x3/VGND" "cdac_sw_1_2/x1/x3/VNB"
 merge "cdac_sw_1_2/x1/x3/VNB" "cdac_sw_1_2/x1/x2/VGND"
-merge "cdac_sw_16_0/dac_out" "10b_cap_array_0/m1_n14221_n21612#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/m1_n14221_n21612#" "m1_105976_n18538#"
+merge "x10b_cap_array_1/SW[3]" "x4[3]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x4[3]/dac_out" "m1_122932_n3072#"
 merge "x3[0]/vssa" "x3[1]/x3/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[1]/x3/vssa" "x3[1]/x1/vssa"
 merge "x3[1]/x1/vssa" "x3[1]/vssa"
 merge "x3[1]/vssa" "x3[1]/x1/a_n562_360#"
 merge "x3[1]/x1/a_n562_360#" "x4[2]/x3/vssa"
+merge "cdac_sw_4_1/dac_out" "x10b_cap_array_0/SW[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[4]" "m1_118856_n17882#"
 merge "cdac_sw_4_1/x1/x3/VPB" "cdac_sw_4_1/x1/x2/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_4_1/x1/x2/VPB" "cdac_sw_8_0/x1/x12/VPWR"
 merge "cdac_sw_8_0/x1/x12/VPWR" "cdac_sw_8_0/x1/x13/VPWR"
 merge "cdac_sw_8_0/x1/x13/VPWR" "cdac_sw_8_0/x1/x13/VPB"
 merge "x2[0]/x1/vssa" "cdac_sw_16_0/x1/x13/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_16_0/x1/x13/VGND" "cdac_sw_16_0/x1/x12/VGND"
+merge "x10b_cap_array_1/m1_n14221_n21940#" "x4[2]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x4[2]/dac_out" "m1_126152_n2908#"
 merge "cdac_sw_4_0/x1/vssa" "cdac_sw_4_1/x1/x13/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_4_1/x1/x13/VGND" "cdac_sw_4_1/x1/x12/VGND"
 merge "cdac_sw_4_1/x1/x12/VGND" "cdac_sw_4_0/x1/x3/VNB"
@@ -192,10 +198,8 @@ merge "cdac_sw_8_0/x1/x3/VPB" "cdac_sw_8_0/x1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "cdac_sw_8_0/x1/vdda" "cdac_sw_8_1/x1/x12/VPWR"
 merge "cdac_sw_8_1/x1/x12/VPWR" "cdac_sw_8_1/x1/x13/VPWR"
 merge "cdac_sw_8_1/x1/x13/VPWR" "cdac_sw_8_1/x1/x13/VPB"
-merge "10b_cap_array_1/m1_n14221_n21940#" "x4[2]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x4[2]/dac_out" "m1_126152_n2908#"
 merge "cdac_sw_2_1/x3/vssa" "cdac_sw_4_0/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/m1_n14221_n21448#" "x3[0]/vcm" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/m1_n14221_n21448#" "x3[0]/vcm" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[0]/vcm" "x3[1]/vcm"
 merge "x3[1]/vcm" "x4[2]/vcm"
 merge "x4[2]/vcm" "x4[3]/vcm"
@@ -215,8 +219,8 @@ merge "cdac_sw_4_1/vcm" "cdac_sw_8_0/vcm"
 merge "cdac_sw_8_0/vcm" "cdac_sw_8_1/vcm"
 merge "cdac_sw_8_1/vcm" "x2[0]/vcm"
 merge "x2[0]/vcm" "cdac_sw_16_0/vcm"
-merge "cdac_sw_16_0/vcm" "10b_cap_array_0/m1_n14221_n21448#"
-merge "10b_cap_array_0/m1_n14221_n21448#" "m1_135326_n18708#"
+merge "cdac_sw_16_0/vcm" "x10b_cap_array_0/m1_n14221_n21448#"
+merge "x10b_cap_array_0/m1_n14221_n21448#" "m1_135326_n18708#"
 merge "m1_135326_n18708#" "vcm"
 merge "cdac_sw_1_2/x1/x13/VGND" "cdac_sw_1_2/x1/x13/VNB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_2/x1/x13/VNB" "cdac_sw_1_2/x1/x12/VGND"
@@ -235,6 +239,8 @@ merge "x2[0]/x1/x3/VPB" "x2[0]/x1/x2/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "x2[0]/x1/x2/VPB" "cdac_sw_16_0/x1/x12/VPWR"
 merge "cdac_sw_16_0/x1/x12/VPWR" "cdac_sw_16_0/x1/x13/VPWR"
 merge "cdac_sw_16_0/x1/x13/VPWR" "cdac_sw_16_0/x1/x13/VPB"
+merge "cdac_sw_8_0/dac_out" "x10b_cap_array_0/SW[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[3]" "m1_115636_n18046#"
 merge "x4[3]/vssa" "x6[4]/x3/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_1/x3/vssa" "cdac_sw_2_0/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_4_1/bi" "swn_in[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -242,6 +248,8 @@ merge "x4[3]/cki" "cdac_sw_8_0/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "cdac_sw_8_0/cki" "cf[3]"
 merge "x6[5]/vssa" "x6[5]/x1/x12/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x6[5]/x1/x12/VGND" "x8[6]/x3/vssa"
+merge "x10b_cap_array_1/SW[1]" "x3[1]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3[1]/dac_out" "m1_129372_n2744#"
 merge "cdac_sw_2_1/x1/x3/VPB" "cdac_sw_2_1/x1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_2_1/x1/vdda" "cdac_sw_4_0/x1/x12/VPWR"
 merge "cdac_sw_4_0/x1/x12/VPWR" "cdac_sw_4_0/x1/x13/VPWR"
@@ -279,6 +287,8 @@ merge "x4[2]/x1/x13/VPWR" "x4[3]/x1/x3/VPWR"
 merge "x4[3]/x1/x3/VPWR" "x4[2]/x1/x13/VPB"
 merge "x4[2]/x1/x13/VPB" "x4[3]/x1/x3/VPB"
 merge "x4[3]/x1/x3/VPB" "x4[3]/x3/vdda"
+merge "x2[0]/dac_out" "x10b_cap_array_0/SW[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[1]" "m1_109196_n18374#"
 merge "cdac_sw_4_0/x3/vssa" "cdac_sw_4_1/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_0/x3/vdda" "cdac_sw_1_1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x6[4]/cki" "cdac_sw_4_1/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -302,6 +312,8 @@ merge "x3[0]/x1/x11/VPB" "x3[0]/x1/x13/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[0]/x1/x13/VPWR" "x3[1]/x1/x3/VPWR"
 merge "x3[1]/x1/x3/VPWR" "x3[0]/x1/x13/VPB"
 merge "x3[0]/x1/x13/VPB" "x3[1]/x1/x3/VPB"
+merge "cdac_sw_4_0/dac_out" "x10b_cap_array_0/m1_n14221_n22432#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/m1_n14221_n22432#" "m1_122076_n17718#"
 merge "cdac_sw_4_1/x3/vssa" "cdac_sw_8_0/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4[3]/x1/x13/VNB" "x6[4]/x1/x3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x6[4]/x1/x3/VGND" "x6[4]/x1/x3/VNB"
@@ -328,11 +340,9 @@ merge "x3[0]/x3/vssa" "cdac_sw_1_0/vssa"
 merge "cdac_sw_1_0/vssa" "cdac_sw_1_0/x1/x12/VGND"
 merge "cdac_sw_1_0/x1/x12/VGND" "cdac_sw_1_0/x1/x13/VGND"
 merge "cdac_sw_1_0/x1/x13/VGND" "m1_135334_n16916#"
-merge "10b_cap_array_1/SW[7]" "x8[7]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/SW[7]" "x8[7]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[7]/dac_out" "m1_110052_n3728#"
 merge "x8[6]/bi" "swp_in[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x2[0]/dac_out" "10b_cap_array_0/SW[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[1]" "m1_109196_n18374#"
 merge "cdac_sw_8_1/x1/vssa" "x2[0]/x1/x13/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x2[0]/x1/x13/VGND" "x2[0]/x1/x12/VGND"
 merge "x2[0]/x1/x12/VGND" "x2[0]/x1/a_n562_n776#"
@@ -340,8 +350,8 @@ merge "x2[0]/x1/a_n562_n776#" "x2[0]/x1/a_n562_360#"
 merge "x6[5]/bi" "swp_in[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_2/cki" "cdac_sw_1_0/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_0/cki" "cf[9]"
-merge "cdac_sw_4_0/dac_out" "10b_cap_array_0/m1_n14221_n22432#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/m1_n14221_n22432#" "m1_122076_n17718#"
+merge "cdac_sw_16_0/dac_out" "x10b_cap_array_0/m1_n14221_n21612#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/m1_n14221_n21612#" "m1_105976_n18538#"
 merge "x3[1]/vdda" "x4[2]/x1/x2/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4[2]/x1/x2/VPB" "x3[1]/x1/x13/VPWR"
 merge "x3[1]/x1/x13/VPWR" "x4[2]/x1/x3/VPWR"
@@ -353,8 +363,6 @@ merge "x6[5]/x1/x13/VGND" "x8[6]/x1/x3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[6]/x1/x3/VGND" "x8[6]/x1/x3/VNB"
 merge "x8[6]/x1/x3/VNB" "x8[6]/x1/x2/VGND"
 merge "x6[4]/bi" "swp_in[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cdac_sw_8_0/dac_out" "10b_cap_array_0/SW[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[3]" "m1_115636_n18046#"
 merge "cdac_sw_1_2/x1/x12/VPWR" "cdac_sw_1_2/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_2/vdda" "cdac_sw_1_2/x1/x13/VPWR"
 merge "cdac_sw_1_2/x1/x13/VPWR" "cdac_sw_16_0/x3/vdda"
@@ -362,32 +370,24 @@ merge "cdac_sw_16_0/x3/vdda" "cdac_sw_16_0/x1/x3/VPWR"
 merge "cdac_sw_16_0/x1/x3/VPWR" "cdac_sw_16_0/x1/vdda"
 merge "cdac_sw_16_0/x1/vdda" "vdref"
 merge "cdac_sw_2_1/bi" "swn_in[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/SW[4]" "x6[4]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x6[4]/dac_out" "m1_119712_n3236#"
 merge "x8[7]/x1/x11/VGND" "x10[8]/x1/x3/VNB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x10[8]/x1/x3/VNB" "x10[8]/x1/x3/VGND"
 merge "x4[2]/cki" "cdac_sw_8_1/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_1/cki" "cf[2]"
-merge "cdac_sw_4_1/dac_out" "10b_cap_array_0/SW[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[4]" "m1_118856_n17882#"
 merge "cdac_sw_4_0/x1/x3/VPB" "cdac_sw_4_1/x1/x13/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_4_1/x1/x13/VPWR" "cdac_sw_4_1/x1/x12/VPWR"
 merge "cdac_sw_4_1/x1/x12/VPWR" "cdac_sw_4_1/x1/x11/VPWR"
 merge "cdac_sw_4_1/x1/x11/VPWR" "cdac_sw_4_1/x1/x13/VPB"
 merge "cdac_sw_4_0/bi" "swn_in[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/SW[3]" "x4[3]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x4[3]/dac_out" "m1_122932_n3072#"
 merge "x4[2]/bi" "swp_in[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/SW[9]" "cdac_sw_1_2/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/SW[9]" "cdac_sw_1_2/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_2/dac_out" "m1_103612_n4056#"
 merge "cdac_sw_2_0/x3/vssa" "cdac_sw_2_1/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[1]/bi" "swp_in[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/m1_n14221_n22432#" "x6[5]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x6[5]/dac_out" "m1_116492_n3400#"
 merge "cdac_sw_8_0/bi" "swn_in[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_2_0/x3/vdda" "cdac_sw_2_1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cdac_sw_2_1/dac_out" "10b_cap_array_0/SW[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[6]" "m1_125296_n17554#"
+merge "cdac_sw_2_1/dac_out" "x10b_cap_array_0/SW[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[6]" "m1_125296_n17554#"
 merge "cdac_sw_1_0/x1/x3/VPB" "cdac_sw_1_0/x1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_1_0/x1/vdda" "cdac_sw_1_1/x1/x12/VPWR"
 merge "cdac_sw_1_1/x1/x12/VPWR" "cdac_sw_1_1/x1/x13/VPWR"
@@ -395,22 +395,20 @@ merge "cdac_sw_1_1/x1/x13/VPWR" "cdac_sw_1_1/x1/x13/VPB"
 merge "x3[0]/bi" "swp_in[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[6]/vdda" "x8[7]/x3/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_1/bi" "swn_in[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/m1_n14221_n21612#" "x3[0]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/m1_n14221_n21612#" "x3[0]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[0]/dac_out" "m1_132592_n2580#"
 merge "x3[0]/x1/x13/VNB" "x3[1]/x1/x3/VNB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x3[1]/x1/x3/VNB" "x3[1]/x1/x3/VGND"
-merge "10b_cap_array_1/SW[6]" "x8[6]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/SW[6]" "x8[6]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[6]/dac_out" "m1_113272_n3564#"
 merge "cdac_sw_4_0/x3/vdda" "cdac_sw_4_1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_0/x3/vdda" "cdac_sw_8_1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_1/SW[8]" "x10[8]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_1/SW[8]" "x10[8]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x10[8]/dac_out" "m1_106832_n3892#"
 merge "cdac_sw_16_0/bi" "swn_in[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x6[4]/x1/a_n562_n776#" "x6[5]/x1/x3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x6[5]/x1/x3/VGND" "x6[5]/x1/x3/VNB"
 merge "x6[5]/x1/x3/VNB" "x6[5]/x1/x2/VGND"
-merge "10b_cap_array_1/SW[1]" "x3[1]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x3[1]/dac_out" "m1_129372_n2744#"
 merge "x4[3]/vdda" "x6[4]/x3/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_0/x1/vssa" "cdac_sw_8_1/x1/x13/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_1/x1/x13/VGND" "cdac_sw_8_1/x1/x12/VGND"
@@ -426,6 +424,8 @@ merge "cdac_sw_8_1/x1/x3/VPB" "cdac_sw_8_1/x1/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "cdac_sw_8_1/x1/vdda" "x2[0]/x1/x12/VPWR"
 merge "x2[0]/x1/x12/VPWR" "x2[0]/x1/x13/VPWR"
 merge "x2[0]/x1/x13/VPWR" "x2[0]/x1/x13/VPB"
+merge "x10b_cap_array_1/m1_n14221_n22432#" "x6[5]/dac_out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x6[5]/dac_out" "m1_116492_n3400#"
 merge "cdac_sw_1_0/x3/vssa" "cdac_sw_1_1/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x8[7]/cki" "cdac_sw_2_0/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_2_0/cki" "cf[7]"
@@ -436,11 +436,11 @@ merge "x8[6]/x1/x13/VNB" "x8[7]/x1/x3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "x8[7]/x1/x3/VGND" "x8[7]/x1/x3/VNB"
 merge "x8[7]/x1/x3/VNB" "x8[7]/x1/x2/VGND"
 merge "cdac_sw_1_1/x3/vdda" "cdac_sw_2_0/vdda" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cdac_sw_1_1/dac_out" "10b_cap_array_0/SW[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[8]" "m1_131736_n17226#"
+merge "cdac_sw_1_1/dac_out" "x10b_cap_array_0/SW[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[8]" "m1_131736_n17226#"
 merge "x6[5]/cki" "cdac_sw_4_0/cki" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_4_0/cki" "cf[5]"
-merge "cdac_sw_1_0/dac_out" "10b_cap_array_0/SW[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "10b_cap_array_0/SW[9]" "m1_134956_n17062#"
+merge "cdac_sw_1_0/dac_out" "x10b_cap_array_0/SW[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10b_cap_array_0/SW[9]" "m1_134956_n17062#"
 merge "x8[6]/vssa" "x8[7]/x3/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cdac_sw_8_0/x3/vssa" "cdac_sw_8_1/vssa" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
