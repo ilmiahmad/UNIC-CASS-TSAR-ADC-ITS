@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=7.1632324e-06
-x2=8.8476203e-05
+x1=2.3425822e-05
+x2=0.00010473879
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -39,8 +39,8 @@ ypos2=2.5739087
 divy=5
 subdivy=1
 unity=1
-x1=7.1632324e-06
-x2=8.8476203e-05
+x1=2.3425822e-05
+x2=0.00010473879
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -113,9 +113,9 @@ C {devices/code.sym} 345 -565 0 0 {name=s2 only_toplevel=false value="
 .option savecurrents
 .options acct list
 .options method=trapezoid
-.options reltol=1e-3 abstol=1e-4
-.options maxstep=10n
-.options minbreak=1n
+.options reltol=1e-2 abstol=1e-4
+.options maxstep=100n
+.options minbreak=10n
 .options solver=iterative
 .control
 global netlist_dir .
@@ -139,7 +139,7 @@ save
 + 'dout[8]'
 + 'dout[9]'
 + cko
-tran 10n 0.1m
+tran 100n 0.5m
 remzerovec
 write adc_tb.raw
 quit 0

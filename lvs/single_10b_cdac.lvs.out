@@ -1,4 +1,19 @@
 
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
@@ -29,94 +44,99 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Circuit 2 cell sky130_fd_sc_hd__nand2_1 is a black box; will not flatten Circuit 1
-Warning: Equate pins:  cell sky130_fd_sc_hd__nand2_1 is a placeholder, treated as a black box.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |1                                          
-(no matching pin)                          |2                                          
-(no matching pin)                          |3                                          
-(no matching pin)                          |4                                          
-(no matching pin)                          |5                                          
-(no matching pin)                          |6                                          
-(no matching pin)                          |7                                          
-A                                          |(no matching pin)                          
-B                                          |(no matching pin)                          
-VGND                                       |(no matching pin)                          
-VNB                                        |(no matching pin)                          
-VPB                                        |(no matching pin)                          
-VPWR                                       |(no matching pin)                          
-Y                                          |(no matching pin)                          
+VGND                                       |VGND                                       
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+B                                          |B                                          
+VNB                                        |VNB                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__nand2_1 and sky130_fd_sc_hd__nand2_1 are equivalent.
 
-Circuit 2 cell sky130_fd_sc_hd__inv_1 is a black box; will not flatten Circuit 1
-Warning: Equate pins:  cell sky130_fd_sc_hd__inv_1 is a placeholder, treated as a black box.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_1          |Circuit 2: sky130_fd_sc_hd__inv_1          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__inv_1          |Circuit 2: sky130_fd_sc_hd__inv_1          
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |1                                          
-(no matching pin)                          |2                                          
-(no matching pin)                          |3                                          
-(no matching pin)                          |4                                          
-(no matching pin)                          |5                                          
-(no matching pin)                          |6                                          
-A                                          |(no matching pin)                          
-VGND                                       |(no matching pin)                          
-VNB                                        |(no matching pin)                          
-VPB                                        |(no matching pin)                          
-VPWR                                       |(no matching pin)                          
-Y                                          |(no matching pin)                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+A                                          |A                                          
+Y                                          |Y                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
 
-Circuit 2 cell sky130_fd_sc_hd__inv_4 is a black box; will not flatten Circuit 1
 Class sky130_fd_sc_hd__inv_4 (0):  Merged 6 parallel devices.
-Warning: Equate pins:  cell sky130_fd_sc_hd__inv_4 is a placeholder, treated as a black box.
+Class sky130_fd_sc_hd__inv_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_4          |Circuit 2: sky130_fd_sc_hd__inv_4          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (4->1)         |sky130_fd_pr__pfet_01v8_hvt (4->1)         
+sky130_fd_pr__nfet_01v8 (4->1)             |sky130_fd_pr__nfet_01v8 (4->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__inv_4          |Circuit 2: sky130_fd_sc_hd__inv_4          
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |1                                          
-(no matching pin)                          |2                                          
-(no matching pin)                          |3                                          
-(no matching pin)                          |4                                          
-(no matching pin)                          |5                                          
-(no matching pin)                          |6                                          
-A                                          |(no matching pin)                          
-VGND                                       |(no matching pin)                          
-VNB                                        |(no matching pin)                          
-VPB                                        |(no matching pin)                          
-VPWR                                       |(no matching pin)                          
-Y                                          |(no matching pin)                          
+Y                                          |Y                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_4 and sky130_fd_sc_hd__inv_4 are equivalent.
 
-Circuit 2 cell sky130_fd_sc_hd__inv_8 is a black box; will not flatten Circuit 1
 Class sky130_fd_sc_hd__inv_8 (0):  Merged 14 parallel devices.
-Warning: Equate pins:  cell sky130_fd_sc_hd__inv_8 is a placeholder, treated as a black box.
+Class sky130_fd_sc_hd__inv_8 (1):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_8          |Circuit 2: sky130_fd_sc_hd__inv_8          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (8->1)         |sky130_fd_pr__pfet_01v8_hvt (8->1)         
+sky130_fd_pr__nfet_01v8 (8->1)             |sky130_fd_pr__nfet_01v8 (8->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__inv_8          |Circuit 2: sky130_fd_sc_hd__inv_8          
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |1                                          
-(no matching pin)                          |2                                          
-(no matching pin)                          |3                                          
-(no matching pin)                          |4                                          
-(no matching pin)                          |5                                          
-(no matching pin)                          |6                                          
-A                                          |(no matching pin)                          
-VGND                                       |(no matching pin)                          
-VNB                                        |(no matching pin)                          
-VPB                                        |(no matching pin)                          
-VPWR                                       |(no matching pin)                          
-Y                                          |(no matching pin)                          
+A                                          |A                                          
+Y                                          |Y                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_8 and sky130_fd_sc_hd__inv_8 are equivalent.
@@ -143,177 +163,24 @@ sky130_fd_sc_hd__inv_1 (5)                 |sky130_fd_sc_hd__inv_1 (5)
 sky130_fd_sc_hd__inv_4 (2)                 |sky130_fd_sc_hd__inv_4 (2)                 
 sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)                 
 Number of devices: 13                      |Number of devices: 13                      
-Number of nets: 96                         |Number of nets: 96                         
+Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
 Circuit 1: nooverlap_clk                   |Circuit 2: nooverlap_clk                   
-
+-------------------------------------------|-------------------------------------------
+clk1                                       |clk1                                       
+clk0                                       |clk0                                       
+vssa                                       |vssa                                       
+vdda                                       |vdda                                       
+in                                         |in                                         
+clkb0                                      |clkb0                                      
+clkb1                                      |clkb1                                      
+a_n562_360#                                |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Net: dummy_36                              |Net: dummy_36                              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: dummy_35                              |Net: dummy_35                              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: dummy_34                              |Net: dummy_34                              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: dummy_33                              |Net: dummy_33                              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: dummy_32                              |Net: dummy_32                              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: dummy_31                              |Net: dummy_31                              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: dummy_30                              |Net: dummy_30                              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: dummy_29                              |Net: dummy_29                              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: dummy_28                              |Net: dummy_28                              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: dummy_27                              |Net: dummy_27                              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: dummy_26                              |Net: dummy_26                              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: dummy_25                              |Net: dummy_25                              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: dummy_24                              |Net: dummy_24                              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: dummy_23                              |Net: dummy_23                              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: dummy_22                              |Net: dummy_22                              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: dummy_21                              |Net: dummy_21                              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: dummy_20                              |Net: dummy_20                              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: dummy_19                              |Net: dummy_19                              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: dummy_18                              |Net: dummy_18                              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: dummy_17                              |Net: dummy_17                              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-                                           |                                           
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: x8/A                                  |Net: b                                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x9/A                                  |Net: a                                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: x5/A                                  |Net: net2                                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x3/Y                                  |Net: net1                                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: x4/A                                  |Net: net5                                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: in                                    |Net: in                                    
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: nooverlap_clk                   |Circuit 2: nooverlap_clk                   
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__inv_1:x3        |Instance: sky130_fd_sc_hd__inv_1:3         
-  A = 2                                    |  proxyA = 1                               
-  VGND = 26                                |  proxyVGND = 1                            
-  VNB = 26                                 |  proxyVNB = 1                             
-  VPB = 26                                 |  proxyVPB = 1                             
-  VPWR = 26                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 26                                   
-  proxy3 = 1                               |  3 = 26                                   
-  proxy4 = 1                               |  4 = 26                                   
-  proxy5 = 1                               |  5 = 26                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__nand2_1:x2      |Instance: sky130_fd_sc_hd__nand2_1:2       
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 26                                |  proxyVGND = 1                            
-  VNB = 26                                 |  proxyVNB = 1                             
-  VPB = 26                                 |  proxyVPB = 1                             
-  VPWR = 26                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 26                                   
-  proxy4 = 1                               |  4 = 26                                   
-  proxy5 = 1                               |  5 = 26                                   
-  proxy6 = 1                               |  6 = 26                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: sky130_fd_sc_hd__nand2_1:x1      |Instance: sky130_fd_sc_hd__nand2_1:1       
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 26                                |  proxyVGND = 1                            
-  VNB = 26                                 |  proxyVNB = 1                             
-  VPB = 26                                 |  proxyVPB = 1                             
-  VPWR = 26                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 26                                   
-  proxy4 = 1                               |  4 = 26                                   
-  proxy5 = 1                               |  5 = 26                                   
-  proxy6 = 1                               |  6 = 26                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
+Cell pin lists are equivalent.
+Device classes nooverlap_clk and nooverlap_clk are equivalent.
   Flattening non-matched subcircuits nooverlap_clk nooverlap_clk
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMY429 in circuit tg_sw_4 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XHGLWN in circuit tg_sw_4 (0)(1 instance)
@@ -595,199 +462,23 @@ sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)
 tg_sw_4 (1)                                |tg_sw_4 (1)                                
 dac_sw_4 (1)                               |dac_sw_4 (1)                               
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 99                         |Number of nets: 99                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
 Circuit 1: cdac_sw_4                       |Circuit 2: cdac_sw_4                       
-
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+bi                                         |bi                                         
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+cki                                        |cki                                        
+dac_out                                    |dac_out                                    
+x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/dummy_36             |Net: nooverlap_clk:1/dummy_36              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_35             |Net: nooverlap_clk:1/dummy_35              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_34             |Net: nooverlap_clk:1/dummy_34              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_33             |Net: nooverlap_clk:1/dummy_33              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_32             |Net: nooverlap_clk:1/dummy_32              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_31             |Net: nooverlap_clk:1/dummy_31              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_30             |Net: nooverlap_clk:1/dummy_30              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_29             |Net: nooverlap_clk:1/dummy_29              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_28             |Net: nooverlap_clk:1/dummy_28              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_27             |Net: nooverlap_clk:1/dummy_27              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_26             |Net: nooverlap_clk:1/dummy_26              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_25             |Net: nooverlap_clk:1/dummy_25              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_24             |Net: nooverlap_clk:1/dummy_24              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_23             |Net: nooverlap_clk:1/dummy_23              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_22             |Net: nooverlap_clk:1/dummy_22              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_21             |Net: nooverlap_clk:1/dummy_21              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_20             |Net: nooverlap_clk:1/dummy_20              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_19             |Net: nooverlap_clk:1/dummy_19              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_18             |Net: nooverlap_clk:1/dummy_18              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_17             |Net: nooverlap_clk:1/dummy_17              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
-  tg_sw_4/vssa = 1                         |  tg_sw_4/vssa = 1                         
-  dac_sw_4/vssa = 1                        |  dac_sw_4/vssa = 1                        
-                                           |                                           
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-  tg_sw_4/vdda = 1                         |  tg_sw_4/vdda = 1                         
-  dac_sw_4/vdda = 1                        |  dac_sw_4/vdda = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x8/A                 |Net: nooverlap_clk:1/b                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x9/A                 |Net: nooverlap_clk:1/a                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x2/swp                                |Net: clkb1                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  tg_sw_4/swp = 1                          |  tg_sw_4/swp = 1                          
-                                           |                                           
-Net: x3/ckb                                |Net: clkb0                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  dac_sw_4/ckb = 1                         |  dac_sw_4/ckb = 1                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x5/A                 |Net: nooverlap_clk:1/net2                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x3/Y                 |Net: nooverlap_clk:1/net1                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x4/A                 |Net: nooverlap_clk:1/net5                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x2/swn                                |Net: clk1                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  tg_sw_4/swn = 1                          |  tg_sw_4/swn = 1                          
-                                           |                                           
-Net: x3/ck                                 |Net: clk0                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  dac_sw_4/ck = 1                          |  dac_sw_4/ck = 1                          
-                                           |                                           
-Net: cki                                   |Net: cki                                   
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cdac_sw_4                       |Circuit 2: cdac_sw_4                       
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 28                                   
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
+Cell pin lists are equivalent.
+Device classes cdac_sw_4 and cdac_sw_4 are equivalent.
   Flattening non-matched subcircuits cdac_sw_4 cdac_sw_4
 
 Cell cdac_sw_16 (0) disconnected node: x1/a_n562_360#
@@ -801,199 +492,23 @@ sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)
 tg_sw_16 (1)                               |tg_sw_16 (1)                               
 dac_sw_16 (1)                              |dac_sw_16 (1)                              
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 99                         |Number of nets: 99                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
 Circuit 1: cdac_sw_16                      |Circuit 2: cdac_sw_16                      
-
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+bi                                         |bi                                         
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+cki                                        |cki                                        
+dac_out                                    |dac_out                                    
+x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/dummy_36             |Net: nooverlap_clk:1/dummy_36              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_35             |Net: nooverlap_clk:1/dummy_35              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_34             |Net: nooverlap_clk:1/dummy_34              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_33             |Net: nooverlap_clk:1/dummy_33              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_32             |Net: nooverlap_clk:1/dummy_32              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_31             |Net: nooverlap_clk:1/dummy_31              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_30             |Net: nooverlap_clk:1/dummy_30              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_29             |Net: nooverlap_clk:1/dummy_29              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_28             |Net: nooverlap_clk:1/dummy_28              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_27             |Net: nooverlap_clk:1/dummy_27              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_26             |Net: nooverlap_clk:1/dummy_26              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_25             |Net: nooverlap_clk:1/dummy_25              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_24             |Net: nooverlap_clk:1/dummy_24              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_23             |Net: nooverlap_clk:1/dummy_23              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_22             |Net: nooverlap_clk:1/dummy_22              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_21             |Net: nooverlap_clk:1/dummy_21              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_20             |Net: nooverlap_clk:1/dummy_20              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_19             |Net: nooverlap_clk:1/dummy_19              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_18             |Net: nooverlap_clk:1/dummy_18              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_17             |Net: nooverlap_clk:1/dummy_17              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
-  tg_sw_16/vssa = 1                        |  tg_sw_16/vssa = 1                        
-  dac_sw_16/vssa = 1                       |  dac_sw_16/vssa = 1                       
-                                           |                                           
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-  tg_sw_16/vdda = 1                        |  tg_sw_16/vdda = 1                        
-  dac_sw_16/vdda = 1                       |  dac_sw_16/vdda = 1                       
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x8/A                 |Net: nooverlap_clk:1/b                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x9/A                 |Net: nooverlap_clk:1/a                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x2/swp                                |Net: clkb1                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  tg_sw_16/swp = 1                         |  tg_sw_16/swp = 1                         
-                                           |                                           
-Net: x3/ckb                                |Net: clkb0                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  dac_sw_16/ckb = 1                        |  dac_sw_16/ckb = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x5/A                 |Net: nooverlap_clk:1/net2                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x3/Y                 |Net: nooverlap_clk:1/net1                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x4/A                 |Net: nooverlap_clk:1/net5                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x2/swn                                |Net: clk1                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  tg_sw_16/swn = 1                         |  tg_sw_16/swn = 1                         
-                                           |                                           
-Net: x3/ck                                 |Net: clk0                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  dac_sw_16/ck = 1                         |  dac_sw_16/ck = 1                         
-                                           |                                           
-Net: cki                                   |Net: cki                                   
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cdac_sw_16                      |Circuit 2: cdac_sw_16                      
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 28                                   
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
+Cell pin lists are equivalent.
+Device classes cdac_sw_16 and cdac_sw_16 are equivalent.
   Flattening non-matched subcircuits cdac_sw_16 cdac_sw_16
 
 Subcircuit summary:
@@ -1006,200 +521,22 @@ sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)
 tg_sw_2 (1)                                |tg_sw_2 (1)                                
 dac_sw_2 (1)                               |dac_sw_2 (1)                               
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 99                         |Number of nets: 99                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely.
+
+Subcircuit pins:
 Circuit 1: cdac_sw_2                       |Circuit 2: cdac_sw_2                       
-
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+bi                                         |bi                                         
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+cki                                        |cki                                        
+dac_out                                    |dac_out                                    
 ---------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/dummy_36             |Net: nooverlap_clk:1/dummy_36              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_35             |Net: nooverlap_clk:1/dummy_35              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_34             |Net: nooverlap_clk:1/dummy_34              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_33             |Net: nooverlap_clk:1/dummy_33              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_32             |Net: nooverlap_clk:1/dummy_32              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_31             |Net: nooverlap_clk:1/dummy_31              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_30             |Net: nooverlap_clk:1/dummy_30              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_29             |Net: nooverlap_clk:1/dummy_29              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_28             |Net: nooverlap_clk:1/dummy_28              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_27             |Net: nooverlap_clk:1/dummy_27              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_26             |Net: nooverlap_clk:1/dummy_26              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_25             |Net: nooverlap_clk:1/dummy_25              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_24             |Net: nooverlap_clk:1/dummy_24              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_23             |Net: nooverlap_clk:1/dummy_23              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_22             |Net: nooverlap_clk:1/dummy_22              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_21             |Net: nooverlap_clk:1/dummy_21              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_20             |Net: nooverlap_clk:1/dummy_20              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_19             |Net: nooverlap_clk:1/dummy_19              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_18             |Net: nooverlap_clk:1/dummy_18              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_17             |Net: nooverlap_clk:1/dummy_17              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
-  tg_sw_2/vssa = 1                         |  tg_sw_2/vssa = 1                         
-  dac_sw_2/vssa = 1                        |  dac_sw_2/vssa = 1                        
-                                           |                                           
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-  tg_sw_2/vdda = 1                         |  tg_sw_2/vdda = 1                         
-  dac_sw_2/vdda = 1                        |  dac_sw_2/vdda = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x8/A                 |Net: nooverlap_clk:1/b                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x9/A                 |Net: nooverlap_clk:1/a                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x2/swp                                |Net: clkb1                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  tg_sw_2/swp = 1                          |  tg_sw_2/swp = 1                          
-                                           |                                           
-Net: x3/ckb                                |Net: clkb0                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  dac_sw_2/ckb = 1                         |  dac_sw_2/ckb = 1                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x5/A                 |Net: nooverlap_clk:1/net2                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x3/Y                 |Net: nooverlap_clk:1/net1                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x4/A                 |Net: nooverlap_clk:1/net5                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x2/swn                                |Net: clk1                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  tg_sw_2/swn = 1                          |  tg_sw_2/swn = 1                          
-                                           |                                           
-Net: x3/ck                                 |Net: clk0                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  dac_sw_2/ck = 1                          |  dac_sw_2/ck = 1                          
-                                           |                                           
-Net: cki                                   |Net: cki                                   
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cdac_sw_2                       |Circuit 2: cdac_sw_2                       
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 28                                   
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-  Flattening non-matched subcircuits cdac_sw_2 cdac_sw_2
+Cell pin lists are equivalent.
+Device classes cdac_sw_2 and cdac_sw_2 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RV4AQU in circuit x10b_cap_array (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_DURRY3 in circuit x10b_cap_array (0)(1 instance)
 
@@ -1244,200 +581,22 @@ sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)
 tg_sw_8 (1)                                |tg_sw_8 (1)                                
 dac_sw_8 (1)                               |dac_sw_8 (1)                               
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 99                         |Number of nets: 99                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely.
+
+Subcircuit pins:
 Circuit 1: cdac_sw_8                       |Circuit 2: cdac_sw_8                       
-
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+bi                                         |bi                                         
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+cki                                        |cki                                        
+dac_out                                    |dac_out                                    
 ---------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/dummy_36             |Net: nooverlap_clk:1/dummy_36              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_35             |Net: nooverlap_clk:1/dummy_35              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_34             |Net: nooverlap_clk:1/dummy_34              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_33             |Net: nooverlap_clk:1/dummy_33              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_32             |Net: nooverlap_clk:1/dummy_32              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_31             |Net: nooverlap_clk:1/dummy_31              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_30             |Net: nooverlap_clk:1/dummy_30              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_29             |Net: nooverlap_clk:1/dummy_29              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_28             |Net: nooverlap_clk:1/dummy_28              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_27             |Net: nooverlap_clk:1/dummy_27              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_26             |Net: nooverlap_clk:1/dummy_26              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_25             |Net: nooverlap_clk:1/dummy_25              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_24             |Net: nooverlap_clk:1/dummy_24              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_23             |Net: nooverlap_clk:1/dummy_23              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_22             |Net: nooverlap_clk:1/dummy_22              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_21             |Net: nooverlap_clk:1/dummy_21              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_20             |Net: nooverlap_clk:1/dummy_20              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_19             |Net: nooverlap_clk:1/dummy_19              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_18             |Net: nooverlap_clk:1/dummy_18              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_17             |Net: nooverlap_clk:1/dummy_17              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
-  tg_sw_8/vssa = 1                         |  tg_sw_8/vssa = 1                         
-  dac_sw_8/vssa = 1                        |  dac_sw_8/vssa = 1                        
-                                           |                                           
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-  tg_sw_8/vdda = 1                         |  tg_sw_8/vdda = 1                         
-  dac_sw_8/vdda = 1                        |  dac_sw_8/vdda = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x8/A                 |Net: nooverlap_clk:1/b                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x9/A                 |Net: nooverlap_clk:1/a                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x2/swp                                |Net: clkb1                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  tg_sw_8/swp = 1                          |  tg_sw_8/swp = 1                          
-                                           |                                           
-Net: x3/ckb                                |Net: clkb0                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  dac_sw_8/ckb = 1                         |  dac_sw_8/ckb = 1                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x5/A                 |Net: nooverlap_clk:1/net2                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x3/Y                 |Net: nooverlap_clk:1/net1                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x4/A                 |Net: nooverlap_clk:1/net5                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x2/swn                                |Net: clk1                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  tg_sw_8/swn = 1                          |  tg_sw_8/swn = 1                          
-                                           |                                           
-Net: x3/ck                                 |Net: clk0                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  dac_sw_8/ck = 1                          |  dac_sw_8/ck = 1                          
-                                           |                                           
-Net: cki                                   |Net: cki                                   
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cdac_sw_8                       |Circuit 2: cdac_sw_8                       
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 28                                   
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-  Flattening non-matched subcircuits cdac_sw_8 cdac_sw_8
+Cell pin lists are equivalent.
+Device classes cdac_sw_8 and cdac_sw_8 are equivalent.
 
 Cell cdac_sw_1 (0) disconnected node: x1/a_n562_360#
 Subcircuit summary:
@@ -1450,332 +609,92 @@ sky130_fd_sc_hd__inv_8 (4)                 |sky130_fd_sc_hd__inv_8 (4)
 tg_sw_1 (1)                                |tg_sw_1 (1)                                
 dac_sw_1 (1)                               |dac_sw_1 (1)                               
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 99                         |Number of nets: 99                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
 Circuit 1: cdac_sw_1                       |Circuit 2: cdac_sw_1                       
-
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+bi                                         |bi                                         
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+cki                                        |cki                                        
+dac_out                                    |dac_out                                    
+x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/dummy_36             |Net: nooverlap_clk:1/dummy_36              
-  sky130_fd_sc_hd__inv_1/proxy6 = 1        |  sky130_fd_sc_hd__inv_1/proxyY = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_35             |Net: nooverlap_clk:1/dummy_35              
-  sky130_fd_sc_hd__inv_1/proxy5 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPWR = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_34             |Net: nooverlap_clk:1/dummy_34              
-  sky130_fd_sc_hd__inv_1/proxy4 = 1        |  sky130_fd_sc_hd__inv_1/proxyVPB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_33             |Net: nooverlap_clk:1/dummy_33              
-  sky130_fd_sc_hd__inv_1/proxy3 = 1        |  sky130_fd_sc_hd__inv_1/proxyVNB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_32             |Net: nooverlap_clk:1/dummy_32              
-  sky130_fd_sc_hd__inv_1/proxy2 = 1        |  sky130_fd_sc_hd__inv_1/proxyVGND = 1     
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_31             |Net: nooverlap_clk:1/dummy_31              
-  sky130_fd_sc_hd__inv_1/proxy1 = 1        |  sky130_fd_sc_hd__inv_1/proxyA = 1        
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_30             |Net: nooverlap_clk:1/dummy_30              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_29             |Net: nooverlap_clk:1/dummy_29              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_28             |Net: nooverlap_clk:1/dummy_28              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_27             |Net: nooverlap_clk:1/dummy_27              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_26             |Net: nooverlap_clk:1/dummy_26              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_25             |Net: nooverlap_clk:1/dummy_25              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_24             |Net: nooverlap_clk:1/dummy_24              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_23             |Net: nooverlap_clk:1/dummy_23              
-  sky130_fd_sc_hd__nand2_1/proxy7 = 1      |  sky130_fd_sc_hd__nand2_1/proxyY = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_22             |Net: nooverlap_clk:1/dummy_22              
-  sky130_fd_sc_hd__nand2_1/proxy6 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPWR = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_21             |Net: nooverlap_clk:1/dummy_21              
-  sky130_fd_sc_hd__nand2_1/proxy5 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVPB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_20             |Net: nooverlap_clk:1/dummy_20              
-  sky130_fd_sc_hd__nand2_1/proxy4 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVNB = 1    
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_19             |Net: nooverlap_clk:1/dummy_19              
-  sky130_fd_sc_hd__nand2_1/proxy3 = 1      |  sky130_fd_sc_hd__nand2_1/proxyVGND = 1   
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_18             |Net: nooverlap_clk:1/dummy_18              
-  sky130_fd_sc_hd__nand2_1/proxy2 = 1      |  sky130_fd_sc_hd__nand2_1/proxyB = 1      
-                                           |                                           
-Net: nooverlap_clk:x1/dummy_17             |Net: nooverlap_clk:1/dummy_17              
-  sky130_fd_sc_hd__nand2_1/proxy1 = 1      |  sky130_fd_sc_hd__nand2_1/proxyA = 1      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vssa                                  |Net: vssa                                  
-  sky130_fd_sc_hd__nand2_1/VGND = 2        |  sky130_fd_sc_hd__nand2_1/3 = 2           
-  sky130_fd_sc_hd__nand2_1/VNB = 2         |  sky130_fd_sc_hd__nand2_1/4 = 2           
-  sky130_fd_sc_hd__inv_1/VGND = 5          |  sky130_fd_sc_hd__inv_1/2 = 5             
-  sky130_fd_sc_hd__inv_1/VNB = 5           |  sky130_fd_sc_hd__inv_1/3 = 5             
-  sky130_fd_sc_hd__inv_4/VGND = 2          |  sky130_fd_sc_hd__inv_4/2 = 2             
-  sky130_fd_sc_hd__inv_4/VNB = 2           |  sky130_fd_sc_hd__inv_4/3 = 2             
-  sky130_fd_sc_hd__inv_8/VGND = 4          |  sky130_fd_sc_hd__inv_8/2 = 4             
-  sky130_fd_sc_hd__inv_8/VNB = 4           |  sky130_fd_sc_hd__inv_8/3 = 4             
-  tg_sw_1/vssa = 1                         |  tg_sw_1/vssa = 1                         
-  dac_sw_1/vssa = 1                        |  dac_sw_1/vssa = 1                        
-                                           |                                           
-Net: vdda                                  |Net: vdda                                  
-  sky130_fd_sc_hd__nand2_1/VPB = 2         |  sky130_fd_sc_hd__nand2_1/5 = 2           
-  sky130_fd_sc_hd__nand2_1/VPWR = 2        |  sky130_fd_sc_hd__nand2_1/6 = 2           
-  sky130_fd_sc_hd__inv_1/VPB = 5           |  sky130_fd_sc_hd__inv_1/4 = 5             
-  sky130_fd_sc_hd__inv_1/VPWR = 5          |  sky130_fd_sc_hd__inv_1/5 = 5             
-  sky130_fd_sc_hd__inv_4/VPB = 2           |  sky130_fd_sc_hd__inv_4/4 = 2             
-  sky130_fd_sc_hd__inv_4/VPWR = 2          |  sky130_fd_sc_hd__inv_4/5 = 2             
-  sky130_fd_sc_hd__inv_8/VPB = 4           |  sky130_fd_sc_hd__inv_8/4 = 4             
-  sky130_fd_sc_hd__inv_8/VPWR = 4          |  sky130_fd_sc_hd__inv_8/5 = 4             
-  tg_sw_1/vdda = 1                         |  tg_sw_1/vdda = 1                         
-  dac_sw_1/vdda = 1                        |  dac_sw_1/vdda = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x8/A                 |Net: nooverlap_clk:1/b                     
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x9/A                 |Net: nooverlap_clk:1/a                     
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__inv_1/6 = 1             
-  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |                                           
-Net: x2/swp                                |Net: clkb1                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  tg_sw_1/swp = 1                          |  tg_sw_1/swp = 1                          
-                                           |                                           
-Net: x3/ckb                                |Net: clkb0                                 
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  sky130_fd_sc_hd__inv_8/A = 1             |  sky130_fd_sc_hd__inv_8/1 = 1             
-  dac_sw_1/ckb = 1                         |  dac_sw_1/ckb = 1                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: nooverlap_clk:x1/x5/A                 |Net: nooverlap_clk:1/net2                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x3/Y                 |Net: nooverlap_clk:1/net1                  
-  sky130_fd_sc_hd__inv_1/Y = 1             |  sky130_fd_sc_hd__nand2_1/2 = 1           
-  sky130_fd_sc_hd__nand2_1/B = 1           |  sky130_fd_sc_hd__inv_1/6 = 1             
-                                           |                                           
-Net: nooverlap_clk:x1/x4/A                 |Net: nooverlap_clk:1/net5                  
-  sky130_fd_sc_hd__nand2_1/Y = 1           |  sky130_fd_sc_hd__nand2_1/7 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
-                                           |                                           
-Net: x2/swn                                |Net: clk1                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  tg_sw_1/swn = 1                          |  tg_sw_1/swn = 1                          
-                                           |                                           
-Net: x3/ck                                 |Net: clk0                                  
-  sky130_fd_sc_hd__inv_8/Y = 1             |  sky130_fd_sc_hd__inv_8/6 = 1             
-  dac_sw_1/ck = 1                          |  dac_sw_1/ck = 1                          
-                                           |                                           
-Net: cki                                   |Net: cki                                   
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/1 = 1           
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/1 = 1             
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cdac_sw_1                       |Circuit 2: cdac_sw_1                       
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 28                                   
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 2                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 3                                    |  proxyA = 1                               
-  B = 2                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 3                                    
-  proxy2 = 1                               |  2 = 2                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
-                                           |                                           
-Instance: nooverlap_clk:x1/sky130_fd_sc_hd |Instance: nooverlap_clk:1/sky130_fd_sc_hd_ 
-  A = 2                                    |  proxyA = 1                               
-  B = 3                                    |  proxyB = 1                               
-  VGND = 28                                |  proxyVGND = 1                            
-  VNB = 28                                 |  proxyVNB = 1                             
-  VPB = 28                                 |  proxyVPB = 1                             
-  VPWR = 28                                |  proxyVPWR = 1                            
-  Y = 2                                    |  proxyY = 1                               
-  proxy1 = 1                               |  1 = 2                                    
-  proxy2 = 1                               |  2 = 3                                    
-  proxy3 = 1                               |  3 = 28                                   
-  proxy4 = 1                               |  4 = 28                                   
-  proxy5 = 1                               |  5 = 28                                   
-  proxy6 = 1                               |  6 = 28                                   
-  proxy7 = 1                               |  7 = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
+Cell pin lists are equivalent.
+Device classes cdac_sw_1 and cdac_sw_1 are equivalent.
   Flattening non-matched subcircuits cdac_sw_1 cdac_sw_1
 
 Cell single_10b_cdac (0) disconnected node: vcp
 Cell single_10b_cdac (0) disconnected node: vcn
-Cell single_10b_cdac (1) disconnected node: cf[0],cf[1],cf[2],cf[3],cf[4],cf[5],cf[6],cf[7],cf[8],cf[9]
-Cell single_10b_cdac (1) disconnected node: swp_in[0],swp_in[1],swp_in[2],swp_in[3],swp_in[4],swp_in[5],swp_in[6],swp_in[7],swp_in[8],swp_in[9]
-Cell single_10b_cdac (1) disconnected node: swn_in[0],swn_in[1],swn_in[2],swn_in[3],swn_in[4],swn_in[5],swn_in[6],swn_in[7],swn_in[8],swn_in[9]
 Subcircuit summary:
 Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
 -------------------------------------------|-------------------------------------------
-sky130_fd_sc_hd__nand2_1 (40)              |sky130_fd_sc_hd__nand2_1 (40)              
-sky130_fd_sc_hd__inv_1 (100)               |sky130_fd_sc_hd__inv_1 (100)               
-sky130_fd_sc_hd__inv_4 (40)                |sky130_fd_sc_hd__inv_4 (40)                
-sky130_fd_sc_hd__inv_8 (80)                |sky130_fd_sc_hd__inv_8 (80)                
+sky130_fd_sc_hd__nand2_1 (24)              |sky130_fd_sc_hd__nand2_1 (24)              
+sky130_fd_sc_hd__inv_1 (60)                |sky130_fd_sc_hd__inv_1 (60)                
+sky130_fd_sc_hd__inv_4 (24)                |sky130_fd_sc_hd__inv_4 (24)                
+sky130_fd_sc_hd__inv_8 (48)                |sky130_fd_sc_hd__inv_8 (48)                
 tg_sw_4 (4)                                |tg_sw_4 (4)                                
 dac_sw_4 (4)                               |dac_sw_4 (4)                               
 tg_sw_16 (4)                               |tg_sw_16 (4)                               
 dac_sw_16 (4)                              |dac_sw_16 (4)                              
-tg_sw_2 (4)                                |tg_sw_2 (4)                                
-dac_sw_2 (4)                               |dac_sw_2 (4)                               
+cdac_sw_2 (4)                              |cdac_sw_2 (4)                              
 x10b_cap_array (2)                         |x10b_cap_array (2)                         
-tg_sw_8 (4)                                |tg_sw_8 (4)                                
-dac_sw_8 (4)                               |dac_sw_8 (4)                               
+cdac_sw_8 (4)                              |cdac_sw_8 (4)                              
 tg_sw_1 (4)                                |tg_sw_1 (4)                                
 dac_sw_1 (4)                               |dac_sw_1 (4)                               
-Number of devices: 302                     |Number of devices: 302                     
-Number of nets: 1915                       |Number of nets: 1915                       
+Number of devices: 190                     |Number of devices: 190                     
+Number of nets: 211                        |Number of nets: 211                        
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
-
----------------------------------------------------------------------------------------
-Net: vsref                                 |Net: vsref                                 
-  sky130_fd_sc_hd__nand2_1/VGND = 40       |  sky130_fd_sc_hd__nand2_1/3 = 40          
-  sky130_fd_sc_hd__nand2_1/VNB = 40        |  sky130_fd_sc_hd__nand2_1/4 = 40          
-  sky130_fd_sc_hd__inv_1/VGND = 100        |  sky130_fd_sc_hd__inv_1/2 = 100           
-  sky130_fd_sc_hd__inv_1/VNB = 100         |  sky130_fd_sc_hd__inv_1/3 = 100           
-  sky130_fd_sc_hd__inv_4/VGND = 40         |  sky130_fd_sc_hd__inv_4/2 = 40            
-  sky130_fd_sc_hd__inv_4/VNB = 40          |  sky130_fd_sc_hd__inv_4/3 = 40            
-  sky130_fd_sc_hd__inv_8/VGND = 80         |  sky130_fd_sc_hd__inv_8/2 = 80            
-  sky130_fd_sc_hd__inv_8/VNB = 80          |  sky130_fd_sc_hd__inv_8/3 = 80            
-  tg_sw_4/vssa = 4                         |  tg_sw_4/vssa = 4                         
-  dac_sw_4/vssa = 4                        |  dac_sw_4/vssa = 4                        
-  tg_sw_16/vssa = 4                        |  tg_sw_16/vssa = 4                        
-  dac_sw_16/vssa = 4                       |  dac_sw_16/vssa = 4                       
-  tg_sw_2/vssa = 4                         |  tg_sw_2/vssa = 4                         
-  dac_sw_2/vssa = 4                        |  dac_sw_2/vssa = 4                        
-  tg_sw_8/vssa = 4                         |  tg_sw_8/vssa = 4                         
-  dac_sw_8/vssa = 4                        |  dac_sw_8/vssa = 4                        
-  tg_sw_1/vssa = 4                         |  tg_sw_1/vssa = 4                         
-  dac_sw_1/vssa = 4                        |  dac_sw_1/vssa = 4                        
-                                           |                                           
-Net: vdref                                 |Net: vdref                                 
-  sky130_fd_sc_hd__nand2_1/VPB = 40        |  sky130_fd_sc_hd__nand2_1/5 = 40          
-  sky130_fd_sc_hd__nand2_1/VPWR = 40       |  sky130_fd_sc_hd__nand2_1/6 = 40          
-  sky130_fd_sc_hd__inv_1/VPB = 100         |  sky130_fd_sc_hd__inv_1/4 = 100           
-  sky130_fd_sc_hd__inv_1/VPWR = 100        |  sky130_fd_sc_hd__inv_1/5 = 100           
-  sky130_fd_sc_hd__inv_4/VPB = 40          |  sky130_fd_sc_hd__inv_4/4 = 40            
-  sky130_fd_sc_hd__inv_4/VPWR = 40         |  sky130_fd_sc_hd__inv_4/5 = 40            
-  sky130_fd_sc_hd__inv_8/VPB = 80          |  sky130_fd_sc_hd__inv_8/4 = 80            
-  sky130_fd_sc_hd__inv_8/VPWR = 80         |  sky130_fd_sc_hd__inv_8/5 = 80            
-  tg_sw_4/vdda = 4                         |  tg_sw_4/vdda = 4                         
-  dac_sw_4/vdda = 4                        |  dac_sw_4/vdda = 4                        
-  tg_sw_16/vdda = 4                        |  tg_sw_16/vdda = 4                        
-  dac_sw_16/vdda = 4                       |  dac_sw_16/vdda = 4                       
-  tg_sw_2/vdda = 4                         |  tg_sw_2/vdda = 4                         
-  dac_sw_2/vdda = 4                        |  dac_sw_2/vdda = 4                        
-  tg_sw_8/vdda = 4                         |  tg_sw_8/vdda = 4                         
-  dac_sw_8/vdda = 4                        |  dac_sw_8/vdda = 4                        
-  tg_sw_1/vdda = 4                         |  tg_sw_1/vdda = 4                         
-  dac_sw_1/vdda = 4                        |  dac_sw_1/vdda = 4                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vcm                                   |Net: vcm                                   
-  tg_sw_4/in = 4                           |  tg_sw_4/in = 4                           
-  tg_sw_16/in = 4                          |  tg_sw_16/in = 4                          
-  tg_sw_2/in = 4                           |  tg_sw_2/in = 4                           
-  x10b_cap_array/VCM = 2                   |  x10b_cap_array/vcm = 2                   
-  tg_sw_8/in = 4                           |  tg_sw_8/in = 4                           
-  tg_sw_1/in = 4                           |  tg_sw_1/in = 4                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: cf[9]                                 |Net: cf[9]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[8]                                 |Net: cf[8]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[7]                                 |Net: cf[7]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[6]                                 |Net: cf[6]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[5]                                 |Net: cf[5]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[4]                                 |Net: cf[4]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[3]                                 |Net: cf[3]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[2]                                 |Net: cf[2]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[1]                                 |Net: cf[1]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
-                                           |                                           
-Net: cf[0]                                 |Net: cf[0]                                 
-  sky130_fd_sc_hd__nand2_1/A = 2           |  sky130_fd_sc_hd__nand2_1/1 = 2           
-  sky130_fd_sc_hd__inv_1/A = 2             |  sky130_fd_sc_hd__inv_1/1 = 2             
----------------------------------------------------------------------------------------
-Netlists do not match.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
 -------------------------------------------|-------------------------------------------
-vsref                                      |vsref                                      
+cf[2]                                      |cf[2]                                      
+cf[3]                                      |cf[3]                                      
+cf[6]                                      |cf[6]                                      
+cf[7]                                      |cf[7]                                      
 vdref                                      |vdref                                      
+vsref                                      |vsref                                      
 vcm                                        |vcm                                        
-Cell pin lists are equivalent.
+swn_in[0]                                  |swn_in[0]                                  
+swp_in[0]                                  |swp_in[0]                                  
+swn_in[1]                                  |swn_in[1]                                  
+swp_in[1]                                  |swp_in[1]                                  
+swn_in[2]                                  |swn_in[2]                                  
+swp_in[2]                                  |swp_in[2]                                  
+swn_in[3]                                  |swn_in[3]                                  
+swp_in[3]                                  |swp_in[3]                                  
+swn_in[4]                                  |swn_in[4]                                  
+swp_in[4]                                  |swp_in[4]                                  
+swn_in[5]                                  |swn_in[5]                                  
+swp_in[5]                                  |swp_in[5]                                  
+swn_in[6]                                  |swn_in[6]                                  
+swp_in[6]                                  |swp_in[6]                                  
+swn_in[7]                                  |swn_in[7]                                  
+swp_in[7]                                  |swp_in[7]                                  
+swn_in[9]                                  |swn_in[9]                                  
+swp_in[9]                                  |swp_in[9]                                  
+swn_in[8]                                  |swn_in[8]                                  
+swp_in[8]                                  |swp_in[8]                                  
+cf[8]                                      |cf[8]                                      
+cf[9]                                      |cf[9]                                      
+cf[0]                                      |cf[0]                                      
+cf[1]                                      |cf[1]                                      
+cf[4]                                      |cf[4]                                      
+cf[5]                                      |cf[5]                                      
+(no matching pin)                          |vcp                                        
+(no matching pin)                          |vcn                                        
+vcp                                        |(no matching pin)                          
+vcn                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for single_10b_cdac and single_10b_cdac altered to match.
 Device classes single_10b_cdac and single_10b_cdac are equivalent.
 
-Final result: Netlists do not match.
+Final result: Top level cell failed pin matching.
