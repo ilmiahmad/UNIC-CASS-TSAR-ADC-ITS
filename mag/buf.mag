@@ -1,0 +1,17 @@
+magic
+tech sky130A
+timestamp 1730671111
+use sky130_fd_sc_hd__buf_8  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1730671111
+transform 1 0 442 0 1 383
+box -19 -24 571 296
+<< labels >>
+flabel space 488 499 488 499 0 FreeSans 400 0 0 0 A
+port 0 nsew
+flabel space 909 498 909 498 0 FreeSans 400 0 0 0 X
+port 1 nsew
+flabel space 529 669 529 669 0 FreeSans 400 0 0 0 VPWR
+port 2 nsew
+flabel space 534 365 534 365 0 FreeSans 400 0 0 0 VGND
+port 3 nsew
+<< end >>
