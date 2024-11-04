@@ -139,7 +139,7 @@ save
 + 'dout[8]'
 + 'dout[9]'
 + cko
-tran 10n 1m
+tran 10n 0.1m
 remzerovec
 write adc_tb.raw
 quit 0

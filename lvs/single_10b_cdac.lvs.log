@@ -1,0 +1,74 @@
+Netgen 1.5.277 compiled on Rab 21 Agu 2024 08:42:28  WIB
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.ext.spc
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Reading netlist file /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.sch.spc
+
+Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.lvs.out
+Logging to file "/home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.lvs.out" enabled
+
+Contents of circuit 1:  Circuit: 'single_10b_cdac'
+Circuit single_10b_cdac contains 4752 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 1352
+  Class: sky130_fd_pr__cap_mim_m3_1 instances: 2048
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 980
+  Class: sky130_fd_pr__pfet_01v8 instances: 372
+Circuit contains 409 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'single_10b_cdac'
+Circuit single_10b_cdac contains 0 device instances.
+Circuit contains 0 nets, and 35 disconnected pins.
+
+Circuit single_10b_cdac contains no devices.
+
+Final result: 
+Verify:  cell /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.sch.spc has no elements and/or nodes.  Not checked.
+Logging to file "/home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.lvs.out" disabled
+LVS Done.

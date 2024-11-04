@@ -1,0 +1,146 @@
+Flattening unmatched subcell cdac_sw_4 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell nooverlap_clk in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit single_10b_cdac (0)(20 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit single_10b_cdac (0)(16 instances)
+Flattening unmatched subcell tg_sw_4 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMY429 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XHGLWN in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell dac_sw_4 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMY429 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XHGLWN in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell cdac_sw_16 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell nooverlap_clk in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit single_10b_cdac (0)(20 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit single_10b_cdac (0)(16 instances)
+Flattening unmatched subcell tg_sw_16 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GN49S6 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GPU48F in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell dac_sw_16 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GN49S6 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GPU48F in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell x10b_cap_array in circuit single_10b_cdac (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RV4AQU in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_DURRY3 in circuit single_10b_cdac (0)(2 instances)
+Flattening unmatched subcell cdac_sw_2 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell nooverlap_clk in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit single_10b_cdac (0)(20 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit single_10b_cdac (0)(16 instances)
+Flattening unmatched subcell tg_sw_2 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_DJGLWN in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYQY6 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell dac_sw_2 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYQY6 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_DJGLWN in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell cdac_sw_8 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell nooverlap_clk in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit single_10b_cdac (0)(20 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit single_10b_cdac (0)(16 instances)
+Flattening unmatched subcell tg_sw_8 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYUV5 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_KDBLWN in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell dac_sw_8 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYUV5 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_KDBLWN in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell cdac_sw_1 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell nooverlap_clk in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit single_10b_cdac (0)(20 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit single_10b_cdac (0)(16 instances)
+Flattening unmatched subcell tg_sw_1 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYSY6 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SMGLWN in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell dac_sw_1 in circuit single_10b_cdac (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TMYSY6 in circuit single_10b_cdac (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SMGLWN in circuit single_10b_cdac (0)(8 instances)
+
+Cell single_10b_cdac (0) disconnected node: vcp
+Cell single_10b_cdac (0) disconnected node: vcn
+Cell single_10b_cdac (1) disconnected node: vdref
+Cell single_10b_cdac (1) disconnected node: cf[0]
+Cell single_10b_cdac (1) disconnected node: cf[1]
+Cell single_10b_cdac (1) disconnected node: cf[2]
+Cell single_10b_cdac (1) disconnected node: cf[3]
+Cell single_10b_cdac (1) disconnected node: cf[4]
+Cell single_10b_cdac (1) disconnected node: cf[5]
+Cell single_10b_cdac (1) disconnected node: cf[6]
+Cell single_10b_cdac (1) disconnected node: cf[7]
+Cell single_10b_cdac (1) disconnected node: cf[8]
+Cell single_10b_cdac (1) disconnected node: cf[9]
+Cell single_10b_cdac (1) disconnected node: swp_in[0]
+Cell single_10b_cdac (1) disconnected node: swp_in[1]
+Cell single_10b_cdac (1) disconnected node: swp_in[2]
+Cell single_10b_cdac (1) disconnected node: swp_in[3]
+Cell single_10b_cdac (1) disconnected node: swp_in[4]
+Cell single_10b_cdac (1) disconnected node: swp_in[5]
+Cell single_10b_cdac (1) disconnected node: swp_in[6]
+Cell single_10b_cdac (1) disconnected node: swp_in[7]
+Cell single_10b_cdac (1) disconnected node: swp_in[8]
+Cell single_10b_cdac (1) disconnected node: swp_in[9]
+Cell single_10b_cdac (1) disconnected node: swn_in[0]
+Cell single_10b_cdac (1) disconnected node: swn_in[1]
+Cell single_10b_cdac (1) disconnected node: swn_in[2]
+Cell single_10b_cdac (1) disconnected node: swn_in[3]
+Cell single_10b_cdac (1) disconnected node: swn_in[4]
+Cell single_10b_cdac (1) disconnected node: swn_in[5]
+Cell single_10b_cdac (1) disconnected node: swn_in[6]
+Cell single_10b_cdac (1) disconnected node: swn_in[7]
+Cell single_10b_cdac (1) disconnected node: swn_in[8]
+Cell single_10b_cdac (1) disconnected node: swn_in[9]
+Cell single_10b_cdac (1) disconnected node: vcm
+Cell single_10b_cdac (1) disconnected node: vsref
+Cell single_10b_cdac (1) disconnected node: vcp
+Cell single_10b_cdac (1) disconnected node: vcn
+Class single_10b_cdac (0):  Merged 4010 parallel devices.
+
+Subcircuit pins:
+Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
+-------------------------------------------|-------------------------------------------
+vdref                                      |vdref                                      
+cf[0]                                      |cf[0]                                      
+cf[1]                                      |cf[1]                                      
+cf[2]                                      |cf[2]                                      
+cf[3]                                      |cf[3]                                      
+cf[4]                                      |cf[4]                                      
+cf[5]                                      |cf[5]                                      
+cf[6]                                      |cf[6]                                      
+cf[7]                                      |cf[7]                                      
+cf[8]                                      |cf[8]                                      
+cf[9]                                      |cf[9]                                      
+swp_in[0]                                  |swp_in[0]                                  
+swp_in[1]                                  |swp_in[1]                                  
+swp_in[2]                                  |swp_in[2]                                  
+swp_in[3]                                  |swp_in[3]                                  
+swp_in[4]                                  |swp_in[4]                                  
+swp_in[5]                                  |swp_in[5]                                  
+swp_in[6]                                  |swp_in[6]                                  
+swp_in[7]                                  |swp_in[7]                                  
+swp_in[8]                                  |swp_in[8]                                  
+swp_in[9]                                  |swp_in[9]                                  
+swn_in[0]                                  |swn_in[0]                                  
+swn_in[1]                                  |swn_in[1]                                  
+swn_in[2]                                  |swn_in[2]                                  
+swn_in[3]                                  |swn_in[3]                                  
+swn_in[4]                                  |swn_in[4]                                  
+swn_in[5]                                  |swn_in[5]                                  
+swn_in[6]                                  |swn_in[6]                                  
+swn_in[7]                                  |swn_in[7]                                  
+swn_in[8]                                  |swn_in[8]                                  
+swn_in[9]                                  |swn_in[9]                                  
+vcm                                        |vcm                                        
+vsref                                      |vsref                                      
+vcp                                        |vcp                                        
+vcn                                        |vcn                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes single_10b_cdac and single_10b_cdac are equivalent.
+
+Final result: Verify:  cell /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.sch.spc has no elements and/or nodes.  Not checked.

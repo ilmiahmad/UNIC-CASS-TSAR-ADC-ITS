@@ -719,11 +719,11 @@ rect 135258 -15209 135362 -9858
 rect 135258 -15275 135259 -15209
 rect 135361 -15275 135362 -15209
 rect 135258 -15276 135362 -15275
-use 10b_cap_array  10b_cap_array_0
+use x10b_cap_array  x10b_cap_array_0
 timestamp 1730625751
 transform -1 0 121209 0 -1 -40052
 box -14221 -23088 17979 850
-use 10b_cap_array  10b_cap_array_1
+use x10b_cap_array  x10b_cap_array_1
 timestamp 1730625751
 transform 1 0 117451 0 1 19026
 box -14221 -23088 17979 850
