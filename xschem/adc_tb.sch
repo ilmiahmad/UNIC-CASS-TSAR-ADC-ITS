@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 1110 -540 1910 -140 {flags=graph
-y1=-0.021485226
+y1=-0.0214853
 y2=1.8980372
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.3425822e-05
-x2=0.00010473879
+x1=0.0002836274
+x2=0.00036494039
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -25,11 +25,11 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="9 6 7 12"
+color="9 6 4 7"
 node="x1.clks
-x1.vcn
-x1.vcp
-comp_p"
+comp_p
+x1.x1.vcp
+x1.x1.vcn"
 hilight_wave=3}
 B 2 1950 -540 2750 -140 {flags=graph
 y1=0
@@ -39,8 +39,8 @@ ypos2=2.5739087
 divy=5
 subdivy=1
 unity=1
-x1=2.3425822e-05
-x2=0.00010473879
+x1=0.0002836274
+x2=0.00036494039
 divx=5
 subdivx=1
 xlabmag=1.0

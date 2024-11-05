@@ -83,9 +83,9 @@ C {devices/lab_pin.sym} 690 -240 0 1 {name=p4 sig_type=std_logic lab=VPBT3}
 C {devices/lab_pin.sym} 540 -240 0 1 {name=p6 sig_type=std_logic lab=VPBT2}
 C {devices/lab_pin.sym} 390 -240 0 0 {name=p7 sig_type=std_logic lab=VPBT1}
 C {devices/ipin.sym} 270 -310 0 0 {name=p9 lab=VDDA}
-C {devices/ipin.sym} 270 -280 0 0 {name=p10 lab=VPBT1}
-C {devices/ipin.sym} 270 -250 0 0 {name=p12 lab=VPBT2}
-C {devices/ipin.sym} 270 -220 0 0 {name=p13 lab=VPBT3}
+C {devices/iopin.sym} 270 -280 0 1 {name=p10 lab=VPBT1}
+C {devices/iopin.sym} 270 -250 0 1 {name=p12 lab=VPBT2}
+C {devices/iopin.sym} 270 -220 0 1 {name=p13 lab=VPBT3}
 C {devices/ipin.sym} 270 -190 0 0 {name=p15 lab=VSSA}
 C {devices/lab_pin.sym} 860 -240 3 0 {name=p18 sig_type=std_logic lab=VPBT1}
 C {devices/lab_pin.sym} 990 -240 3 0 {name=p20 sig_type=std_logic lab=VPBT2}

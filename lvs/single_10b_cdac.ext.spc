@@ -886,7 +886,7 @@ Xx3 vdda bi x3/ck x3/ckb dac_out vssa dac_sw_1
 .subckt single_10b_cdac vdref cf[0] cf[1] cf[2] cf[3] cf[4] cf[5] cf[6] cf[7] cf[8]
 + cf[9] swp_in[0] swp_in[1] swp_in[2] swp_in[3] swp_in[4] swp_in[5] swp_in[6] swp_in[7]
 + swp_in[8] swp_in[9] swn_in[0] swn_in[1] swn_in[2] swn_in[3] swn_in[4] swn_in[5]
-+ swn_in[6] swn_in[7] swn_in[8] swn_in[9] vcm vsref vcp vcn
++ swn_in[6] swn_in[7] swn_in[8] swn_in[9] vcm vsref VCP VCN
 Xx6[5] cf[5] swp_in[5] vcm x6[5]/dac_out x6[5]/x1/a_n562_360# vdref vsref cdac_sw_4
 Xx6[4] cf[4] swp_in[4] vcm x6[4]/dac_out vsref vdref vsref cdac_sw_4
 Xcdac_sw_4_0 cf[5] swn_in[5] vcm cdac_sw_4_0/dac_out vsref vdref vsref cdac_sw_4
@@ -898,10 +898,10 @@ Xcdac_sw_2_0 cf[7] swn_in[7] vcm cdac_sw_2_0/dac_out vdref vsref cdac_sw_2
 Xcdac_sw_2_1 cf[6] swn_in[6] vcm cdac_sw_2_1/dac_out vdref vsref cdac_sw_2
 Xcdac_sw_16_0 cf[0] swn_in[0] vcm cdac_sw_16_0/dac_out cdac_sw_16_0/x1/a_n562_360#
 + vdref vsref cdac_sw_16
-Xx10b_cap_array_0 vcn vcm x2[0]/dac_out cdac_sw_8_1/dac_out cdac_sw_8_0/dac_out cdac_sw_4_1/dac_out
+Xx10b_cap_array_0 VCN vcm x2[0]/dac_out cdac_sw_8_1/dac_out cdac_sw_8_0/dac_out cdac_sw_4_1/dac_out
 + cdac_sw_2_1/dac_out cdac_sw_2_0/dac_out cdac_sw_1_1/dac_out cdac_sw_1_0/dac_out
 + cdac_sw_16_0/dac_out cdac_sw_4_0/dac_out x10b_cap_array
-Xx10b_cap_array_1 vcp vcm x3[1]/dac_out x4[2]/dac_out x4[3]/dac_out x6[4]/dac_out
+Xx10b_cap_array_1 VCP vcm x3[1]/dac_out x4[2]/dac_out x4[3]/dac_out x6[4]/dac_out
 + x8[6]/dac_out x8[7]/dac_out x10[8]/dac_out cdac_sw_1_2/dac_out x3[0]/dac_out x6[5]/dac_out
 + x10b_cap_array
 Xx4[3] cf[3] swp_in[3] vcm x4[3]/dac_out vdref vsref cdac_sw_8

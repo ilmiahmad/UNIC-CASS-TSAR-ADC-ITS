@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730316192
+timestamp 1730796434
 << nwell >>
 rect -3854 -546 6074 -544
 rect -3854 -840 6110 -546
@@ -126,15 +126,15 @@ timestamp 1729900431
 transform 1 0 -3748 0 -1 493
 box -119 -1753 9905 1280
 use phase_detector  phase_detector_0
-timestamp 1730308816
+timestamp 1730796434
 transform 0 -1 9209 -1 0 -453
 box -1184 180 1722 1972
 use sky130_fd_sc_hd__inv_8  sky130_fd_sc_hd__inv_8_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1723858470
+timestamp 1730246015
 transform -1 0 6972 0 1 -1273
 box -38 -48 866 592
 use sky130_fd_sc_hd__inv_8  sky130_fd_sc_hd__inv_8_1
-timestamp 1723858470
+timestamp 1730246015
 transform -1 0 6972 0 -1 -185
 box -38 -48 866 592
 << labels >>

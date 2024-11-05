@@ -188,6 +188,36 @@ Xx2 vdda x2/swp x2/swn vcm dac_out vssa tg_sw_16
 Xx3 vdda bi x3/ck x3/ckb dac_out vssa dac_sw_16
 .ends
 
+.subckt sky130_fd_pr__nfet_01v8_DJGLWN a_n50_n297# a_n50_21# a_n210_n383# a_50_n209#
++ a_n108_n209# a_n108_109# a_50_109#
+X0 a_50_n209# a_n50_n297# a_n108_n209# a_n210_n383# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X1 a_50_109# a_n50_21# a_n108_109# a_n210_n383# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_TMYQY6 a_n108_118# a_n50_21# a_50_n418# w_n246_n637#
++ a_50_118# a_n108_n418# a_n50_n515#
+X0 a_50_118# a_n50_21# a_n108_118# w_n246_n637# sky130_fd_pr__pfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.5
+X1 a_50_n418# a_n50_n515# a_n108_n418# w_n246_n637# sky130_fd_pr__pfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.5
+.ends
+
+.subckt tg_sw_2 vdda swp swn vssa in out
+Xsky130_fd_pr__nfet_01v8_DJGLWN_0 swn swn vssa in out out in sky130_fd_pr__nfet_01v8_DJGLWN
+Xsky130_fd_pr__pfet_01v8_TMYQY6_0 in swp out vdda out in swp sky130_fd_pr__pfet_01v8_TMYQY6
+.ends
+
+.subckt dac_sw_2 vdda in ck ckb out vssa
+XXM1 vdda in m1_978_n3009# vdda m1_978_n3009# vdda in sky130_fd_pr__pfet_01v8_TMYQY6
+XXM2 m1_978_n3009# ckb out vdda out m1_978_n3009# ckb sky130_fd_pr__pfet_01v8_TMYQY6
+XXM3 ck ck vssa m1_1856_n3018# out out m1_1856_n3018# sky130_fd_pr__nfet_01v8_DJGLWN
+XXM4 in in vssa vssa m1_1856_n3018# m1_1856_n3018# vssa sky130_fd_pr__nfet_01v8_DJGLWN
+.ends
+
+.subckt cdac_sw_2 cki bi vcm dac_out vdda vssa
+Xx1 cki x3/ck x3/ckb x2/swn x2/swp x1/a_n562_360# vssa vdda nooverlap_clk
+Xx2 vdda x2/swp x2/swn vssa vcm dac_out tg_sw_2
+Xx3 vdda bi x3/ck x3/ckb dac_out vssa dac_sw_2
+.ends
+
 .subckt sky130_fd_pr__cap_mim_m3_1_RV4AQU c1_n346_n11360# m3_n1398_n11400# c1_n1358_n11360#
 + c1_6738_n11360# m3_1638_n11400# c1_666_n11360# c1_n7430_n11360# m3_n7470_n11400#
 + c1_5726_n11360# c1_2690_n11360# c1_4714_n11360# m3_6698_n11400# c1_3702_n11360#
@@ -771,36 +801,6 @@ Xsky130_fd_pr__cap_mim_m3_1_RV4AQU_1 VC SW[9] VC VC SW[8] VC VC SW[9] VC VC VC S
 + SW[9] sky130_fd_pr__cap_mim_m3_1_RV4AQU
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_DJGLWN a_n50_n297# a_n50_21# a_n210_n383# a_50_n209#
-+ a_n108_n209# a_n108_109# a_50_109#
-X0 a_50_n209# a_n50_n297# a_n108_n209# a_n210_n383# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
-X1 a_50_109# a_n50_21# a_n108_109# a_n210_n383# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
-.ends
-
-.subckt sky130_fd_pr__pfet_01v8_TMYQY6 a_n108_118# a_n50_21# a_50_n418# w_n246_n637#
-+ a_50_118# a_n108_n418# a_n50_n515#
-X0 a_50_118# a_n50_21# a_n108_118# w_n246_n637# sky130_fd_pr__pfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.5
-X1 a_50_n418# a_n50_n515# a_n108_n418# w_n246_n637# sky130_fd_pr__pfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.5
-.ends
-
-.subckt tg_sw_2 vdda swp swn vssa in out
-Xsky130_fd_pr__nfet_01v8_DJGLWN_0 swn swn vssa in out out in sky130_fd_pr__nfet_01v8_DJGLWN
-Xsky130_fd_pr__pfet_01v8_TMYQY6_0 in swp out vdda out in swp sky130_fd_pr__pfet_01v8_TMYQY6
-.ends
-
-.subckt dac_sw_2 vdda in ck ckb out vssa
-XXM1 vdda in m1_978_n3009# vdda m1_978_n3009# vdda in sky130_fd_pr__pfet_01v8_TMYQY6
-XXM2 m1_978_n3009# ckb out vdda out m1_978_n3009# ckb sky130_fd_pr__pfet_01v8_TMYQY6
-XXM3 ck ck vssa m1_1856_n3018# out out m1_1856_n3018# sky130_fd_pr__nfet_01v8_DJGLWN
-XXM4 in in vssa vssa m1_1856_n3018# m1_1856_n3018# vssa sky130_fd_pr__nfet_01v8_DJGLWN
-.ends
-
-.subckt cdac_sw_2 cki bi vcm dac_out vdda vssa
-Xx1 cki x3/ck x3/ckb x2/swn x2/swp x1/a_n562_360# vssa vdda nooverlap_clk
-Xx2 vdda x2/swp x2/swn vssa vcm dac_out tg_sw_2
-Xx3 vdda bi x3/ck x3/ckb dac_out vssa dac_sw_2
-.ends
-
 .subckt sky130_fd_pr__pfet_01v8_TMYUV5 a_50_n2026# a_50_n1490# a_n50_n1051# a_n108_118#
 + w_n246_n2245# a_n50_n1587# a_n50_21# a_n108_1726# a_50_n418# a_n50_1629# a_50_118#
 + a_n108_n418# a_n50_n2123# a_n108_654# a_n108_n1490# a_n108_n2026# a_50_n954# a_n50_n515#
@@ -883,27 +883,27 @@ Xx2 vdda x2/swp x2/swn vcm dac_out vssa tg_sw_1
 Xx3 vdda bi x3/ck x3/ckb dac_out vssa dac_sw_1
 .ends
 
-.subckt cdac_10b vdref cf[0] cf[1] cf[2] cf[3] cf[4] cf[5] cf[6] cf[7] cf[8] cf[9]
+.subckt single_10b_cdac cf[0] cf[1] cf[2] cf[3] cf[4] cf[5] cf[6] cf[7] cf[8] cf[9]
 + swp_in[0] swp_in[1] swp_in[2] swp_in[3] swp_in[4] swp_in[5] swp_in[6] swp_in[7]
 + swp_in[8] swp_in[9] swn_in[0] swn_in[1] swn_in[2] swn_in[3] swn_in[4] swn_in[5]
-+ swn_in[6] swn_in[7] swn_in[8] swn_in[9] vcm vsref vcp vcn
++ swn_in[6] swn_in[7] swn_in[8] swn_in[9] vcm VCN vdref vsref VCP
 Xx6[5] cf[5] swp_in[5] vcm x6[5]/dac_out x6[5]/x1/a_n562_360# vdref vsref cdac_sw_4
 Xx6[4] cf[4] swp_in[4] vcm x6[4]/dac_out vsref vdref vsref cdac_sw_4
 Xcdac_sw_4_0 cf[5] swn_in[5] vcm cdac_sw_4_0/dac_out vsref vdref vsref cdac_sw_4
 Xcdac_sw_4_1 cf[4] swn_in[4] vcm cdac_sw_4_1/dac_out cdac_sw_4_1/x1/a_n562_360# vdref
 + vsref cdac_sw_4
 Xx3[1] cf[1] swp_in[1] vcm x3[1]/dac_out vsref vdref vsref cdac_sw_16
-X10b_cap_array_0 10b_cap_array_0/VC vcm x2[0]/dac_out cdac_sw_8_1/dac_out cdac_sw_8_0/dac_out
-+ cdac_sw_4_1/dac_out cdac_sw_2_1/dac_out cdac_sw_2_0/dac_out cdac_sw_1_1/dac_out
-+ cdac_sw_1_0/dac_out cdac_sw_16_0/dac_out cdac_sw_4_0/dac_out x10b_cap_array
-X10b_cap_array_1 10b_cap_array_1/VC vcm x3[1]/dac_out x4[2]/dac_out x4[3]/dac_out
-+ x6[4]/dac_out x8[6]/dac_out x8[7]/dac_out x10[8]/dac_out cdac_sw_1_2/dac_out x3[0]/dac_out
-+ x6[5]/dac_out x10b_cap_array
 Xx3[0] cf[0] swp_in[0] vcm x3[0]/dac_out x3[0]/x1/a_n562_360# vdref vsref cdac_sw_16
 Xcdac_sw_2_0 cf[7] swn_in[7] vcm cdac_sw_2_0/dac_out vdref vsref cdac_sw_2
 Xcdac_sw_2_1 cf[6] swn_in[6] vcm cdac_sw_2_1/dac_out vdref vsref cdac_sw_2
 Xcdac_sw_16_0 cf[0] swn_in[0] vcm cdac_sw_16_0/dac_out cdac_sw_16_0/x1/a_n562_360#
 + vdref vsref cdac_sw_16
+Xx10b_cap_array_0 VCN vcm x2[0]/dac_out cdac_sw_8_1/dac_out cdac_sw_8_0/dac_out cdac_sw_4_1/dac_out
++ cdac_sw_2_1/dac_out cdac_sw_2_0/dac_out cdac_sw_1_1/dac_out cdac_sw_1_0/dac_out
++ cdac_sw_16_0/dac_out cdac_sw_4_0/dac_out x10b_cap_array
+Xx10b_cap_array_1 VCP vcm x3[1]/dac_out x4[2]/dac_out x4[3]/dac_out x6[4]/dac_out
++ x8[6]/dac_out x8[7]/dac_out x10[8]/dac_out cdac_sw_1_2/dac_out x3[0]/dac_out x6[5]/dac_out
++ x10b_cap_array
 Xx4[3] cf[3] swp_in[3] vcm x4[3]/dac_out vdref vsref cdac_sw_8
 Xx4[2] cf[2] swp_in[2] vcm x4[2]/dac_out vdref vsref cdac_sw_8
 Xx8[7] cf[7] swp_in[7] vcm x8[7]/dac_out vdref vsref cdac_sw_2
@@ -917,5 +917,19 @@ Xcdac_sw_1_2 cf[9] swp_in[9] vcm cdac_sw_1_2/dac_out cdac_sw_1_2/x1/a_n562_360# 
 Xx2[0] cf[1] swn_in[1] vcm x2[0]/dac_out vsref vdref vsref cdac_sw_16
 Xcdac_sw_8_0 cf[3] swn_in[3] vcm cdac_sw_8_0/dac_out vdref vsref cdac_sw_8
 Xcdac_sw_8_1 cf[2] swn_in[2] vcm cdac_sw_8_1/dac_out vdref vsref cdac_sw_8
+.ends
+
+.subckt cdac_10b VCM VSREF VDREF SWP_IN[0] SWP_IN[1] SWP_IN[2] SWP_IN[3] SWP_IN[4]
++ SWP_IN[5] SWP_IN[6] SWP_IN[7] SWP_IN[8] SWP_IN[9] CF[9] CF[8] CF[7] CF[6] CF[5]
++ CF[4] CF[3] CF[2] CF[1] CF[0] SWN_IN[9] SWN_IN[8] SWN_IN[7] SWN_IN[6] SWN_IN[5]
++ SWN_IN[4] SWN_IN[3] SWN_IN[2] SWN_IN[1] SWN_IN[0] VCP VCN
+Xsingle_10b_cdac_0 CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] CF[9] SWP_IN[0]
++ SWP_IN[1] SWP_IN[2] SWP_IN[3] SWP_IN[4] SWP_IN[5] SWP_IN[6] SWP_IN[7] SWP_IN[8]
++ SWP_IN[9] SWN_IN[0] SWN_IN[1] SWN_IN[2] SWN_IN[3] SWN_IN[4] SWN_IN[5] SWN_IN[6]
++ SWN_IN[7] SWN_IN[8] SWN_IN[9] VCM VCN VDREF VSREF VCP single_10b_cdac
+Xsingle_10b_cdac_1 CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] CF[9] SWP_IN[0]
++ SWP_IN[1] SWP_IN[2] SWP_IN[3] SWP_IN[4] SWP_IN[5] SWP_IN[6] SWP_IN[7] SWP_IN[8]
++ SWP_IN[9] SWN_IN[0] SWN_IN[1] SWN_IN[2] SWN_IN[3] SWN_IN[4] SWN_IN[5] SWN_IN[6]
++ SWN_IN[7] SWN_IN[8] SWN_IN[9] VCM VCN VDREF VSREF VCP single_10b_cdac
 .ends
 

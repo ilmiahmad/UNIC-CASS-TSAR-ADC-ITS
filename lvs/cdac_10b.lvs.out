@@ -693,5 +693,58 @@ cf[5]                                      |cf[5]
 Cell pin lists are equivalent.
 Device classes single_10b_cdac and single_10b_cdac are equivalent.
 
+Subcircuit summary:
+Circuit 1: cdac_10b                        |Circuit 2: cdac_10b                        
+-------------------------------------------|-------------------------------------------
+single_10b_cdac (2)                        |single_10b_cdac (2)                        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 35                         |Number of nets: 35                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: cdac_10b                        |Circuit 2: cdac_10b                        
+-------------------------------------------|-------------------------------------------
+VDREF                                      |VDREF                                      
+CF[0]                                      |CF[0]                                      
+CF[1]                                      |CF[1]                                      
+CF[2]                                      |CF[2]                                      
+CF[3]                                      |CF[3]                                      
+CF[4]                                      |CF[4]                                      
+CF[5]                                      |CF[5]                                      
+CF[6]                                      |CF[6]                                      
+CF[7]                                      |CF[7]                                      
+CF[8]                                      |CF[8]                                      
+CF[9]                                      |CF[9]                                      
+SWP_IN[0]                                  |SWP_IN[0]                                  
+SWP_IN[1]                                  |SWP_IN[1]                                  
+SWP_IN[2]                                  |SWP_IN[2]                                  
+SWP_IN[3]                                  |SWP_IN[3]                                  
+SWP_IN[4]                                  |SWP_IN[4]                                  
+SWP_IN[5]                                  |SWP_IN[5]                                  
+SWP_IN[6]                                  |SWP_IN[6]                                  
+SWP_IN[7]                                  |SWP_IN[7]                                  
+SWP_IN[8]                                  |SWP_IN[8]                                  
+SWP_IN[9]                                  |SWP_IN[9]                                  
+SWN_IN[0]                                  |SWN_IN[0]                                  
+SWN_IN[1]                                  |SWN_IN[1]                                  
+SWN_IN[2]                                  |SWN_IN[2]                                  
+SWN_IN[3]                                  |SWN_IN[3]                                  
+SWN_IN[4]                                  |SWN_IN[4]                                  
+SWN_IN[5]                                  |SWN_IN[5]                                  
+SWN_IN[6]                                  |SWN_IN[6]                                  
+SWN_IN[7]                                  |SWN_IN[7]                                  
+SWN_IN[8]                                  |SWN_IN[8]                                  
+SWN_IN[9]                                  |SWN_IN[9]                                  
+VCM                                        |VCM                                        
+VSREF                                      |VSREF                                      
+VCN                                        |VCN                                        
+VCP                                        |VCP                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cdac_10b and cdac_10b are equivalent.
+
 Final result: Circuits match uniquely.
 .
