@@ -715,7 +715,7 @@ Circuit single_10b_cdac contains 190 device instances.
   Class: cdac_sw_2             instances:   4
   Class: cdac_sw_8             instances:   4
   Class: tg_sw_16              instances:   4
-Circuit contains 217 nets, and 2 disconnected pins.
+Circuit contains 217 nets.
 Contents of circuit 2:  Circuit: 'single_10b_cdac'
 Circuit single_10b_cdac contains 190 device instances.
   Class: dac_sw_1              instances:   4
@@ -738,7 +738,7 @@ Circuit 1 contains 211 nets,    Circuit 2 contains 211 nets.
 
 
 Final result: 
-Top level cell failed pin matching.
-
+Circuits match uniquely.
+.
 Logging to file "/home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/lvs/single_10b_cdac.lvs.out" disabled
 LVS Done.

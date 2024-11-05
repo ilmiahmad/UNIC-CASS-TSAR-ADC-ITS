@@ -628,8 +628,6 @@ Cell pin lists are equivalent.
 Device classes cdac_sw_1 and cdac_sw_1 are equivalent.
   Flattening non-matched subcircuits cdac_sw_1 cdac_sw_1
 
-Cell single_10b_cdac (0) disconnected node: vcp
-Cell single_10b_cdac (0) disconnected node: vcn
 Subcircuit summary:
 Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
 -------------------------------------------|-------------------------------------------
@@ -651,7 +649,7 @@ Number of nets: 211                        |Number of nets: 211
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: single_10b_cdac                 |Circuit 2: single_10b_cdac                 
@@ -663,6 +661,8 @@ cf[7]                                      |cf[7]
 vdref                                      |vdref                                      
 vsref                                      |vsref                                      
 vcm                                        |vcm                                        
+vcn                                        |vcn                                        
+vcp                                        |vcp                                        
 swn_in[0]                                  |swn_in[0]                                  
 swp_in[0]                                  |swp_in[0]                                  
 swn_in[1]                                  |swn_in[1]                                  
@@ -689,12 +689,9 @@ cf[0]                                      |cf[0]
 cf[1]                                      |cf[1]                                      
 cf[4]                                      |cf[4]                                      
 cf[5]                                      |cf[5]                                      
-(no matching pin)                          |vcp                                        
-(no matching pin)                          |vcn                                        
-vcp                                        |(no matching pin)                          
-vcn                                        |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for single_10b_cdac and single_10b_cdac altered to match.
+Cell pin lists are equivalent.
 Device classes single_10b_cdac and single_10b_cdac are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
