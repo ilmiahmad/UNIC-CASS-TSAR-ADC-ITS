@@ -5,7 +5,6 @@ K {}
 V {}
 S {}
 E {}
-C {th_sw.sym} 450 -280 0 0 {name=x2}
 C {devices/lab_wire.sym} 300 -330 0 0 {name=p1 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 300 -150 0 0 {name=p2 sig_type=std_logic lab=VDDR}
 C {devices/lab_wire.sym} 300 -50 0 0 {name=p5 sig_type=std_logic lab=VSSR}
@@ -46,3 +45,4 @@ C {devices/ipin.sym} 80 -340 0 0 {name=p8 sig_type=std_logic lab=SWP[0:9]}
 C {devices/ipin.sym} 80 -320 0 0 {name=p11 sig_type=std_logic lab=SWN[0:9]}
 C {devices/ipin.sym} 80 -260 0 0 {name=p12 sig_type=std_logic lab=CLKS}
 C {devices/ipin.sym} 80 -280 0 0 {name=p15 sig_type=std_logic lab=CLKSB}
+C {sh_bsw_diff.sym} 450 -280 0 0 {name=x4}
