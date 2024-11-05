@@ -124,9 +124,10 @@ save
 + clk
 + vip
 + vin
-+ x1.vcp
-+ x1.vcn
-+ x1.comp_p
++ x1.x1.vcp
++ x1.x1.vcn
++ comp_p
++ comp_n
 + x1.clks
 + 'dout[0]'
 + 'dout[1]'
