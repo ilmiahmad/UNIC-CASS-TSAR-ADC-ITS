@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730797079
+timestamp 1730845130
 << viali >>
 rect 120 -1144 160 -1104
 rect 1604 -1144 1644 -1104
@@ -195,23 +195,23 @@ rect 5168 -1435 5220 -1425
 rect 7100 -1435 7152 -1425
 rect 9032 -1435 9084 -1425
 use sky130_fd_sc_hd__dfrtp_2  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1730246015
+timestamp 1730336909
 transform 1 0 -167 0 1 -1566
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x2
-timestamp 1730246015
+timestamp 1730336909
 transform 1 0 1765 0 1 -1566
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x3
-timestamp 1730246015
+timestamp 1730336909
 transform 1 0 3697 0 1 -1566
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x4
-timestamp 1730246015
+timestamp 1730336909
 transform 1 0 5629 0 1 -1566
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x6
-timestamp 1730246015
+timestamp 1730336909
 transform 1 0 7561 0 1 -1566
 box -38 -48 1970 592
 << labels >>

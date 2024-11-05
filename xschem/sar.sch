@@ -1,13 +1,10 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
-C {cyclic_flag.sym} 490 -390 0 0 {name=x3}
-C {cdac_ctrl.sym} 490 -260 0 0 {name=x4}
-C {out_latch.sym} 490 -110 0 0 {name=x5}
 C {devices/ipin.sym} 140 -400 0 0 {name=p20 sig_type=std_logic lab=VDDD}
 C {devices/ipin.sym} 140 -300 0 0 {name=p22 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 340 -430 0 0 {name=p1 sig_type=std_logic lab=VDDD}
@@ -47,7 +44,10 @@ C {devices/lab_wire.sym} 340 -550 0 0 {name=p2 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 340 -490 0 0 {name=p5 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 340 -530 0 0 {name=p54 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 640 -550 0 1 {name=p55 sig_type=std_logic lab=CLKS}
-C {auto_sampling.sym} 490 -520 0 0 {name=x1}
 C {devices/lab_wire.sym} 640 -530 0 1 {name=p56 sig_type=std_logic lab=CLKSB}
 C {devices/lab_wire.sym} 340 -510 0 0 {name=p57 sig_type=std_logic lab=EN}
 C {devices/opin.sym} 140 -120 0 0 {name=p8 sig_type=std_logic lab=CLKSB}
+C {/home/raditya/Documents/Projects/tsar_adc/xschem/auto_sampling.sym} 490 -520 0 0 {name=x2}
+C {/home/raditya/Documents/Projects/tsar_adc/xschem/cyclic_flag.sym} 490 -390 0 0 {name=x1}
+C {/home/raditya/Documents/Projects/tsar_adc/xschem/cdac_ctrl.sym} 490 -260 0 0 {name=x3}
+C {/home/raditya/Documents/Projects/tsar_adc/xschem/out_latch.sym} 490 -110 0 0 {name=x4}
