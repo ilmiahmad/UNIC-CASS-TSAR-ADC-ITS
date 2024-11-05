@@ -27,9 +27,6 @@ T {COMP_N} -125 16 0 0 0.2 0.2 {}
 B 5 -152.5 37.5 -147.5 42.5 {name=VSSD sig_type=std_logic dir=in}
 L 4 -150 40 -130 40 {}
 T {VSSD} -125 36 0 0 0.2 0.2 {}
-B 5 -152.5 57.5 -147.5 62.5 {name=CLKS sig_type=std_logic dir=in}
-L 4 -150 60 -130 60 {}
-T {CLKS} -125 56 0 0 0.2 0.2 {}
 B 5 147.5 -62.5 152.5 -57.5 {name=CF[0:9] sig_type=std_logic dir=out}
 L 4 130 -60 150 -60 {}
 T {CF[0:9]} 125 -64 0 1 0.2 0.2 {}
@@ -45,3 +42,9 @@ T {DOUT[0:9]} 125 -4 0 1 0.2 0.2 {}
 B 5 147.5 17.5 152.5 22.5 {name=CKO sig_type=std_logic dir=out}
 L 4 130 20 150 20 {}
 T {CKO} 125 16 0 1 0.2 0.2 {}
+B 5 147.5 37.5 152.5 42.5 {name=CLKS sig_type=std_logic dir=out}
+L 4 130 40 150 40 {}
+T {CLKS} 125 36 0 1 0.2 0.2 {}
+B 5 147.5 57.5 152.5 62.5 {name=CLKSB sig_type=std_logic dir=out}
+L 4 130 60 150 60 {}
+T {CLKSB} 125 56 0 1 0.2 0.2 {}

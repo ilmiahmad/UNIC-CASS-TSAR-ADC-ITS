@@ -37,9 +37,17 @@ C {devices/opin.sym} 140 -220 0 0 {name=p50 sig_type=std_logic lab=SWP[0:9]}
 C {devices/opin.sym} 140 -200 0 0 {name=p51 sig_type=std_logic lab=SWN[0:9]}
 C {devices/opin.sym} 140 -180 0 0 {name=p52 sig_type=std_logic lab=DOUT[0:9]}
 C {devices/opin.sym} 140 -160 0 0 {name=p53 sig_type=std_logic lab=CKO}
-C {devices/ipin.sym} 140 -280 0 0 {name=p24 sig_type=std_logic lab=CLKS}
+C {devices/opin.sym} 140 -140 0 0 {name=p24 sig_type=std_logic lab=CLKS}
 C {devices/lab_wire.sym} 340 -270 0 0 {name=p6 sig_type=std_logic lab=COMP_N}
 C {devices/ipin.sym} 140 -320 0 0 {name=p11 sig_type=std_logic lab=COMP_N}
 C {devices/ipin.sym} 140 -380 0 0 {name=p14 sig_type=std_logic lab=EN}
 C {devices/lab_wire.sym} 340 -100 0 0 {name=p16 sig_type=std_logic lab=EN}
 C {devices/lab_wire.sym} 340 -390 0 0 {name=p17 sig_type=std_logic lab=EN}
+C {devices/lab_wire.sym} 340 -550 0 0 {name=p2 sig_type=std_logic lab=VDDD}
+C {devices/lab_wire.sym} 340 -490 0 0 {name=p5 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 340 -530 0 0 {name=p54 sig_type=std_logic lab=CLK}
+C {devices/lab_wire.sym} 640 -550 0 1 {name=p55 sig_type=std_logic lab=CLKS}
+C {auto_sampling.sym} 490 -520 0 0 {name=x1}
+C {devices/lab_wire.sym} 640 -530 0 1 {name=p56 sig_type=std_logic lab=CLKSB}
+C {devices/lab_wire.sym} 340 -510 0 0 {name=p57 sig_type=std_logic lab=EN}
+C {devices/opin.sym} 140 -120 0 0 {name=p8 sig_type=std_logic lab=CLKSB}
