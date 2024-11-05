@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1730774538
+use sky130_fd_sc_hd__and2_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1704896540
+transform 1 0 9850 0 1 -240
+box -19 -24 249 296
+<< end >>
