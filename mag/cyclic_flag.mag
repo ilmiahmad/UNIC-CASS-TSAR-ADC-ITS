@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730797164
+timestamp 1730845130
 << nwell >>
 rect 10848 2130 11074 2356
 rect 10849 1191 11075 1417
@@ -153,15 +153,15 @@ rect 3053 1454 3058 1514
 rect 3118 1454 3123 1514
 rect 3053 1449 3123 1454
 use buf  buf_0
-timestamp 1730797079
+timestamp 1730845130
 transform -1 0 2036 0 -1 2540
 box 846 718 2026 1358
 use flip_flop_5  flip_flop_5_0
-timestamp 1730797079
+timestamp 1730845130
 transform 1 0 1318 0 1 3340
 box -342 -1614 9531 -974
 use flip_flop_5  flip_flop_5_1
-timestamp 1730797079
+timestamp 1730845130
 transform -1 0 10644 0 -1 208
 box -342 -1614 9531 -974
 << labels >>

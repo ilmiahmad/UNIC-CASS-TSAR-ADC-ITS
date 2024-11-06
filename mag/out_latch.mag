@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730797079
+timestamp 1730845130
 << nwell >>
 rect 9948 -18 9980 114
 rect 10032 -16 10064 112
@@ -314,19 +314,19 @@ rect 9558 -135 9563 -75
 rect 9493 -140 9563 -135
 rect 9498 -872 9558 -140
 use and_latch  and_latch_0
-timestamp 1730797079
+timestamp 1730845130
 transform -1 0 29994 0 1 -16
 box 19662 -528 20198 112
 use and_latch  and_latch_1
-timestamp 1730797079
+timestamp 1730845130
 transform -1 0 29994 0 -1 112
 box 19662 -528 20198 112
 use flip_flop_5_latch  flip_flop_5_latch_0
-timestamp 1730797079
+timestamp 1730845130
 transform 1 0 342 0 -1 -974
 box -205 -1614 9531 -974
 use flip_flop_5_latch  flip_flop_5_latch_1
-timestamp 1730797079
+timestamp 1730845130
 transform -1 0 9668 0 1 1070
 box -205 -1614 9531 -974
 << labels >>
