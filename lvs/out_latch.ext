@@ -1,0 +1,138 @@
+timestamp 1730870077
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use flip_flop_5_latch flip_flop_5_latch_1 -1 0 9668 0 1 1070
+use flip_flop_5_latch flip_flop_5_latch_0 1 0 342 0 -1 -974
+use and_latch and_latch_1 -1 0 29994 0 -1 112
+use and_latch and_latch_0 -1 0 29994 0 1 -16
+port "SWP[8]" 25 9528 -846 9528 -846 m3
+port "SWP[6]" 23 7598 -848 7598 -848 m3
+port "SWP[4]" 21 5666 -848 5666 -848 m3
+port "DOUT[8]" 15 8044 714 8050 714 m3
+port "DOUT[6]" 13 6110 712 6116 712 m3
+port "SWP[9]" 26 8212 -852 8212 -838 m3
+port "SWP[7]" 24 6278 -838 6278 -838 m3
+port "DOUT[9]" 16 9696 922 9702 922 m3
+port "DOUT[7]" 14 7758 918 7764 918 m3
+port "DOUT[5]" 12 5834 930 5840 930 m3
+port "SWP[2]" 19 3736 -832 3736 -832 m3
+port "SWP[0]" 17 1802 -828 1802 -828 m3
+port "DOUT[4]" 11 4176 714 4182 714 m3
+port "DOUT[2]" 9 2248 718 2254 718 m3
+port "DOUT[0]" 27 314 924 314 938 m3
+port "SWP[5]" 22 4342 -834 4342 -834 m3
+port "SWP[3]" 20 2412 -836 2412 -836 m3
+port "SWP[1]" 18 474 -846 474 -846 m3
+port "DOUT[3]" 10 3904 936 3910 936 m3
+port "DOUT[1]" 8 1962 930 1968 930 m3
+port "CK" 5 -170 290 -170 290 m2
+port "EN" 4 -164 424 -164 424 m2
+port "VSSD" 2 -54 -504 -54 -504 m1
+port "VDDD" 3 -54 48 -54 48 m1
+port "VSSD" 28 -28 598 -28 598 m1
+port "FINAL" 0 10250 -850 10250 -850 m2
+port "CLKS" 1 10066 -754 10066 -754 m2
+node "SWP[8]" 0 0 9528 -846 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[6]" 0 0 7598 -848 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[4]" 0 0 5666 -848 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[8]" 0 0 8044 714 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[6]" 0 0 6110 712 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[9]" 0 0 8212 -852 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[7]" 0 0 6278 -838 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[9]" 0 0 9696 922 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[7]" 0 0 7758 918 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[5]" 0 0 5834 930 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_4829_n231#" 0 0 4829 -231 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[2]" 0 0 3736 -832 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[0]" 0 0 1802 -828 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[4]" 0 0 4176 714 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[2]" 0 0 2248 718 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[0]" 0 0 314 924 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[5]" 0 0 4342 -834 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[3]" 0 0 2412 -836 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[1]" 0 0 474 -846 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[3]" 0 0 3904 936 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DOUT[1]" 0 0 1962 930 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CK" 0 0 -170 290 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_5297_400#" 0 0 5297 400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "EN" 0 0 -164 424 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSSD" 0 0 -54 -504 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDDD" 0 0 -54 48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSSD" 0 0 -28 598 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9856_n140#" 0 0 9856 -140 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "FINAL" 0 0 10250 -850 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKS" 0 0 10066 -754 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_10294_0#" 0 0 10294 0 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_10032_n16#" 0 0 10032 -16 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_9948_n18#" 0 0 9948 -18 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_10348_n476#" 0 0 10348 -476 ppd 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_0/x1/X" "and_latch_1/x1/X" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_1/x1/X" "flip_flop_5_latch_1/x1/CLK"
+merge "flip_flop_5_latch_1/x1/CLK" "li_9856_n140#"
+merge "and_latch_0/x1/VPWR" "and_latch_0/x1/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_0/x1/VPB" "and_latch_1/x1/VPWR"
+merge "and_latch_1/x1/VPWR" "and_latch_1/x1/VPB"
+merge "and_latch_1/x1/VPB" "w_10294_0#"
+merge "w_10294_0#" "w_10032_n16#"
+merge "w_10032_n16#" "w_9948_n18#"
+merge "w_9948_n18#" "flip_flop_5_latch_0/x6/VPB"
+merge "flip_flop_5_latch_0/x6/VPB" "flip_flop_5_latch_1/x1/VPB"
+merge "flip_flop_5_latch_1/x1/VPB" "flip_flop_5_latch_1/x2/VPB"
+merge "flip_flop_5_latch_1/x2/VPB" "flip_flop_5_latch_0/x6/VPWR"
+merge "flip_flop_5_latch_0/x6/VPWR" "flip_flop_5_latch_1/x1/VPWR"
+merge "flip_flop_5_latch_1/x1/VPWR" "flip_flop_5_latch_0/x4/VPWR"
+merge "flip_flop_5_latch_0/x4/VPWR" "flip_flop_5_latch_1/x2/VPWR"
+merge "flip_flop_5_latch_1/x2/VPWR" "flip_flop_5_latch_0/x3/VPWR"
+merge "flip_flop_5_latch_0/x3/VPWR" "flip_flop_5_latch_1/x3/VPWR"
+merge "flip_flop_5_latch_1/x3/VPWR" "flip_flop_5_latch_0/x2/VPWR"
+merge "flip_flop_5_latch_0/x2/VPWR" "flip_flop_5_latch_1/x4/VPWR"
+merge "flip_flop_5_latch_1/x4/VPWR" "flip_flop_5_latch_0/x1/VPWR"
+merge "flip_flop_5_latch_0/x1/VPWR" "flip_flop_5_latch_1/x6/VPWR"
+merge "flip_flop_5_latch_1/x6/VPWR" "VDDD"
+merge "flip_flop_5_latch_0/x2/Q" "DOUT[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_1/x1/VGND" "flip_flop_5_latch_0/x6/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x6/VGND" "and_latch_0/VSUBS"
+merge "and_latch_0/VSUBS" "and_latch_0/x1/VGND"
+merge "and_latch_0/x1/VGND" "flip_flop_5_latch_1/x1/VGND"
+merge "flip_flop_5_latch_1/x1/VGND" "and_latch_1/VSUBS"
+merge "and_latch_1/VSUBS" "flip_flop_5_latch_0/VSUBS"
+merge "flip_flop_5_latch_0/VSUBS" "flip_flop_5_latch_1/VSUBS"
+merge "flip_flop_5_latch_1/VSUBS" "a_10348_n476#"
+merge "flip_flop_5_latch_0/x6/Q" "DOUT[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x1/Q" "DOUT[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_0/x1/A" "and_latch_1/x1/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_1/x1/A" "FINAL"
+merge "flip_flop_5_latch_0/x4/Q" "DOUT[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x3/D" "SWP[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x1/VGND" "flip_flop_5_latch_1/x6/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x6/VGND" "VSSD"
+merge "flip_flop_5_latch_1/x2/Q" "DOUT[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x1/CLK" "CK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x3/Q" "DOUT[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x3/Q" "DOUT[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x6/D" "SWP[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x2/VPB" "flip_flop_5_latch_0/x1/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x1/VPB" "flip_flop_5_latch_1/x6/VPB"
+merge "flip_flop_5_latch_0/m1_1294_n1425#" "EN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "EN" "flip_flop_5_latch_1/x3/RESET_B"
+merge "flip_flop_5_latch_1/x3/RESET_B" "m2_5297_400#"
+merge "flip_flop_5_latch_0/x1/D" "SWP[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x4/Q" "DOUT[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x4/D" "SWP[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x4/VPB" "flip_flop_5_latch_1/x3/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x3/CLK" "flip_flop_5_latch_1/li_n141_n1297#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/li_n141_n1297#" "m2_4829_n231#"
+merge "flip_flop_5_latch_0/li_7848_n1144#" "SWP[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x1/Q" "DOUT[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x1/D" "SWP[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x6/Q" "DOUT[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x4/D" "SWP[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x2/D" "SWP[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x3/D" "SWP[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x2/D" "SWP[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x3/VPB" "flip_flop_5_latch_1/x4/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_0/x1/B" "and_latch_1/x1/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_latch_1/x1/B" "CLKS"

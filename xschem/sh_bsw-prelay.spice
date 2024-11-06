@@ -46,9 +46,9 @@ XM7 SWITCHING SWITCHING SWITCHING VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1
 ** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/pcell_bsw_dischrg.sym
 ** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/pcell_bsw_dischrg.sch
 .subckt pcell_bsw_dischrg VPBT3 VBOOT SWITCHING
-*.iopin VPBT3
+*.ipin VPBT3
 *.ipin SWITCHING
-*.iopin VBOOT
+*.ipin VBOOT
 XM1 VBOOT SWITCHING VPBT3 VPBT3 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
 XM2 VBOOT VPBT3 VPBT3 VPBT3 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -66,11 +66,11 @@ XM5 VBOOT VPBT3 VPBT3 VPBT3 sky130_fd_pr__pfet_01v8 L=0.15 W=0.5 nf=1 ad='int((n
 ** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cap_bsw.sym
 ** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cap_bsw.sch
 .subckt cap_bsw VPBT1 VNBT1 VPBT2 VPBT3 VNBT3 CLKS
-*.iopin VPBT1
+*.ipin VPBT1
 *.ipin VNBT1
-*.iopin VPBT2
-*.iopin VPBT3
-*.iopin VNBT3
+*.ipin VPBT2
+*.ipin VPBT3
+*.ipin VNBT3
 *.ipin CLKS
 XC1 VPBT1 VNBT1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 XC2 VPBT2 CLKS sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
@@ -84,7 +84,7 @@ XC3 VPBT3 VNBT3 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=2 m=2
 .subckt ncell_bsw_dischrg VDDA CLKSB VBOOT VSSA
 *.ipin VDDA
 *.ipin CLKSB
-*.iopin VBOOT
+*.ipin VBOOT
 *.ipin VSSA
 XM1 VBOOT VDDA PROTECTION VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
@@ -102,9 +102,9 @@ XM4 VSSA VSSA VSSA VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)
 ** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/ncell_bsw.sch
 .subckt ncell_bsw VDDA VPBT1 VPBT2 VPBT3 VSSA
 *.ipin VDDA
-*.iopin VPBT1
-*.iopin VPBT2
-*.iopin VPBT3
+*.ipin VPBT1
+*.ipin VPBT2
+*.ipin VPBT3
 *.ipin VSSA
 XM1 VDDA VPBT2 VPBT1 VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
@@ -131,7 +131,7 @@ XM7 VDDA VDDA VDDA VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)
 *.opin OUT
 *.ipin VPWR
 *.ipin VPB
-*.iopin VGND
+*.ipin VGND
 *.ipin VNB
 XM2 OUT IN VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1

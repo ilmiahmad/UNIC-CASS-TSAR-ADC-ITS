@@ -1,12 +1,12 @@
-timestamp 1730765947
+timestamp 1730870077
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
 use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_1 1 0 0 0 -1 0
-use sky130_fd_sc_hd__buf_8 x1 1 0 -1104 0 1 0
 use sky130_fd_sc_hd__dfrtp_2 x1[0] 1 0 0 0 1 0
+use sky130_fd_sc_hd__buf_8 x1 1 0 -1104 0 1 0
 use sky130_fd_sc_hd__buf_8 x2 1 0 -1104 0 -1 0
 use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_0 1 0 1932 0 -1 0
 use sky130_fd_sc_hd__dfrtp_2 x1[1] 1 0 1932 0 1 0
@@ -137,9 +137,9 @@ merge "x1[1]/VGND" "sky130_fd_sc_hd__dfrtp_2_0/VNB"
 merge "sky130_fd_sc_hd__dfrtp_2_0/VNB" "sky130_fd_sc_hd__dfrtp_2_0/VGND"
 merge "sky130_fd_sc_hd__dfrtp_2_0/VGND" "x1[0]/VNB"
 merge "x1[0]/VNB" "x1[0]/VGND"
-merge "x1[0]/VGND" "sky130_fd_sc_hd__dfrtp_2_1/VNB"
-merge "sky130_fd_sc_hd__dfrtp_2_1/VNB" "sky130_fd_sc_hd__dfrtp_2_1/VGND"
-merge "sky130_fd_sc_hd__dfrtp_2_1/VGND" "x2/VNB"
+merge "x1[0]/VGND" "sky130_fd_sc_hd__dfrtp_2_1/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VGND" "sky130_fd_sc_hd__dfrtp_2_1/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VNB" "x2/VNB"
 merge "x2/VNB" "x2/VGND"
 merge "x2/VGND" "x1/VNB"
 merge "x1/VNB" "x1/VGND"
@@ -194,10 +194,10 @@ merge "x1[3]/VPB" "x1[2]/VPWR"
 merge "x1[2]/VPWR" "x1[2]/VPB"
 merge "x1[2]/VPB" "x1[1]/VPWR"
 merge "x1[1]/VPWR" "x1[1]/VPB"
-merge "x1[1]/VPB" "x1[0]/VPWR"
+merge "x1[1]/VPB" "x1/VPWR"
+merge "x1/VPWR" "x1[0]/VPWR"
 merge "x1[0]/VPWR" "x1[0]/VPB"
-merge "x1[0]/VPB" "x1/VPWR"
-merge "x1/VPWR" "x1/VPB"
+merge "x1[0]/VPB" "x1/VPB"
 merge "x1/VPB" "VDDD"
 merge "VDDD" "sky130_fd_sc_hd__dfrtp_2_8/VPWR"
 merge "sky130_fd_sc_hd__dfrtp_2_8/VPWR" "m1_19291_n592#"

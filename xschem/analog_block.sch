@@ -45,4 +45,4 @@ C {devices/ipin.sym} 80 -340 0 0 {name=p8 sig_type=std_logic lab=SWP[0:9]}
 C {devices/ipin.sym} 80 -320 0 0 {name=p11 sig_type=std_logic lab=SWN[0:9]}
 C {devices/ipin.sym} 80 -260 0 0 {name=p12 sig_type=std_logic lab=CLKS}
 C {devices/ipin.sym} 80 -280 0 0 {name=p15 sig_type=std_logic lab=CLKSB}
-C {sh_bsw_diff.sym} 450 -280 0 0 {name=x4}
+C {th_switch.sym} 450 -280 0 0 {name=x2}
