@@ -71,9 +71,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 480 -320 0 0 {name=p1 lab=VPBT3}
+C {devices/ipin.sym} 480 -320 0 0 {name=p1 lab=VPBT3}
 C {devices/ipin.sym} 510 -280 0 0 {name=p2 lab=SWITCHING}
-C {devices/iopin.sym} 540 -320 0 1 {name=p4 lab=VBOOT}
+C {devices/ipin.sym} 540 -320 0 1 {name=p4 lab=VBOOT}
 C {sky130_fd_pr/pfet_01v8.sym} 650 -420 3 0 {name=M2
 W=0.5
 L=0.15

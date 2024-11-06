@@ -47,5 +47,5 @@ C {devices/ipin.sym} 90 -120 0 0 {name=p1 lab=IN}
 C {devices/opin.sym} 160 -110 0 0 {name=p2 lab=OUT}
 C {devices/ipin.sym} 130 -180 0 0 {name=p3 lab=VPWR}
 C {devices/ipin.sym} 160 -150 0 1 {name=p4 lab=VPB}
-C {devices/iopin.sym} 130 -40 0 1 {name=p5 lab=VGND}
+C {devices/ipin.sym} 130 -40 0 0 {name=p5 lab=VGND}
 C {devices/ipin.sym} 160 -70 0 1 {name=p6 lab=VNB}

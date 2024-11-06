@@ -53,7 +53,7 @@ C {devices/lab_pin.sym} 610 -180 2 1 {name=p4 sig_type=std_logic lab=VBOOT}
 C {devices/lab_pin.sym} 690 -180 1 0 {name=p5 sig_type=std_logic lab=PROTECTION}
 C {devices/ipin.sym} 530 -270 0 0 {name=p6 lab=VDDA}
 C {devices/ipin.sym} 530 -250 0 0 {name=p7 lab=CLKSB}
-C {devices/iopin.sym} 530 -230 0 1 {name=p8 lab=VBOOT}
+C {devices/ipin.sym} 530 -230 0 0 {name=p8 lab=VBOOT}
 C {devices/ipin.sym} 530 -210 0 0 {name=p9 lab=VSSA}
 C {sky130_fd_pr/nfet_01v8.sym} 740 -200 3 1 {name=M2
 W=0.5
