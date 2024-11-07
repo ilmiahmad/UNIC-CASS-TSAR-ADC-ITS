@@ -323,7 +323,7 @@ Contents of circuit 1:  Circuit: 'out_latch'
 Circuit out_latch contains 12 device instances.
   Class: sky130_fd_sc_hd__dfrtp_2 instances:  10
   Class: sky130_fd_sc_hd__and2_1 instances:   2
-Circuit contains 26 nets.
+Circuit contains 26 nets, and 1 disconnected pin.
 Contents of circuit 2:  Circuit: 'out_latch'
 Circuit out_latch contains 12 device instances.
   Class: sky130_fd_sc_hd__dfrtp_2 instances:  10
@@ -333,6 +333,10 @@ Circuit contains 26 nets.
 Circuit 1 contains 12 devices, Circuit 2 contains 12 devices.
 Circuit 1 contains 26 nets,    Circuit 2 contains 26 nets.
 
+  Flattening non-matched subcircuits out_latch out_latch
+
+Flattening instances of out_latch in file /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/mag/sar.ext.spc
+Flattening instances of out_latch in file /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/mag/sar.sch.spc
 
 Contents of circuit 1:  Circuit: 'cyclic_flag'
 Circuit cyclic_flag contains 11 device instances.
@@ -386,21 +390,23 @@ Circuit 1 contains 37 nets,    Circuit 2 contains 37 nets.
 
 
 Contents of circuit 1:  Circuit: 'sar'
-Circuit sar contains 4 device instances.
+Circuit sar contains 15 device instances.
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:  10
   Class: auto_sampling         instances:   1
   Class: cyclic_flag           instances:   1
-  Class: out_latch             instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   2
   Class: cdac_ctrl             instances:   1
 Circuit contains 50 nets.
 Contents of circuit 2:  Circuit: 'sar'
-Circuit sar contains 4 device instances.
+Circuit sar contains 15 device instances.
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:  10
   Class: auto_sampling         instances:   1
   Class: cyclic_flag           instances:   1
-  Class: out_latch             instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   2
   Class: cdac_ctrl             instances:   1
-Circuit contains 50 nets.
+Circuit contains 51 nets.
 
-Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 15 devices, Circuit 2 contains 15 devices.
 Circuit 1 contains 50 nets,    Circuit 2 contains 50 nets.
 
 

@@ -55,9 +55,9 @@ Xx4 x6/CLK x4/D x6/RESET_B x6/VGND VSUBS x6/VPB x6/VPWR x4/Q sky130_fd_sc_hd__df
 Xx6 x6/CLK x6/D x6/RESET_B x6/VGND VSUBS x6/VPB x6/VPWR x6/Q sky130_fd_sc_hd__dfrtp_2
 .ends
 
-.subckt out_latch FINAL CLKS VDDD EN CK DOUT[1] DOUT[2] DOUT[3] DOUT[4] DOUT[5] DOUT[6]
+.subckt out_latch FINAL CLKS EN CK DOUT[1] DOUT[2] DOUT[3] DOUT[4] DOUT[5] DOUT[6]
 + DOUT[7] DOUT[8] DOUT[9] SWP[0] SWP[1] SWP[2] SWP[3] SWP[4] SWP[5] SWP[6] SWP[7]
-+ SWP[8] SWP[9] DOUT[0] VSSD
++ SWP[8] SWP[9] DOUT[0] VDDD a_10348_404# VSSD
 Xand_latch_0 VDDD VDDD CLKS FINAL VSSD CK VSSD and_latch
 Xand_latch_1 VDDD VDDD CLKS FINAL VSSD CK VSSD and_latch
 Xflip_flop_5_latch_0 DOUT[5] SWP[1] EN SWP[5] DOUT[3] VSSD DOUT[7] DOUT[9] VDDD SWP[3]
@@ -66,7 +66,7 @@ Xflip_flop_5_latch_1 DOUT[4] SWP[8] EN SWP[4] DOUT[6] VSSD DOUT[2] DOUT[0] VDDD 
 + VDDD CK SWP[0] VSSD SWP[2] DOUT[8] flip_flop_5_latch
 .ends
 
-.subckt flip_flop_5 D x6/D x3/D x6/Q x6/VPB x6/VPWR RESET_B x6/VGND x2/D CLK VSUBS
+.subckt flip_flop_5 D x6/D x3/D x6/Q x6/VPWR RESET_B x6/VGND x2/D CLK x6/VPB VSUBS
 + x4/D
 Xx1 CLK D RESET_B x6/VGND VSUBS x6/VPB x6/VPWR x2/D sky130_fd_sc_hd__dfrtp_2
 Xx2 CLK x2/D RESET_B x6/VGND VSUBS x6/VPB x6/VPWR x3/D sky130_fd_sc_hd__dfrtp_2
@@ -104,10 +104,10 @@ X21 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1
 Xx5 x5/A x5/VGND VSUBS x5/VPB x5/VPWR x5/X sky130_fd_sc_hd__buf_8
 .ends
 
-.subckt cyclic_flag EN VSSD RDY CLKS FINAL CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6]
-+ CF[7] CF[8] CF[9] VDDD
-Xflip_flop_5_0 EN CF[6] CF[8] CF[5] VDDD VDDD CLKS VSSD CF[9] RDY VSSD CF[7] flip_flop_5
-Xflip_flop_5_1 CF[5] CF[1] CF[3] CF[0] VDDD VDDD CLKS VSSD CF[4] RDY VSSD CF[2] flip_flop_5
+.subckt cyclic_flag EN RDY CLKS FINAL CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7]
++ CF[8] CF[9] VDDD VSSD
+Xflip_flop_5_0 EN CF[6] CF[8] CF[5] VDDD CLKS VSSD CF[9] RDY VDDD VSSD CF[7] flip_flop_5
+Xflip_flop_5_1 CF[5] CF[1] CF[3] CF[0] VDDD CLKS VSSD CF[4] RDY VDDD VSSD CF[2] flip_flop_5
 Xbuf_0 VDDD VDDD CF[0] VSSD FINAL VSSD buf
 .ends
 
@@ -173,9 +173,9 @@ Xx14 CKC x14/D RST VSSD VSSD VDDD VDDD x15/D sky130_fd_sc_hd__dfrtp_2
 Xx16 CKC x16/D RST VSSD VSSD VDDD VDDD x21/D sky130_fd_sc_hd__dfrtp_2
 .ends
 
-.subckt cdac_ctrl CLKS COMP_P COMP_N CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7]
-+ CF[8] CF[9] SWN[0] SWN[1] SWN[2] SWN[3] SWN[4] SWN[5] SWN[6] SWN[7] SWN[8] SWN[9]
-+ SWP[0] SWP[1] SWP[2] SWP[3] SWP[4] SWP[5] SWP[6] SWP[7] SWP[8] SWP[9] VDDD VSSD
+.subckt cdac_ctrl CLKS COMP_P COMP_N CF[0] CF[1] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8]
++ CF[9] SWN[0] SWN[1] SWN[2] SWN[3] SWN[4] SWN[5] SWN[6] SWN[7] SWN[8] SWN[9] SWP[0]
++ SWP[1] SWP[2] SWP[3] SWP[4] SWP[5] SWP[6] SWP[7] SWP[8] SWP[9] CF[2] VDDD VSSD
 Xx1 COMP_P VSSD VSSD VDDD VDDD x1/X sky130_fd_sc_hd__buf_8
 Xx2 COMP_N VSSD VSSD VDDD VDDD x2/X sky130_fd_sc_hd__buf_8
 Xx1[9] CF[9] x1/X CLKS VSSD VSSD VDDD VDDD SWP[9] sky130_fd_sc_hd__dfrtp_2
@@ -204,14 +204,14 @@ Xsky130_fd_sc_hd__dfrtp_2_9 CF[8] x2/X CLKS VSSD VSSD VDDD VDDD SWN[8] sky130_fd
 + DOUT[9] CLKS CLKSB CLK EN VSSD VDDD CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7]
 + CF[8] CF[9] SWP[9] SWP[8] SWP[7] SWP[6] SWP[5] SWP[4] SWP[3] SWP[2] SWP[1] SWP[0]
 + SWN[9] SWN[8] SWN[7] SWN[6] SWN[5] SWN[4] SWN[3] SWN[2] SWN[1] SWN[0] COMP_P COMP_N
-Xout_latch_0 out_latch_0/FINAL CLKS VDDD EN CKO DOUT[1] DOUT[2] DOUT[3] DOUT[4] DOUT[5]
+Xout_latch_0 out_latch_0/FINAL CLKS EN CKO DOUT[1] DOUT[2] DOUT[3] DOUT[4] DOUT[5]
 + DOUT[6] DOUT[7] DOUT[8] DOUT[9] SWP[0] SWP[1] SWP[2] SWP[3] SWP[4] SWP[5] SWP[6]
-+ SWP[7] SWP[8] SWP[9] DOUT[0] VSSD out_latch
-Xcyclic_flag_0 EN VSSD CLK CLKS out_latch_0/FINAL CF[0] CF[1] CF[2] CF[3] CF[4] CF[5]
-+ CF[6] CF[7] CF[8] CF[9] VDDD cyclic_flag
++ SWP[7] SWP[8] SWP[9] DOUT[0] VDDD VSSD VSSD out_latch
+Xcyclic_flag_0 EN CLK CLKS out_latch_0/FINAL CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6]
++ CF[7] CF[8] CF[9] VDDD VSSD cyclic_flag
 Xauto_sampling_0 CLKSB CLKS CLK EN VSSD VDDD auto_sampling
-Xcdac_ctrl_0 CLKS COMP_P COMP_N CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8]
-+ CF[9] SWN[0] SWN[1] SWN[2] SWN[3] SWN[4] SWN[5] SWN[6] SWN[7] SWN[8] SWN[9] SWP[0]
-+ SWP[1] SWP[2] SWP[3] SWP[4] SWP[5] SWP[6] SWP[7] SWP[8] SWP[9] VDDD VSSD cdac_ctrl
+Xcdac_ctrl_0 CLKS COMP_P COMP_N CF[0] CF[1] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] CF[9]
++ SWN[0] SWN[1] SWN[2] SWN[3] SWN[4] SWN[5] SWN[6] SWN[7] SWN[8] SWN[9] SWP[0] SWP[1]
++ SWP[2] SWP[3] SWP[4] SWP[5] SWP[6] SWP[7] SWP[8] SWP[9] CF[2] VDDD VSSD cdac_ctrl
 .ends
 

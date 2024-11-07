@@ -221,6 +221,7 @@ Device classes sky130_fd_sc_hd__inv_8 and sky130_fd_sc_hd__inv_8 are equivalent.
 Flattening unmatched subcell and_latch in circuit out_latch (0)(2 instances)
 Flattening unmatched subcell flip_flop_5_latch in circuit out_latch (0)(2 instances)
 
+Cell out_latch (0) disconnected node: a_10348_404#
 Subcircuit summary:
 Circuit 1: out_latch                       |Circuit 2: out_latch                       
 -------------------------------------------|-------------------------------------------
@@ -262,9 +263,11 @@ FINAL                                      |FINAL
 CLKS                                       |CLKS                                       
 VSSD                                       |VSSD                                       
 VDDD                                       |VDDD                                       
+a_10348_404#                               |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes out_latch and out_latch are equivalent.
+  Flattening non-matched subcircuits out_latch out_latch
 Flattening unmatched subcell flip_flop_5 in circuit cyclic_flag (0)(2 instances)
 Flattening unmatched subcell buf in circuit cyclic_flag (0)(1 instance)
 
@@ -384,46 +387,23 @@ Device classes cdac_ctrl and cdac_ctrl are equivalent.
 Subcircuit summary:
 Circuit 1: sar                             |Circuit 2: sar                             
 -------------------------------------------|-------------------------------------------
-out_latch (1)                              |out_latch (1)                              
+sky130_fd_sc_hd__and2_1 (2)                |sky130_fd_sc_hd__and2_1 (2)                
+sky130_fd_sc_hd__dfrtp_2 (10)              |sky130_fd_sc_hd__dfrtp_2 (10)              
 cyclic_flag (1)                            |cyclic_flag (1)                            
 auto_sampling (1)                          |auto_sampling (1)                          
 cdac_ctrl (1)                              |cdac_ctrl (1)                              
-Number of devices: 4                       |Number of devices: 4                       
+Number of devices: 15                      |Number of devices: 15                      
 Number of nets: 50                         |Number of nets: 50                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
 
 Subcircuit pins:
 Circuit 1: sar                             |Circuit 2: sar                             
 -------------------------------------------|-------------------------------------------
-CLKSB                                      |CLKSB                                      
-COMP_P                                     |COMP_P                                     
-COMP_N                                     |COMP_N                                     
-SWN[0]                                     |SWN[0]                                     
-SWN[1]                                     |SWN[1]                                     
-SWN[2]                                     |SWN[2]                                     
-SWN[3]                                     |SWN[3]                                     
-SWN[4]                                     |SWN[4]                                     
-SWN[5]                                     |SWN[5]                                     
-SWN[6]                                     |SWN[6]                                     
-SWN[7]                                     |SWN[7]                                     
-SWN[8]                                     |SWN[8]                                     
-SWN[9]                                     |SWN[9]                                     
-DOUT[0]                                    |DOUT[0]                                    
-DOUT[1]                                    |DOUT[1]                                    
-DOUT[2]                                    |DOUT[2]                                    
-DOUT[3]                                    |DOUT[3]                                    
-DOUT[4]                                    |DOUT[4]                                    
-DOUT[5]                                    |DOUT[5]                                    
-DOUT[6]                                    |DOUT[6]                                    
-DOUT[7]                                    |DOUT[7]                                    
-DOUT[8]                                    |DOUT[8]                                    
-DOUT[9]                                    |DOUT[9]                                    
-CKO                                        |CKO                                        
-EN                                         |EN                                         
 VDDD                                       |VDDD                                       
 VSSD                                       |VSSD                                       
-CLKS                                       |CLKS                                       
 CLK                                        |CLK                                        
 CF[0]                                      |CF[0]                                      
 CF[1]                                      |CF[1]                                      
@@ -445,6 +425,32 @@ SWP[6]                                     |SWP[6]
 SWP[7]                                     |SWP[7]                                     
 SWP[8]                                     |SWP[8]                                     
 SWP[9]                                     |SWP[9]                                     
+CLKSB                                      |CLKSB                                      
+COMP_P                                     |COMP_P                                     
+COMP_N                                     |COMP_N                                     
+SWN[0]                                     |SWN[0]                                     
+SWN[1]                                     |SWN[1]                                     
+SWN[2]                                     |SWN[2]                                     
+SWN[3]                                     |SWN[3]                                     
+SWN[4]                                     |SWN[4]                                     
+SWN[5]                                     |SWN[5]                                     
+SWN[6]                                     |SWN[6]                                     
+SWN[7]                                     |SWN[7]                                     
+SWN[8]                                     |SWN[8]                                     
+SWN[9]                                     |SWN[9]                                     
+DOUT[0]                                    |DOUT[0]                                    
+DOUT[9]                                    |DOUT[9]                                    
+DOUT[8]                                    |DOUT[8]                                    
+DOUT[7]                                    |DOUT[7]                                    
+DOUT[6]                                    |DOUT[6]                                    
+DOUT[5]                                    |DOUT[5]                                    
+DOUT[4]                                    |DOUT[4]                                    
+DOUT[3]                                    |DOUT[3]                                    
+DOUT[2]                                    |DOUT[2]                                    
+DOUT[1]                                    |DOUT[1]                                    
+EN                                         |EN                                         
+CKO                                        |CKO                                        
+CLKS                                       |CLKS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sar and sar are equivalent.
