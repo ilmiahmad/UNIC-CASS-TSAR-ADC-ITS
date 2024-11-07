@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730868737
+timestamp 1730962709
+use bsw_diff  bsw_diff_0
+timestamp 1730962236
+transform 1 0 72762 0 1 32265
+box 773 -6771 3852 -981
 use cdac_10b  cdac_10b_0
 timestamp 1730868527
 transform 1 0 -18 0 1 30
