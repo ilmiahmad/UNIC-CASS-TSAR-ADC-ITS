@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -47,7 +47,7 @@ C {devices/lab_wire.sym} 640 -550 0 1 {name=p55 sig_type=std_logic lab=CLKS}
 C {devices/lab_wire.sym} 640 -530 0 1 {name=p56 sig_type=std_logic lab=CLKSB}
 C {devices/lab_wire.sym} 340 -510 0 0 {name=p57 sig_type=std_logic lab=EN}
 C {devices/opin.sym} 140 -120 0 0 {name=p8 sig_type=std_logic lab=CLKSB}
-C {/home/raditya/Documents/Projects/tsar_adc/xschem/auto_sampling.sym} 490 -520 0 0 {name=x2}
-C {/home/raditya/Documents/Projects/tsar_adc/xschem/cyclic_flag.sym} 490 -390 0 0 {name=x1}
-C {/home/raditya/Documents/Projects/tsar_adc/xschem/cdac_ctrl.sym} 490 -260 0 0 {name=x3}
-C {/home/raditya/Documents/Projects/tsar_adc/xschem/out_latch.sym} 490 -110 0 0 {name=x4}
+C {auto_sampling.sym} 490 -520 0 0 {name=x2}
+C {cyclic_flag.sym} 490 -390 0 0 {name=x1}
+C {cdac_ctrl.sym} 490 -260 0 0 {name=x3}
+C {out_latch.sym} 490 -110 0 0 {name=x4}

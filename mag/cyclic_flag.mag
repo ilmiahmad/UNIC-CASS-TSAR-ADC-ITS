@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730845130
+timestamp 1730878573
 << nwell >>
 rect 10848 2130 11074 2356
 rect 10849 1191 11075 1417
@@ -153,15 +153,15 @@ rect 3053 1454 3058 1514
 rect 3118 1454 3123 1514
 rect 3053 1449 3123 1454
 use buf  buf_0
-timestamp 1730845130
+timestamp 1730870077
 transform -1 0 2036 0 -1 2540
 box 846 718 2026 1358
 use flip_flop_5  flip_flop_5_0
-timestamp 1730845130
+timestamp 1730870077
 transform 1 0 1318 0 1 3340
 box -342 -1614 9531 -974
 use flip_flop_5  flip_flop_5_1
-timestamp 1730845130
+timestamp 1730870077
 transform -1 0 10644 0 -1 208
 box -342 -1614 9531 -974
 << labels >>
@@ -177,24 +177,24 @@ flabel metal1 -152 1228 -152 1228 0 FreeSans 800 0 0 0 VDDD
 port 4 nsew
 flabel metal2 -142 1538 -142 1538 0 FreeSans 800 0 0 0 FINAL
 port 18 nsew
-flabel metal2 3338 2548 3338 2550 0 FreeSans 800 0 0 0 CF[0]
-port 19 nsew
-flabel metal2 5274 2554 5274 2556 0 FreeSans 800 0 0 0 CF[1]
-port 20 nsew
-flabel metal2 7202 2564 7202 2566 0 FreeSans 800 0 0 0 CF[2]
-port 21 nsew
-flabel metal2 9132 2556 9132 2558 0 FreeSans 800 0 0 0 CF[3]
-port 22 nsew
-flabel metal2 10718 2552 10718 2554 0 FreeSans 800 0 0 0 CF[4]
-port 23 nsew
-flabel metal2 8618 966 8618 968 0 FreeSans 800 0 0 0 CF[5]
+flabel metal2 1234 934 1270 968 0 FreeSans 800 0 0 0 CF[0]
 port 24 nsew
-flabel metal2 6684 948 6684 950 0 FreeSans 800 0 0 0 CF[6]
+flabel metal2 2810 928 2846 962 0 FreeSans 800 0 0 0 CF[1]
 port 25 nsew
-flabel metal2 4754 942 4754 944 0 FreeSans 800 0 0 0 CF[7]
+flabel metal2 4746 918 4782 952 0 FreeSans 800 0 0 0 CF[2]
 port 26 nsew
-flabel metal2 2822 956 2822 958 0 FreeSans 800 0 0 0 CF[8]
+flabel metal2 6676 920 6712 954 0 FreeSans 800 0 0 0 CF[3]
 port 27 nsew
-flabel metal2 1252 956 1260 964 0 FreeSans 800 0 0 0 CF[9]
+flabel metal2 8608 922 8644 956 0 FreeSans 800 0 0 0 CF[4]
 port 28 nsew
+flabel metal2 10706 2564 10734 2596 0 FreeSans 800 0 0 0 CF[5]
+port 29 nsew
+flabel metal2 9122 2548 9150 2580 0 FreeSans 800 0 0 0 CF[6]
+port 30 nsew
+flabel metal2 7192 2560 7220 2592 0 FreeSans 800 0 0 0 CF[7]
+port 31 nsew
+flabel metal2 5264 2560 5292 2592 0 FreeSans 800 0 0 0 CF[8]
+port 32 nsew
+flabel metal2 3332 2562 3360 2594 0 FreeSans 800 0 0 0 CF[9]
+port 34 nsew
 << end >>
