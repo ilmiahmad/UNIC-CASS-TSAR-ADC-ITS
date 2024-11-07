@@ -42,13 +42,13 @@ lab=#net2}
 N 900 -620 1230 -620 {
 lab=#net1}
 N 860 -650 860 -550 {
-lab=clk}
+lab=clks}
 N 1080 -480 1080 -440 {
 lab=#net5}
 N 1000 -410 1040 -410 {
-lab=clkb}
+lab=clksb}
 N 820 -600 860 -600 {
-lab=clk}
+lab=clks}
 N 1080 -860 1080 -840 {
 lab=vdd}
 N 1080 -860 1430 -860 {
@@ -92,7 +92,7 @@ lab=vss}
 N 1080 -410 1140 -410 {
 lab=vss}
 N 1530 -890 1530 -850 {
-lab=clkb}
+lab=clksb}
 N 1560 -810 1600 -810 {
 lab=vss}
 N 1830 -640 1830 -600 {
@@ -132,13 +132,13 @@ lab=#net7}
 N 1830 -640 2160 -640 {
 lab=#net6}
 N 1790 -670 1790 -570 {
-lab=clk}
+lab=clks}
 N 2010 -500 2010 -460 {
 lab=#net10}
 N 1930 -430 1970 -430 {
-lab=clkb}
+lab=clksb}
 N 1750 -620 1790 -620 {
-lab=clk}
+lab=clks}
 N 2010 -880 2010 -860 {
 lab=vdd}
 N 2010 -880 2360 -880 {
@@ -162,7 +162,7 @@ lab=#net8}
 N 2400 -700 2400 -540 {
 lab=#net8}
 N 2430 -500 2490 -500 {
-lab=vo}
+lab=vcn}
 N 2340 -500 2340 -390 {
 lab=vin}
 N 2280 -500 2280 -430 {
@@ -335,16 +335,16 @@ C {devices/lab_wire.sym} 1470 -410 2 0 {name=p6 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1430 -760 2 0 {name=p7 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1530 -760 2 0 {name=p8 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1600 -810 2 0 {name=p9 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 1530 -890 0 1 {name=p10 sig_type=std_logic lab=clkb}
-C {devices/lab_wire.sym} 820 -600 0 0 {name=p11 sig_type=std_logic lab=clk}
-C {devices/lab_wire.sym} 1000 -410 0 0 {name=p12 sig_type=std_logic lab=clkb}
+C {devices/lab_wire.sym} 1530 -890 0 1 {name=p10 sig_type=std_logic lab=clksb}
+C {devices/lab_wire.sym} 820 -600 0 0 {name=p11 sig_type=std_logic lab=clks}
+C {devices/lab_wire.sym} 1000 -410 0 0 {name=p12 sig_type=std_logic lab=clksb}
 C {devices/lab_wire.sym} 1080 -340 0 1 {name=p13 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1410 -370 2 0 {name=p14 sig_type=std_logic lab=vip}
 C {devices/lab_wire.sym} 1560 -480 2 0 {name=p15 sig_type=std_logic lab=vcp}
 C {devices/lab_wire.sym} 1140 -860 0 1 {name=p16 sig_type=std_logic lab=vdd}
 C {devices/ipin.sym} 660 -840 0 0 {name=p17 lab=vdd}
-C {devices/ipin.sym} 660 -800 0 0 {name=p18 lab=clk}
-C {devices/ipin.sym} 660 -760 0 0 {name=p19 lab=clkb}
+C {devices/ipin.sym} 660 -800 0 0 {name=p18 lab=clks}
+C {devices/ipin.sym} 660 -760 0 0 {name=p19 lab=clksb}
 C {devices/ipin.sym} 660 -720 0 0 {name=p20 lab=vip}
 C {sky130_fd_pr/pfet_01v8.sym} 1810 -670 0 0 {name=M11
 L=0.15
@@ -496,9 +496,9 @@ C {devices/lab_wire.sym} 2400 -430 2 0 {name=p28 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 2360 -780 2 0 {name=p29 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 2460 -780 2 0 {name=p30 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 2530 -830 2 0 {name=p31 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 2460 -910 0 1 {name=p32 sig_type=std_logic lab=clkb}
-C {devices/lab_wire.sym} 1750 -620 0 0 {name=p33 sig_type=std_logic lab=clk}
-C {devices/lab_wire.sym} 1930 -430 0 0 {name=p34 sig_type=std_logic lab=clkb}
+C {devices/lab_wire.sym} 2460 -910 0 1 {name=p32 sig_type=std_logic lab=clksb}
+C {devices/lab_wire.sym} 1750 -620 0 0 {name=p33 sig_type=std_logic lab=clks}
+C {devices/lab_wire.sym} 1930 -430 0 0 {name=p34 sig_type=std_logic lab=clksb}
 C {devices/lab_wire.sym} 2010 -360 0 1 {name=p35 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 2340 -390 2 0 {name=p36 sig_type=std_logic lab=vin}
 C {devices/lab_wire.sym} 2490 -500 2 0 {name=p37 sig_type=std_logic lab=vcn}
