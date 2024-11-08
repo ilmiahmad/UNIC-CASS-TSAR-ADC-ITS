@@ -1,4 +1,4 @@
-timestamp 1730971434
+timestamp 1731085190
 version 8.3
 tech sky130A
 style ngspice()
@@ -27,36 +27,45 @@ node "li_6909_n1052#" 0 0 6909 -1052 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "li_6282_n1058#" 0 0 6282 -1058 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_6909_n440#" 0 0 6909 -440 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_6282_n434#" 0 0 6282 -434 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "w_n3854_n840#" 0 0 -3854 -840 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n4234_n3709#" 0 0 -4234 -3709 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dw_n4234_n3709#" 0 0 -4234 -3709 dnw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "delay_element_0/XM6/a_1500_n600#" "sky130_fd_sc_hd__inv_8_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_sc_hd__inv_8_0/A" "li_6282_n1058#"
-merge "sky130_fd_sc_hd__inv_8_1/VNB" "delay_element_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "delay_element_1/VSUBS" "phase_detector_0/VSUBS"
-merge "phase_detector_0/VSUBS" "sky130_fd_sc_hd__inv_8_0/VNB"
-merge "sky130_fd_sc_hd__inv_8_0/VNB" "delay_element_0/VSUBS"
-merge "delay_element_0/VSUBS" "VSUBS"
 merge "delay_element_1/vss" "phase_detector_0/VSSA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "phase_detector_0/VSSA" "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VNB"
-merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VNB" "sky130_fd_sc_hd__inv_8_1/VGND"
+merge "phase_detector_0/VSSA" "delay_element_1/XM8/a_n1660_n374#"
+merge "delay_element_1/XM8/a_n1660_n374#" "delay_element_1/XM7/a_n1660_n374#"
+merge "delay_element_1/XM7/a_n1660_n374#" "delay_element_1/XM3/a_n1660_n374#"
+merge "delay_element_1/XM3/a_n1660_n374#" "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VNB"
+merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VNB" "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VNB"
+merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VNB" "sky130_fd_sc_hd__inv_8_1/VNB"
+merge "sky130_fd_sc_hd__inv_8_1/VNB" "sky130_fd_sc_hd__inv_8_1/VGND"
 merge "sky130_fd_sc_hd__inv_8_1/VGND" "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VGND"
-merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VGND" "sky130_fd_sc_hd__inv_8_0/VGND"
-merge "sky130_fd_sc_hd__inv_8_0/VGND" "delay_element_0/vss"
-merge "delay_element_0/vss" "vssa"
-merge "phase_detector_0/VDDA" "sky130_fd_sc_hd__inv_8_0/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VGND" "sky130_fd_sc_hd__inv_8_0/VNB"
+merge "sky130_fd_sc_hd__inv_8_0/VNB" "sky130_fd_sc_hd__inv_8_0/VGND"
+merge "sky130_fd_sc_hd__inv_8_0/VGND" "delay_element_0/XM8/a_n1660_n374#"
+merge "delay_element_0/XM8/a_n1660_n374#" "vssa"
+merge "vssa" "delay_element_0/XM7/a_n1660_n374#"
+merge "delay_element_0/XM7/a_n1660_n374#" "delay_element_0/XM3/a_n1660_n374#"
+merge "delay_element_0/XM3/a_n1660_n374#" "delay_element_0/vss"
+merge "delay_element_0/vss" "w_n4234_n3709#"
+merge "phase_detector_0/VDDA" "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_0/VPB" "phase_detector_0/XM2/w_n211_n519#"
+merge "phase_detector_0/XM2/w_n211_n519#" "sky130_fd_sc_hd__inv_8_0/VPWR"
 merge "sky130_fd_sc_hd__inv_8_0/VPWR" "sky130_fd_sc_hd__inv_8_1/VPWR"
 merge "sky130_fd_sc_hd__inv_8_1/VPWR" "sky130_fd_sc_hd__inv_8_1/VPB"
-merge "sky130_fd_sc_hd__inv_8_1/VPB" "delay_element_0/XM6/w_n1696_n819#"
-merge "delay_element_0/XM6/w_n1696_n819#" "sky130_fd_sc_hd__inv_8_0/VPB"
-merge "sky130_fd_sc_hd__inv_8_0/VPB" "delay_element_1/XM6/w_n1696_n819#"
-merge "delay_element_1/XM6/w_n1696_n819#" "delay_element_0/XM2/w_n1696_n819#"
-merge "delay_element_0/XM2/w_n1696_n819#" "delay_element_1/XM2/w_n1696_n819#"
-merge "delay_element_1/XM2/w_n1696_n819#" "delay_element_0/XM1/w_n1696_n819#"
-merge "delay_element_0/XM1/w_n1696_n819#" "delay_element_1/XM1/w_n1696_n819#"
-merge "delay_element_1/XM1/w_n1696_n819#" "delay_element_0/vdd"
-merge "delay_element_0/vdd" "delay_element_1/vdd"
-merge "delay_element_1/vdd" "vdda"
-merge "vdda" "w_n3854_n840#"
+merge "sky130_fd_sc_hd__inv_8_1/VPB" "delay_element_1/XM6/w_n1696_n819#"
+merge "delay_element_1/XM6/w_n1696_n819#" "delay_element_1/XM2/w_n1696_n819#"
+merge "delay_element_1/XM2/w_n1696_n819#" "delay_element_1/XM1/w_n1696_n819#"
+merge "delay_element_1/XM1/w_n1696_n819#" "delay_element_1/li_n106_n427#"
+merge "delay_element_1/li_n106_n427#" "vdda"
+merge "vdda" "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VPB"
+merge "phase_detector_0/sky130_fd_sc_hd__nand2_1_1/VPB" "phase_detector_0/XM4/w_n211_n519#"
+merge "phase_detector_0/XM4/w_n211_n519#" "sky130_fd_sc_hd__inv_8_0/VPB"
+merge "sky130_fd_sc_hd__inv_8_0/VPB" "delay_element_0/XM6/w_n1696_n819#"
+merge "delay_element_0/XM6/w_n1696_n819#" "delay_element_0/XM2/w_n1696_n819#"
+merge "delay_element_0/XM2/w_n1696_n819#" "delay_element_0/XM1/w_n1696_n819#"
+merge "delay_element_0/XM1/w_n1696_n819#" "dw_n4234_n3709#"
 merge "phase_detector_0/OUT" "outp" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "delay_element_1/vin" "delay_element_0/vip" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "delay_element_0/vip" "vinp"

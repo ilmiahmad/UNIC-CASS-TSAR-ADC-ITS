@@ -986,8 +986,8 @@ Xx3 bi x3/ck x3/ckb dac_out vdda vssa dac_sw_1
 + swp_in[8] swp_in[9] swn_in[0] swn_in[1] swn_in[2] swn_in[3] swn_in[4] swn_in[5]
 + swn_in[6] swn_in[7] swn_in[8] swn_in[9] vcm VCN VCP vsref vdref
 Xx6[5] cf[5] swp_in[5] vcm x6[5]/dac_out vsref vdref cdac_sw_4
-Xcdac_sw_4_0 cf[5] swn_in[5] vcm cdac_sw_4_0/dac_out vsref vdref cdac_sw_4
 Xx6[4] cf[4] swp_in[4] vcm x6[4]/dac_out vsref vdref cdac_sw_4
+Xcdac_sw_4_0 cf[5] swn_in[5] vcm cdac_sw_4_0/dac_out vsref vdref cdac_sw_4
 Xcdac_sw_4_1 cf[4] swn_in[4] vcm cdac_sw_4_1/dac_out vsref vdref cdac_sw_4
 Xx3[1] cf[1] swp_in[1] vcm x3[1]/dac_out vdref vsref cdac_sw_16
 Xx3[0] cf[0] swp_in[0] vcm x3[0]/dac_out vdref vsref cdac_sw_16

@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.0002836274
-x2=0.00036494039
+x1=5.3709113e-05
+x2=0.00011860124
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -25,38 +25,44 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="9 6 4 7"
+color="9 6 4 7 12 10"
 node="x1.clks
 comp_p
 x1.x1.vcp
-x1.x1.vcn"
+x1.x1.vcn
+clk
+cko"
 hilight_wave=3}
 B 2 1950 -540 2750 -140 {flags=graph
 y1=0
 y2=2
-ypos1=0.021345583
-ypos2=2.5739087
+ypos1=0.11426543
+ypos2=3.0544197
 divy=5
 subdivy=1
 unity=1
-x1=0.0002836274
-x2=0.00036494039
+x1=5.3709113e-05
+x2=0.00011860124
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="cko
-dout[9]
-dout[8]
-dout[7]
-dout[6]
-dout[5]
-dout[4]
-dout[3]
-dout[2]
-dout[1]
-dout[0]"
-color="4 4 4 4 4 4 4 4 4 4 4"
+BUS_NAME;dout[9],dout[8],dout[7],dout[6],dout[5],dout[4],dout[3],dout[2],dout[1],dout[0]
+x1.comp_p
+clk
+x1.clks
+x1.cf[0]
+x1.cf[1]
+x1.cf[2]
+x1.cf[3]
+x1.cf[4]
+x1.cf[5]
+x1.cf[6]
+x1.cf[7]
+x1.cf[8]
+x1.cf[9]"
+color="4 4 4 4 4 4 4 4 4 4 4 6 5 6 7"
 dataset=-1
 unitx=1
 logx=0
@@ -73,7 +79,7 @@ N 320 -230 320 -210 {
 lab=#net1}
 C {devices/vsource.sym} 590 -110 0 0 {name=VS value=0 savecurrent=false}
 C {devices/vsource.sym} 700 -260 0 0 {name=VDA value=1.8 savecurrent=false}
-C {devices/vsource.sym} 780 -260 0 0 {name=VDD value=1.8 savecurrent=false}
+C {devices/vsource.sym} 780 -260 0 0 {name=VDD value=2 savecurrent=false}
 C {devices/gnd.sym} 590 -80 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} 590 -140 0 0 {name=p1 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 700 -230 2 1 {name=p2 sig_type=std_logic lab=VSSA}
@@ -126,9 +132,10 @@ save
 + vin
 + x1.x1.vcp
 + x1.x1.vcn
-+ comp_p
-+ comp_n
++ x1.comp_p
++ x1.comp_n
 + x1.clks
++ x1.clksb
 + 'dout[0]'
 + 'dout[1]'
 + 'dout[2]'
@@ -139,6 +146,16 @@ save
 + 'dout[7]'
 + 'dout[8]'
 + 'dout[9]'
++ 'x1.cf[0]'
++ 'x1.cf[1]'
++ 'x1.cf[2]'
++ 'x1.cf[3]'
++ 'x1.cf[4]'
++ 'x1.cf[5]'
++ 'x1.cf[6]'
++ 'x1.cf[7]'
++ 'x1.cf[8]'
++ 'x1.cf[9]'
 + cko
 tran 100n 0.5m
 remzerovec
@@ -149,7 +166,7 @@ C {devices/vsource.sym} 860 -260 0 0 {name=VCLK value="PULSE(0 1.8 10n 50p 50p 1
 C {devices/lab_wire.sym} 860 -290 0 0 {name=p23 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 860 -230 2 1 {name=p24 sig_type=std_logic lab=VSSD}
 C {sky130_fd_pr/corner.sym} 40 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {10b_adc.sym} 690 -500 0 0 {name=x1}
+C {TSAR_ADC.sym} 690 -500 0 0 {name=x1}
 C {devices/launcher.sym} 1180 -580 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/adc_tb.raw tran"
@@ -179,5 +196,3 @@ C {devices/lab_wire.sym} 540 -520 0 0 {name=p29 sig_type=std_logic lab=EN}
 C {devices/vsource.sym} 920 -110 0 0 {name=VCLK1 value="PWL(0 0, 1u 0, 1.01u 1.8)" savecurrent=false}
 C {devices/lab_wire.sym} 920 -140 0 0 {name=p30 sig_type=std_logic lab=EN}
 C {devices/lab_wire.sym} 920 -80 2 1 {name=p31 sig_type=std_logic lab=VSSD}
-C {devices/lab_wire.sym} 840 -560 0 1 {name=p32 sig_type=std_logic lab=COMP_P}
-C {devices/lab_wire.sym} 840 -540 0 1 {name=p33 sig_type=std_logic lab=COMP_N}
