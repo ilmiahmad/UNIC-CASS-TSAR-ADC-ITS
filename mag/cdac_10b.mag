@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730868527
+timestamp 1730995243
+<< dnwell >>
+rect -8 -2 67002 60777
 << metal1 >>
 rect 32790 40494 32800 40975
 rect 32984 40974 32994 40975
@@ -136,11 +138,11 @@ rect 33245 24003 33711 24099
 rect 980 60673 65652 60777
 rect 1094 -1 66098 103
 use single_10b_cdac  single_10b_cdac_0
-timestamp 1730868527
+timestamp 1730971434
 transform 1 0 -69036 0 1 40901
 box 102622 -40903 136038 19876
 use single_10b_cdac  single_10b_cdac_1
-timestamp 1730868527
+timestamp 1730971434
 transform 1 0 -102630 0 1 40901
 box 102622 -40903 136038 19876
 << labels >>

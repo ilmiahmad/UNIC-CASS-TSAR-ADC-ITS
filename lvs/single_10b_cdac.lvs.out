@@ -177,7 +177,6 @@ vdda                                       |vdda
 in                                         |in                                         
 clkb0                                      |clkb0                                      
 clkb1                                      |clkb1                                      
-a_n562_360#                                |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nooverlap_clk and nooverlap_clk are equivalent.
@@ -475,7 +474,6 @@ vdda                                       |vdda
 vssa                                       |vssa                                       
 cki                                        |cki                                        
 dac_out                                    |dac_out                                    
-x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cdac_sw_4 and cdac_sw_4 are equivalent.
@@ -505,7 +503,6 @@ vdda                                       |vdda
 vssa                                       |vssa                                       
 cki                                        |cki                                        
 dac_out                                    |dac_out                                    
-x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cdac_sw_16 and cdac_sw_16 are equivalent.
@@ -622,7 +619,6 @@ vdda                                       |vdda
 vssa                                       |vssa                                       
 cki                                        |cki                                        
 dac_out                                    |dac_out                                    
-x1/a_n562_360#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cdac_sw_1 and cdac_sw_1 are equivalent.
@@ -661,8 +657,8 @@ cf[7]                                      |cf[7]
 vdref                                      |vdref                                      
 vsref                                      |vsref                                      
 vcm                                        |vcm                                        
-VCN                                        |vcn                                        
-VCP                                        |vcp                                        
+VCN                                        |VCN                                        
+VCP                                        |VCP                                        
 swn_in[0]                                  |swn_in[0]                                  
 swp_in[0]                                  |swp_in[0]                                  
 swn_in[1]                                  |swn_in[1]                                  

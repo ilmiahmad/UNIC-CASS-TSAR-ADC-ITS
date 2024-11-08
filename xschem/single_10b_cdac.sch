@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
@@ -21,7 +21,7 @@ C {devices/ipin.sym} 180 -590 0 0 {name=p19 lab=cf[0:9]}
 C {devices/ipin.sym} 180 -560 0 0 {name=p20 lab=swp_in[0:9]}
 C {devices/ipin.sym} 180 -520 0 0 {name=p22 lab=vcm}
 C {devices/ipin.sym} 180 -490 0 0 {name=p23 lab=vsref}
-C {devices/iopin.sym} 160 -430 0 0 {name=p24 lab=vcp}
+C {devices/iopin.sym} 160 -430 0 0 {name=p24 lab=VCP}
 C {cdac_sw_8.sym} 1050 -570 0 0 {name=x4[2:3]}
 C {devices/lab_wire.sym} 900 -610 0 0 {name=p26 sig_type=std_logic lab=vdref}
 C {devices/lab_wire.sym} 900 -530 0 0 {name=p29 sig_type=std_logic lab=vsref}
@@ -89,5 +89,5 @@ C {devices/lab_wire.sym} 2640 -370 2 0 {name=p64 sig_type=std_logic lab=swp[8:9]
 C {devices/lab_wire.sym} 2340 -310 0 0 {name=p66 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 2340 -350 0 0 {name=p68 sig_type=std_logic lab=cf[8:9]}
 C {devices/lab_wire.sym} 2340 -330 0 0 {name=p69 sig_type=std_logic lab=swp_in[8:9]}
-C {devices/iopin.sym} 160 -460 0 0 {name=p72 lab=vcn}
+C {devices/iopin.sym} 160 -460 0 0 {name=p72 lab=VCN}
 C {devices/ipin.sym} 180 -540 0 0 {name=p74 lab=swn_in[0:9]}

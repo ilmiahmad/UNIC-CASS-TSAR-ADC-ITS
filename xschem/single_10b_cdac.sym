@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2}
+v {xschem version=3.4.6RC file_version=1.2}
 K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
@@ -27,9 +27,9 @@ T {vcm} -125 26 0 0 0.2 0.2 {}
 B 5 -152.5 47.5 -147.5 52.5 {name=vsref dir=in}
 L 4 -150 50 -130 50 {}
 T {vsref} -125 46 0 0 0.2 0.2 {}
-B 5 147.5 -52.5 152.5 -47.5 {name=vcn dir=inout}
+B 5 147.5 -52.5 152.5 -47.5 {name=VCN dir=inout}
 L 7 130 -50 150 -50 {}
-T {vcn} 125 -54 0 1 0.2 0.2 {}
-B 5 147.5 -32.5 152.5 -27.5 {name=vcp dir=inout}
+T {VCN} 125 -54 0 1 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=VCP dir=inout}
 L 7 130 -30 150 -30 {}
-T {vcp} 125 -34 0 1 0.2 0.2 {}
+T {VCP} 125 -34 0 1 0.2 0.2 {}

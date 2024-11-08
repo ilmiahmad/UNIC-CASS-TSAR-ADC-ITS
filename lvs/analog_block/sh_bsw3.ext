@@ -1,0 +1,82 @@
+timestamp 1730800306
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pcell_bsw_dischrg pcell_bsw_dischrg_0 1 0 75 0 1 1310
+use ncell_bsw_sw ncell_bsw_sw_1 1 0 1311 0 1 3662
+use ncell_bsw_dischrg ncell_bsw_dischrg_0 1 0 2450 0 1 1725
+use ncell_bsw ncell_bsw_1 1 0 -4653 0 1 1676
+use inv_bsw inv_bsw_0 0 -1 563 1 0 -215
+use cap_bsw cap_bsw_1 0 -1 -1234 1 0 -1462
+port "VSSA" 5 570 54 570 54 li
+port "VO" 6 1499 -215 1499 -215 m2
+port "VI" 4 1381 -23 1381 -23 m2
+port "CLKS" 2 162 -237 162 -237 m1
+port "VDDA" 1 342 -3 342 -3 m2
+port "CLKSB" 3 161 -342 161 -342 m1
+node "VSSA" 0 0 570 54 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m4_n1073_273#" 0 0 -1073 273 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VO" 0 0 1499 -215 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_552_160#" 0 0 552 160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VI" 0 0 1381 -23 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKS" 0 0 162 -237 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDDA" 0 0 342 -3 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n40_386#" 0 0 -40 386 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLKSB" 0 0 161 -342 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n756_690#" 0 0 -756 690 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n39_819#" 0 0 -39 819 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_918_901#" 0 0 918 901 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_158_n88#" 0 0 158 -88 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_536_687#" 0 0 536 687 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n196_1342#" 0 0 -196 1342 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1262_387#" 0 0 1262 387 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1045_1009#" 0 0 1045 1009 pdif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1094_929#" 0 0 1094 929 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_918_957#" 0 0 918 957 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1003_1003#" 0 0 1003 1003 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pcell_bsw_dischrg_0/sky130_fd_pr__pfet_01v8_275TTJ_2/a_15_n50#" "cap_bsw_1/sky130_fd_pr__cap_mim_m3_1_VCTT89_0/c1_n346_n200#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_bsw_1/sky130_fd_pr__cap_mim_m3_1_VCTT89_0/c1_n346_n200#" "ncell_bsw_1/VPBT3"
+merge "ncell_bsw_1/VPBT3" "m1_n39_819#"
+merge "m1_n39_819#" "pcell_bsw_dischrg_0/VPBT3"
+merge "pcell_bsw_dischrg_0/VPBT3" "m1_536_687#"
+merge "m1_536_687#" "a_1045_1009#"
+merge "a_1045_1009#" "w_1094_929#"
+merge "w_1094_929#" "w_918_957#"
+merge "w_918_957#" "w_1003_1003#"
+merge "ncell_bsw_dischrg_0/VSSA" "ncell_bsw_sw_1/VSSA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/VSSA" "VSSA"
+merge "VSSA" "pcell_bsw_dischrg_0/VSUBS"
+merge "pcell_bsw_dischrg_0/VSUBS" "cap_bsw_1/VSUBS"
+merge "cap_bsw_1/VSUBS" "inv_bsw_0/VNB"
+merge "inv_bsw_0/VNB" "ncell_bsw_1/VSSA"
+merge "ncell_bsw_1/VSSA" "VSUBS"
+merge "cap_bsw_1/sky130_fd_pr__cap_mim_m3_1_VCTT89_0/m3_n386_n240#" "inv_bsw_0/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_bsw_0/VGND" "ncell_bsw_sw_1/VNBT3"
+merge "ncell_bsw_sw_1/VNBT3" "m1_n196_1342#"
+merge "pcell_bsw_dischrg_0/m1_1016_n307#" "ncell_bsw_dischrg_0/VBOOT" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ncell_bsw_dischrg_0/VBOOT" "ncell_bsw_sw_1/VBOOT"
+merge "ncell_bsw_sw_1/VBOOT" "pcell_bsw_dischrg_0/m1_861_n381#"
+merge "pcell_bsw_dischrg_0/m1_861_n381#" "li_1262_387#"
+merge "li_1262_387#" "m1_918_901#"
+merge "inv_bsw_0/VPWR" "ncell_bsw_1/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ncell_bsw_1/VDDA" "VDDA"
+merge "ncell_bsw_sw_1/m1_280_n3433#" "ncell_bsw_sw_1/VI" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/VI" "VI"
+merge "ncell_bsw_1/VPBT2" "m2_552_160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "m2_552_160#" "cap_bsw_1/VPBT2"
+merge "cap_bsw_1/VPBT2" "m1_n40_386#"
+merge "ncell_bsw_dischrg_0/CLKSB" "ncell_bsw_sw_1/VNBT1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ncell_bsw_sw_1/VNBT1" "cap_bsw_1/VNBT1"
+merge "cap_bsw_1/VNBT1" "CLKSB"
+merge "cap_bsw_1/VPBT1" "m4_n1073_273#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "m4_n1073_273#" "ncell_bsw_1/VPBT1"
+merge "ncell_bsw_1/VPBT1" "m1_n756_690#"
+merge "pcell_bsw_dischrg_0/SWITCHING" "inv_bsw_0/OUT" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_bsw_0/OUT" "ncell_bsw_sw_1/SWITCHING"
+merge "ncell_bsw_sw_1/SWITCHING" "m1_158_n88#"
+merge "ncell_bsw_sw_1/VO" "VO" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_bsw_0/IN" "cap_bsw_1/CLKS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_bsw_1/CLKS" "CLKS"

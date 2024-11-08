@@ -1,4 +1,4 @@
-timestamp 1730870077
+timestamp 1730845130
 version 8.3
 tech sky130A
 style ngspice()
@@ -82,9 +82,9 @@ merge "w_9948_n18#" "flip_flop_5_latch_0/x6/VPB"
 merge "flip_flop_5_latch_0/x6/VPB" "flip_flop_5_latch_1/x1/VPB"
 merge "flip_flop_5_latch_1/x1/VPB" "flip_flop_5_latch_1/x2/VPB"
 merge "flip_flop_5_latch_1/x2/VPB" "flip_flop_5_latch_0/x6/VPWR"
-merge "flip_flop_5_latch_0/x6/VPWR" "flip_flop_5_latch_1/x1/VPWR"
-merge "flip_flop_5_latch_1/x1/VPWR" "flip_flop_5_latch_0/x4/VPWR"
-merge "flip_flop_5_latch_0/x4/VPWR" "flip_flop_5_latch_1/x2/VPWR"
+merge "flip_flop_5_latch_0/x6/VPWR" "flip_flop_5_latch_0/x4/VPWR"
+merge "flip_flop_5_latch_0/x4/VPWR" "flip_flop_5_latch_1/x1/VPWR"
+merge "flip_flop_5_latch_1/x1/VPWR" "flip_flop_5_latch_1/x2/VPWR"
 merge "flip_flop_5_latch_1/x2/VPWR" "flip_flop_5_latch_0/x3/VPWR"
 merge "flip_flop_5_latch_0/x3/VPWR" "flip_flop_5_latch_1/x3/VPWR"
 merge "flip_flop_5_latch_1/x3/VPWR" "flip_flop_5_latch_0/x2/VPWR"
@@ -114,7 +114,8 @@ merge "flip_flop_5_latch_0/x1/CLK" "CK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "flip_flop_5_latch_1/x3/Q" "DOUT[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_0/x3/Q" "DOUT[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_1/x6/D" "SWP[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_latch_0/x2/VPB" "flip_flop_5_latch_0/x1/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x2/VPB" "flip_flop_5_latch_1/x4/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_1/x4/VPB" "flip_flop_5_latch_0/x1/VPB"
 merge "flip_flop_5_latch_0/x1/VPB" "flip_flop_5_latch_1/x6/VPB"
 merge "flip_flop_5_latch_0/m1_1294_n1425#" "EN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "EN" "flip_flop_5_latch_1/x3/RESET_B"
@@ -122,7 +123,8 @@ merge "flip_flop_5_latch_1/x3/RESET_B" "m2_5297_400#"
 merge "flip_flop_5_latch_0/x1/D" "SWP[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_1/x4/Q" "DOUT[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_1/x4/D" "SWP[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_latch_0/x4/VPB" "flip_flop_5_latch_1/x3/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x4/VPB" "flip_flop_5_latch_0/x3/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_latch_0/x3/VPB" "flip_flop_5_latch_1/x3/VPB"
 merge "flip_flop_5_latch_0/x3/CLK" "flip_flop_5_latch_1/li_n141_n1297#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_1/li_n141_n1297#" "m2_4829_n231#"
 merge "flip_flop_5_latch_0/li_7848_n1144#" "SWP[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -133,6 +135,5 @@ merge "flip_flop_5_latch_0/x4/D" "SWP[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "flip_flop_5_latch_1/x2/D" "SWP[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_1/x3/D" "SWP[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_latch_0/x2/D" "SWP[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_latch_0/x3/VPB" "flip_flop_5_latch_1/x4/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "and_latch_0/x1/B" "and_latch_1/x1/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "and_latch_1/x1/B" "CLKS"

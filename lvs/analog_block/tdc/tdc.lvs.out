@@ -1,0 +1,679 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Cell sky130_fd_sc_hd__nand2_1 (1) disconnected node: VNB
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8 **Mismatch**             |Number of nets: 9 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+
+---------------------------------------------------------------------------------------
+Net: VNB                                   |Net: dummy_8                               
+  sky130_fd_pr__nfet_01v8/4 = 2            |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_9                               
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits sky130_fd_sc_hd__nand2_1 sky130_fd_sc_hd__nand2_1
+
+Cell sky130_fd_sc_hd__inv_8 (1) disconnected node: VNB
+Class sky130_fd_sc_hd__inv_8 (0):  Merged 14 parallel devices.
+Class sky130_fd_sc_hd__inv_8 (1):  Merged 14 parallel devices.
+Cell sky130_fd_sc_hd__inv_8 (1) disconnected node: VNB
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_8          |Circuit 2: sky130_fd_sc_hd__inv_8          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (8->1)         |sky130_fd_pr__pfet_01v8_hvt (8->1)         
+sky130_fd_pr__nfet_01v8 (8->1)             |sky130_fd_pr__nfet_01v8 (8->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_8          |Circuit 2: sky130_fd_sc_hd__inv_8          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |(no pin, node is dummy_6)                  
+(no matching pin)                          |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for sky130_fd_sc_hd__inv_8 and sky130_fd_sc_hd__inv_8 altered to match.
+Device classes sky130_fd_sc_hd__inv_8 and sky130_fd_sc_hd__inv_8 are equivalent.
+  Flattening non-matched subcircuits sky130_fd_sc_hd__inv_8 sky130_fd_sc_hd__inv_8
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_R8XU9D in circuit phase_detector (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TGNW9T in circuit phase_detector (0)(4 instances)
+
+Subcircuit summary:
+Circuit 1: phase_detector                  |Circuit 2: phase_detector                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (6)                |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
+sky130_fd_pr__pfet_01v8_hvt (4)            |sky130_fd_pr__pfet_01v8_hvt (4)            
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 14 **Mismatch**            |Number of nets: 28 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: phase_detector                  |Circuit 2: phase_detector                  
+
+---------------------------------------------------------------------------------------
+Net: VDDA                                  |Net: VSSA                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+  sky130_fd_pr__pfet_01v8/4 = 6            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/4 = 4        |                                           
+                                           |                                           
+(no matching net)                          |Net: dummy_13                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_15                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_14                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_16                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_17                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_18                              
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_19                              
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_21                              
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_20                              
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: dummy_22                              
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__nand2_1:1/dummy_8    
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__nand2_1:1/dummy_9    
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__nand2_1:2/dummy_8    
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__nand2_1:2/dummy_9    
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: OUT                                   |Net: OUT                                   
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+                                           |                                           
+Net: OUTN                                  |Net: OUTN                                  
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSSA                                  |Net: VDDA                                  
+  sky130_fd_pr__nfet_01v8/4 = 8            |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__pfet_01v8_hvt/4 = 4        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: sky130_fd_sc_hd__nand2_1_1/A          |Net: net5                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: sky130_fd_sc_hd__nand2_1_0/B          |Net: net3                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /sky130_fd_sc_hd__nand2_1_1/a_113_47# |Net: sky130_fd_sc_hd__nand2_1:2/a_113_47#  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /sky130_fd_sc_hd__nand2_1_0/a_113_47# |Net: sky130_fd_sc_hd__nand2_1:1/a_113_47#  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: m1_1302_412#                          |Net: net6                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: m1_n814_412#                          |Net: net4                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: m1_1443_1466#                         |Net: net2                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: m1_n955_1466#                         |Net: net1                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: INP                                   |Net: INP                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: INN                                   |Net: INN                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: phase_detector                  |Circuit 2: phase_detector                  
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__nand2_1_1/sky13 |Instance: sky130_fd_sc_hd__nand2_1:2/sky13 
+  (1,3) = (18,5)                           |  (1,3) = (12,5)                           
+  2 = 5                                    |  2 = 5                                    
+  4 = 18                                   |  4 = 12                                   
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_0/sky13 |Instance: sky130_fd_sc_hd__nand2_1:1/sky13 
+  (1,3) = (18,5)                           |  (1,3) = (12,5)                           
+  2 = 5                                    |  2 = 5                                    
+  4 = 18                                   |  4 = 12                                   
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_1/sky13 |Instance: sky130_fd_sc_hd__nand2_1:2/sky13 
+  (1,3) = (18,5)                           |  (1,3) = (12,5)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  4 = 12                                   
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_0/sky13 |Instance: sky130_fd_sc_hd__nand2_1:1/sky13 
+  (1,3) = (18,5)                           |  (1,3) = (12,5)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  4 = 12                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8_TGNW9T:X |Instance: sky130_fd_pr__nfet_01v8:M10      
+  (1,3) = (12,2)                           |  (1,3) = (4,2)                            
+  2 = 3                                    |  2 = 3                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_TGNW9T:X |Instance: sky130_fd_pr__nfet_01v8:M7       
+  (1,3) = (12,2)                           |  (1,3) = (4,2)                            
+  2 = 3                                    |  2 = 3                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_1/sky13 |Instance: sky130_fd_pr__nfet_01v8:M9       
+  (1,3) = (12,2)                           |  (1,3) = (7,2)                            
+  2 = 5                                    |  2 = 7                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_1/sky13 |Instance: sky130_fd_pr__nfet_01v8:M6       
+  (1,3) = (5,2)                            |  (1,3) = (7,2)                            
+  2 = 7                                    |  2 = 7                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_0/sky13 |Instance: sky130_fd_sc_hd__nand2_1:2/sky13 
+  (1,3) = (12,2)                           |  (1,3) = (5,2)                            
+  2 = 7                                    |  2 = 7                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1_0/sky13 |Instance: sky130_fd_sc_hd__nand2_1:2/sky13 
+  (1,3) = (5,2)                            |  (1,3) = (4,2)                            
+  2 = 5                                    |  2 = 5                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_TGNW9T:X |Instance: sky130_fd_sc_hd__nand2_1:1/sky13 
+  (1,3) = (7,2)                            |  (1,3) = (5,2)                            
+  2 = 7                                    |  2 = 5                                    
+  4 = 12                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_TGNW9T:X |Instance: sky130_fd_sc_hd__nand2_1:1/sky13 
+  (1,3) = (7,2)                            |  (1,3) = (4,2)                            
+  2 = 7                                    |  2 = 7                                    
+  4 = 12                                   |  proxy4 = 1                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8_R8XU9D:X |Instance: sky130_fd_pr__pfet_01v8:M8       
+  (1,3) = (18,7)                           |  (1,3) = (12,7)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_R8XU9D:X |Instance: sky130_fd_pr__pfet_01v8:M5       
+  (1,3) = (18,7)                           |  (1,3) = (12,7)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_R8XU9D:X |Instance: sky130_fd_pr__pfet_01v8:M3       
+  (1,3) = (18,2)                           |  (1,3) = (12,2)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_R8XU9D:X |Instance: sky130_fd_pr__pfet_01v8:M1       
+  (1,3) = (18,2)                           |  (1,3) = (12,2)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 18                                   |  proxy4 = 1                               
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits phase_detector phase_detector
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_NZTZAV in circuit delay_element (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_PHPD3W in circuit delay_element (0)(3 instances)
+
+Subcircuit summary:
+Circuit 1: delay_element                   |Circuit 2: delay_element                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (3)            |sky130_fd_pr__pfet_01v8_lvt (3)            
+sky130_fd_pr__nfet_01v8_lvt (3)            |sky130_fd_pr__nfet_01v8_lvt (3)            
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: delay_element                   |Circuit 2: delay_element                   
+-------------------------------------------|-------------------------------------------
+vip                                        |VIP                                        
+vin                                        |VIN                                        
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
+in                                         |IN                                         
+out                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes delay_element and delay_element are equivalent.
+
+Subcircuit summary:
+Circuit 1: tdc                             |Circuit 2: tdc                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (20->6)        |sky130_fd_pr__pfet_01v8_hvt (20->6)        
+sky130_fd_pr__nfet_01v8 (24->10)           |sky130_fd_pr__nfet_01v8 (24->10)           
+sky130_fd_pr__pfet_01v8 (6)                |sky130_fd_pr__pfet_01v8 (6)                
+delay_element (2)                          |delay_element (2)                          
+Number of devices: 24                      |Number of devices: 24                      
+Number of nets: 19 **Mismatch**            |Number of nets: 35 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: tdc                             |Circuit 2: tdc                             
+
+---------------------------------------------------------------------------------------
+Net: vdda                                  |Net: vssa                                  
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 6    |  sky130_fd_pr__nfet_01v8/(1|3) = 6        
+  sky130_fd_pr__pfet_01v8_hvt/4 = 6        |  delay_element/VSS = 2                    
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/4 = 6            |                                           
+  delay_element/vdd = 2                    |                                           
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__inv_8:4/dummy_6      
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: sky130_fd_sc_hd__inv_8:5/dummy_6      
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_13             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_15             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_14             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_16             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_17             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_18             
+                                           |  sky130_fd_pr__pfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_19             
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_21             
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_20             
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/dummy_22             
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+                                           |                                           
+(no matching net)                          |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /phase_detector_0/sky130_fd_sc_hd__na |Net: phase_detector:1/net5                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: /phase_detector_0/sky130_fd_sc_hd__na |Net: phase_detector:1/net3                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /phase_detector_0//sky130_fd_sc_hd__n |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /phase_detector_0//sky130_fd_sc_hd__n |Net: phase_detector:1/sky130_fd_sc_hd__nan 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /phase_detector_0/m1_1302_412#        |Net: phase_detector:1/net6                 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /phase_detector_0/m1_n814_412#        |Net: phase_detector:1/net4                 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /phase_detector_0/m1_1443_1466#       |Net: phase_detector:1/net2                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: /phase_detector_0/m1_n955_1466#       |Net: phase_detector:1/net1                 
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: vinn                                  |Net: vinn                                  
+  delay_element/vin = 1                    |  delay_element/VIN = 1                    
+  delay_element/vip = 1                    |  delay_element/VIP = 1                    
+                                           |                                           
+Net: vinp                                  |Net: vinp                                  
+  delay_element/vip = 1                    |  delay_element/VIP = 1                    
+  delay_element/vin = 1                    |  delay_element/VIN = 1                    
+                                           |                                           
+Net: start                                 |Net: start                                 
+  delay_element/in = 2                     |  delay_element/IN = 2                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: outn                                  |Net: outn                                  
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: outp                                  |Net: outp                                  
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+                                           |                                           
+Net: phase_detector_0/INP                  |Net: inn                                   
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: phase_detector_0/INN                  |Net: inp                                   
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vssa                                  |Net: vdda                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 6        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 6    
+  sky130_fd_pr__nfet_01v8/4 = 10           |  sky130_fd_pr__pfet_01v8_hvt/4 = 6        
+  delay_element/vss = 2                    |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
+                                           |  delay_element/VDD = 2                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: delay_element_1/out                   |Net: net2                                  
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  delay_element/out = 1                    |  delay_element/OUT = 1                    
+                                           |                                           
+Net: delay_element_0/out                   |Net: net1                                  
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+  delay_element/out = 1                    |  delay_element/OUT = 1                    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: tdc                             |Circuit 2: tdc                             
+
+---------------------------------------------------------------------------------------
+Instance: delay_element_1                  |Instance: delay_element:3                  
+  vip = 2                                  |  VIP = 2                                  
+  in = 2                                   |  IN = 2                                   
+  vin = 2                                  |  VIN = 2                                  
+  out = 3                                  |  OUT = 3                                  
+  vdd = 24                                 |  VDD = 18                                 
+  vss = 18                                 |  VSS = 8                                  
+                                           |                                           
+Instance: delay_element_0                  |Instance: delay_element:2                  
+  vip = 2                                  |  VIP = 2                                  
+  in = 2                                   |  IN = 2                                   
+  vin = 2                                  |  VIN = 2                                  
+  out = 3                                  |  OUT = 3                                  
+  vdd = 24                                 |  VDD = 18                                 
+  vss = 18                                 |  VSS = 8                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: phase_detector_0/sky130_fd_pr__p |Instance: phase_detector:1/sky130_fd_pr__p 
+  (1,3) = (24,7)                           |  (1,3) = (18,7)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 24                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__p |Instance: phase_detector:1/sky130_fd_pr__p 
+  (1,3) = (24,7)                           |  (1,3) = (18,7)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 24                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__p |Instance: phase_detector:1/sky130_fd_pr__p 
+  (1,3) = (24,2)                           |  (1,3) = (18,2)                           
+  2 = 5                                    |  2 = 5                                    
+  4 = 24                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__p |Instance: phase_detector:1/sky130_fd_pr__p 
+  (1,3) = (24,2)                           |  (1,3) = (18,2)                           
+  2 = 5                                    |  2 = 5                                    
+  4 = 24                                   |  proxy4 = 1                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: phase_detector_0/sky130_fd_pr__n |Instance: sky130_fd_sc_hd__inv_8:5/sky130_ 
+  (1,3) = (18,2)                           |  (1,3) = (8,5)                            
+  2 = 5                                    |  2 = 3                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: sky130_fd_sc_hd__inv_8:4/sky130_ 
+  (1,3) = (18,2)                           |  (1,3) = (8,5)                            
+  2 = 5                                    |  2 = 3                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__n |Instance: phase_detector:1/sky130_fd_pr__n 
+  (1,3) = (18,2)                           |  (1,3) = (8,2)                            
+  2 = 5                                    |  2 = 5                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: phase_detector:1/sky130_fd_pr__n 
+  (1,3) = (5,2)                            |  (1,3) = (8,2)                            
+  2 = 7                                    |  2 = 5                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (18,2)                           |  (1,3) = (8,2)                            
+  2 = 7                                    |  2 = 5                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: phase_detector:1/sky130_fd_pr__n 
+  (1,3) = (5,2)                            |  (1,3) = (7,2)                            
+  2 = 5                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__n |Instance: phase_detector:1/sky130_fd_pr__n 
+  (1,3) = (7,2)                            |  (1,3) = (7,2)                            
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: phase_detector_0/sky130_fd_pr__n |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (7,2)                            |  (1,3) = (5,2)                            
+  2 = 7                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_8_1/sky130_ |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (18,5)                           |  (1,3) = (5,2)                            
+  2 = 3                                    |  2 = 5                                    
+  4 = 18                                   |  proxy4 = 1                               
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_8_0/sky130_ |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (18,5)                           |  (1,3) = (8,2)                            
+  2 = 3                                    |  2 = 7                                    
+  4 = 18                                   |  proxy4 = 1                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: sky130_fd_sc_hd__inv_8:5/sky130_ 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 5                                    |  2 = 3                                    
+  4 = 24                                   |  4 = 18                                   
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: sky130_fd_sc_hd__inv_8:4/sky130_ 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 5                                    |  2 = 3                                    
+  4 = 24                                   |  4 = 18                                   
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 7                                    |  2 = 5                                    
+  4 = 24                                   |  4 = 18                                   
+                                           |                                           
+Instance: phase_detector_0//sky130_fd_sc_h |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 7                                    |  2 = 5                                    
+  4 = 24                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_8_1/sky130_ |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 3                                    |  2 = 7                                    
+  4 = 24                                   |  4 = 18                                   
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_8_0/sky130_ |Instance: phase_detector:1/sky130_fd_sc_hd 
+  (1,3) = (24,5)                           |  (1,3) = (18,5)                           
+  2 = 3                                    |  2 = 7                                    
+  4 = 24                                   |  4 = 18                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: tdc                             |Circuit 2: tdc                             
+-------------------------------------------|-------------------------------------------
+vdda                                       |vssa **Mismatch**                          
+vinn                                       |vinn                                       
+vinp                                       |vinp                                       
+start                                      |start                                      
+outn                                       |outn                                       
+outp                                       |outp                                       
+vssa                                       |vdda **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for tdc and tdc altered to match.
+Device classes tdc and tdc are equivalent.
+
+Final result: Top level cell failed pin matching.

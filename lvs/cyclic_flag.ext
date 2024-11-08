@@ -1,4 +1,4 @@
-timestamp 1730870077
+timestamp 1730845130
 version 8.3
 tech sky130A
 style ngspice()
@@ -51,15 +51,17 @@ merge "a_10846_1702#" "flip_flop_5_1/x1/VGND"
 merge "flip_flop_5_1/x1/VGND" "flip_flop_5_0/x4/VGND"
 merge "flip_flop_5_0/x4/VGND" "flip_flop_5_1/x2/VGND"
 merge "flip_flop_5_1/x2/VGND" "flip_flop_5_0/x3/VGND"
-merge "flip_flop_5_0/x3/VGND" "flip_flop_5_1/x3/VGND"
-merge "flip_flop_5_1/x3/VGND" "flip_flop_5_0/x2/VGND"
-merge "flip_flop_5_0/x2/VGND" "flip_flop_5_1/x4/VGND"
+merge "flip_flop_5_0/x3/VGND" "flip_flop_5_0/x2/VGND"
+merge "flip_flop_5_0/x2/VGND" "flip_flop_5_1/x3/VGND"
+merge "flip_flop_5_1/x3/VGND" "flip_flop_5_1/x4/VGND"
 merge "flip_flop_5_1/x4/VGND" "buf_0/x5/VGND"
 merge "buf_0/x5/VGND" "VSSD"
 merge "VSSD" "flip_flop_5_0/x1/VGND"
 merge "flip_flop_5_0/x1/VGND" "flip_flop_5_1/x6/VGND"
+merge "flip_flop_5_0/x4/Q" "CF[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/x1/RESET_B" "flip_flop_5_1/x6/RESET_B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/x6/RESET_B" "m2_1612_1581#"
+merge "flip_flop_5_0/x2/Q" "CF[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "buf_0/x5/X" "FINAL" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "buf_0/x5/VPWR" "flip_flop_5_1/x6/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/x6/VPWR" "VDDD"
@@ -68,20 +70,18 @@ merge "flip_flop_5_0/x6/VPWR" "flip_flop_5_0/x6/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/x6/VPB" "flip_flop_5_1/x1/VPWR"
 merge "flip_flop_5_1/x1/VPWR" "flip_flop_5_1/x1/VPB"
 merge "flip_flop_5_1/x1/VPB" "w_10848_2130#"
-merge "flip_flop_5_0/x3/D" "CF[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_1/x3/Q" "CF[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/D" "EN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_1/x6/D" "CF[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_1/x4/D" "CF[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_1/x2/D" "CF[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_1/x1/Q" "CF[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/x2/CLK" "flip_flop_5_1/x6/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/x6/CLK" "m2_3051_2032#"
-merge "flip_flop_5_0/x6/D" "CF[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/RESET_B" "CLKS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/x6/Q" "buf_0/x5/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "buf_0/x5/A" "CF[9]"
 merge "flip_flop_5_0/x4/D" "CF[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_0/x1/Q" "CF[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "flip_flop_5_1/x4/Q" "CF[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/CLK" "RDY" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/x3/D" "CF[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "flip_flop_5_0/x2/D" "CF[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_0/x6/Q" "flip_flop_5_1/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "flip_flop_5_1/D" "CF[4]"

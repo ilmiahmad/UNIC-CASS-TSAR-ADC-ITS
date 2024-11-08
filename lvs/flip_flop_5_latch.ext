@@ -1,14 +1,14 @@
-timestamp 1730870077
+timestamp 1730845130
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use sky130_fd_sc_hd__dfrtp_2 x6 1 0 7561 0 1 -1566
-use sky130_fd_sc_hd__dfrtp_2 x4 1 0 5629 0 1 -1566
-use sky130_fd_sc_hd__dfrtp_2 x3 1 0 3697 0 1 -1566
-use sky130_fd_sc_hd__dfrtp_2 x2 1 0 1765 0 1 -1566
 use sky130_fd_sc_hd__dfrtp_2 x1 1 0 -167 0 1 -1566
+use sky130_fd_sc_hd__dfrtp_2 x2 1 0 1765 0 1 -1566
+use sky130_fd_sc_hd__dfrtp_2 x3 1 0 3697 0 1 -1566
+use sky130_fd_sc_hd__dfrtp_2 x4 1 0 5629 0 1 -1566
+use sky130_fd_sc_hd__dfrtp_2 x6 1 0 7561 0 1 -1566
 node "m1_1294_n1425#" 0 0 1294 -1425 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n141_n1297#" 0 0 -141 -1297 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_9338_n1144#" 0 0 9338 -1144 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -35,19 +35,19 @@ merge "x4/CLK" "x3/CLK"
 merge "x3/CLK" "x2/CLK"
 merge "x2/CLK" "x1/CLK"
 merge "x1/CLK" "li_n141_n1297#"
-merge "x1/VPWR" "x6/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x6/VPWR" "x4/VPWR"
+merge "x6/VPWR" "x4/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4/VPWR" "x3/VPWR"
 merge "x3/VPWR" "x2/VPWR"
-merge "x1/VPB" "x6/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x6/VPB" "x4/VPB"
+merge "x2/VPWR" "x1/VPWR"
+merge "x6/VPB" "x4/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4/VPB" "x3/VPB"
 merge "x3/VPB" "x2/VPB"
+merge "x2/VPB" "x1/VPB"
 merge "x2/D" "li_2054_n1144#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x1/VGND" "x6/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x6/VGND" "x4/VGND"
+merge "x6/VGND" "x4/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4/VGND" "x3/VGND"
 merge "x3/VGND" "x2/VGND"
+merge "x2/VGND" "x1/VGND"
 merge "x6/RESET_B" "x4/RESET_B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4/RESET_B" "x3/RESET_B"
 merge "x3/RESET_B" "x2/RESET_B"

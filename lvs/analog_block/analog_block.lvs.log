@@ -1,0 +1,1124 @@
+Netgen 1.5.277 compiled on Tue Oct 15 10:26:51 WIB 2024
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
+Creating placeholder cell definition.
+Reading netlist file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+Call to undefined subcircuit cdac_10b
+Creating placeholder cell definition.
+Call to undefined subcircuit tdc
+Creating placeholder cell definition.
+Call to undefined subcircuit sh_bsw_diff
+Creating placeholder cell definition.
+Call to undefined subcircuit single_10b_cdac
+Creating placeholder cell definition.
+Call to undefined subcircuit phase_detector
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__inv_8
+Creating placeholder cell definition.
+Call to undefined subcircuit delay_element
+Creating placeholder cell definition.
+Call to undefined subcircuit sh_bsw-prelay
+Creating placeholder cell definition.
+Call to undefined subcircuit x10b_cap_array
+Creating placeholder cell definition.
+Call to undefined subcircuit cdac_sw_16
+Creating placeholder cell definition.
+Call to undefined subcircuit cdac_sw_8
+Creating placeholder cell definition.
+Call to undefined subcircuit cdac_sw_4
+Creating placeholder cell definition.
+Call to undefined subcircuit cdac_sw_2
+Creating placeholder cell definition.
+Call to undefined subcircuit cdac_sw_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nand2_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
+Creating placeholder cell definition.
+Call to undefined subcircuit ncell_bsw_sw
+Creating placeholder cell definition.
+Call to undefined subcircuit pcell_bsw_dischrg
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_bsw
+Creating placeholder cell definition.
+Call to undefined subcircuit ncell_bsw_dischrg
+Creating placeholder cell definition.
+Call to undefined subcircuit ncell_bsw
+Creating placeholder cell definition.
+Call to undefined subcircuit inv_bsw
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit nooverlap_clk
+Creating placeholder cell definition.
+Call to undefined subcircuit tg_sw_16
+Creating placeholder cell definition.
+Call to undefined subcircuit dac_sw_16
+Creating placeholder cell definition.
+Call to undefined subcircuit tg_sw_8
+Creating placeholder cell definition.
+Call to undefined subcircuit dac_sw_8
+Creating placeholder cell definition.
+Call to undefined subcircuit tg_sw_4
+Creating placeholder cell definition.
+Call to undefined subcircuit dac_sw_4
+Creating placeholder cell definition.
+Call to undefined subcircuit tg_sw_2
+Creating placeholder cell definition.
+Call to undefined subcircuit dac_sw_2
+Creating placeholder cell definition.
+Call to undefined subcircuit tg_sw_1
+Creating placeholder cell definition.
+Call to undefined subcircuit dac_sw_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__inv_4
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nand2_2
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nor2_2
+Creating placeholder cell definition.
+
+Reading setup file /home/ahmadjabar/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__res_generic_po pin end_a == end_b
+No property mult found for device sky130_fd_pr__res_generic_po
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8
+No property ad found for device sky130_fd_pr__nfet_01v8
+No property ps found for device sky130_fd_pr__nfet_01v8
+No property pd found for device sky130_fd_pr__nfet_01v8
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8_lvt pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8_lvt
+No property sa found for device sky130_fd_pr__nfet_01v8_lvt
+No property sb found for device sky130_fd_pr__nfet_01v8_lvt
+No property sd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nf found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__nfet_01v8_lvt
+No property area found for device sky130_fd_pr__nfet_01v8_lvt
+No property perim found for device sky130_fd_pr__nfet_01v8_lvt
+No property topography found for device sky130_fd_pr__nfet_01v8_lvt
+Model sky130_fd_pr__nfet_01v8_lvt pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8_lvt
+No property ad found for device sky130_fd_pr__nfet_01v8_lvt
+No property ps found for device sky130_fd_pr__nfet_01v8_lvt
+No property pd found for device sky130_fd_pr__nfet_01v8_lvt
+No property mult found for device sky130_fd_pr__nfet_01v8_lvt
+No property sa found for device sky130_fd_pr__nfet_01v8_lvt
+No property sb found for device sky130_fd_pr__nfet_01v8_lvt
+No property sd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__nfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__nfet_01v8_lvt
+No property area found for device sky130_fd_pr__nfet_01v8_lvt
+No property perim found for device sky130_fd_pr__nfet_01v8_lvt
+No property topography found for device sky130_fd_pr__nfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8
+No property ad found for device sky130_fd_pr__pfet_01v8
+No property ps found for device sky130_fd_pr__pfet_01v8
+No property pd found for device sky130_fd_pr__pfet_01v8
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8_lvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_lvt
+No property sa found for device sky130_fd_pr__pfet_01v8_lvt
+No property sb found for device sky130_fd_pr__pfet_01v8_lvt
+No property sd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nf found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_lvt
+No property area found for device sky130_fd_pr__pfet_01v8_lvt
+No property perim found for device sky130_fd_pr__pfet_01v8_lvt
+No property topography found for device sky130_fd_pr__pfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8_lvt pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8_lvt
+No property ad found for device sky130_fd_pr__pfet_01v8_lvt
+No property ps found for device sky130_fd_pr__pfet_01v8_lvt
+No property pd found for device sky130_fd_pr__pfet_01v8_lvt
+No property mult found for device sky130_fd_pr__pfet_01v8_lvt
+No property sa found for device sky130_fd_pr__pfet_01v8_lvt
+No property sb found for device sky130_fd_pr__pfet_01v8_lvt
+No property sd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_lvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_lvt
+No property area found for device sky130_fd_pr__pfet_01v8_lvt
+No property perim found for device sky130_fd_pr__pfet_01v8_lvt
+No property topography found for device sky130_fd_pr__pfet_01v8_lvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8_hvt
+No property ad found for device sky130_fd_pr__pfet_01v8_hvt
+No property ps found for device sky130_fd_pr__pfet_01v8_hvt
+No property pd found for device sky130_fd_pr__pfet_01v8_hvt
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+No property value found for device sky130_fd_pr__diode_pw2nd_05v5
+No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
+No property perim found for device sky130_fd_pr__diode_pw2nd_05v5
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.lvs.out
+Logging to file "/home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.lvs.out" enabled
+Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__nand2_1'
+Circuit sky130_fd_sc_hd__nand2_1 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__nand2_1'
+Circuit sky130_fd_sc_hd__nand2_1 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   2
+Circuit contains 9 nets, and 1 disconnected pin.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 9 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_sc_hd__nand2_1 sky130_fd_sc_hd__nand2_1
+
+Flattening instances of sky130_fd_sc_hd__nand2_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of sky130_fd_sc_hd__nand2_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__inv_1'
+Circuit sky130_fd_sc_hd__inv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__inv_1'
+Circuit sky130_fd_sc_hd__inv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 6 nets, and 1 disconnected pin.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1
+
+Flattening instances of sky130_fd_sc_hd__inv_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of sky130_fd_sc_hd__inv_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__inv_4'
+Circuit sky130_fd_sc_hd__inv_4 contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   4
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__inv_4'
+Circuit sky130_fd_sc_hd__inv_4 contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   4
+Circuit contains 9 nets, and 1 disconnected pin.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__inv_4'
+Circuit sky130_fd_sc_hd__inv_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__inv_4'
+Circuit sky130_fd_sc_hd__inv_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 9 nets, and 1 disconnected pin.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits sky130_fd_sc_hd__inv_4 sky130_fd_sc_hd__inv_4
+
+Flattening instances of sky130_fd_sc_hd__inv_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of sky130_fd_sc_hd__inv_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__inv_8'
+Circuit sky130_fd_sc_hd__inv_8 contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   8
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__inv_8'
+Circuit sky130_fd_sc_hd__inv_8 contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   8
+Circuit contains 13 nets, and 1 disconnected pin.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__inv_8'
+Circuit sky130_fd_sc_hd__inv_8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__inv_8'
+Circuit sky130_fd_sc_hd__inv_8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 13 nets, and 1 disconnected pin.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits sky130_fd_sc_hd__inv_8 sky130_fd_sc_hd__inv_8
+
+Flattening instances of sky130_fd_sc_hd__inv_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of sky130_fd_sc_hd__inv_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+Circuit sky130_fd_pr__pfet_01v8_lvt contains no devices.
+Circuit sky130_fd_pr__nfet_01v8_lvt contains no devices.
+
+Contents of circuit 1:  Circuit: 'nooverlap_clk'
+Circuit nooverlap_clk contains 30 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  15
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+Circuit contains 18 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'nooverlap_clk'
+Circuit nooverlap_clk contains 30 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  15
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+Circuit contains 78 nets.
+
+Circuit 1 contains 30 devices, Circuit 2 contains 30 devices.
+Circuit 1 contains 18 nets,    Circuit 2 contains 33 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits nooverlap_clk nooverlap_clk
+
+Flattening instances of nooverlap_clk in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of nooverlap_clk in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tg_sw_4'
+Circuit tg_sw_4 contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_4'
+Circuit tg_sw_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'tg_sw_4'
+Circuit tg_sw_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_4'
+Circuit tg_sw_4 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits tg_sw_4 tg_sw_4
+
+Flattening instances of tg_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tg_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'dac_sw_4'
+Circuit dac_sw_4 contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_4'
+Circuit dac_sw_4 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'dac_sw_4'
+Circuit dac_sw_4 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_4'
+Circuit dac_sw_4 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 12 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits dac_sw_4 dac_sw_4
+
+Flattening instances of dac_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of dac_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tg_sw_16'
+Circuit tg_sw_16 contains 32 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+  Class: sky130_fd_pr__pfet_01v8 instances:  16
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_16'
+Circuit tg_sw_16 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'tg_sw_16'
+Circuit tg_sw_16 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_16'
+Circuit tg_sw_16 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits tg_sw_16 tg_sw_16
+
+Flattening instances of tg_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tg_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'dac_sw_16'
+Circuit dac_sw_16 contains 64 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  32
+  Class: sky130_fd_pr__pfet_01v8 instances:  32
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_16'
+Circuit dac_sw_16 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'dac_sw_16'
+Circuit dac_sw_16 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_16'
+Circuit dac_sw_16 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 12 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits dac_sw_16 dac_sw_16
+
+Flattening instances of dac_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of dac_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tg_sw_2'
+Circuit tg_sw_2 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_2'
+Circuit tg_sw_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'tg_sw_2'
+Circuit tg_sw_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_2'
+Circuit tg_sw_2 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits tg_sw_2 tg_sw_2
+
+Flattening instances of tg_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tg_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'dac_sw_2'
+Circuit dac_sw_2 contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_2'
+Circuit dac_sw_2 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'dac_sw_2'
+Circuit dac_sw_2 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_2'
+Circuit dac_sw_2 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 12 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits dac_sw_2 dac_sw_2
+
+Flattening instances of dac_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of dac_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tg_sw_8'
+Circuit tg_sw_8 contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_8'
+Circuit tg_sw_8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'tg_sw_8'
+Circuit tg_sw_8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_8'
+Circuit tg_sw_8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits tg_sw_8 tg_sw_8
+
+Flattening instances of tg_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tg_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'dac_sw_8'
+Circuit dac_sw_8 contains 32 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+  Class: sky130_fd_pr__pfet_01v8 instances:  16
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_8'
+Circuit dac_sw_8 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'dac_sw_8'
+Circuit dac_sw_8 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_8'
+Circuit dac_sw_8 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 12 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits dac_sw_8 dac_sw_8
+
+Flattening instances of dac_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of dac_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tg_sw_1'
+Circuit tg_sw_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'tg_sw_1'
+Circuit tg_sw_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits tg_sw_1 tg_sw_1
+
+Flattening instances of tg_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tg_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'dac_sw_1'
+Circuit dac_sw_1 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'dac_sw_1'
+Circuit dac_sw_1 contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 12 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 12 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits dac_sw_1 dac_sw_1
+
+Flattening instances of dac_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of dac_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'inv_bsw'
+Circuit inv_bsw contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'inv_bsw'
+Circuit inv_bsw contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 6 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+  Flattening non-matched subcircuits inv_bsw inv_bsw
+
+Flattening instances of inv_bsw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of inv_bsw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'pcell_bsw_dischrg'
+Circuit pcell_bsw_dischrg contains 8 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'pcell_bsw_dischrg'
+Circuit pcell_bsw_dischrg contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   5
+Circuit contains 8 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'pcell_bsw_dischrg'
+Circuit pcell_bsw_dischrg contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'pcell_bsw_dischrg'
+Circuit pcell_bsw_dischrg contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 8 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 5 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits pcell_bsw_dischrg pcell_bsw_dischrg
+
+Flattening instances of pcell_bsw_dischrg in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of pcell_bsw_dischrg in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cap_bsw'
+Circuit cap_bsw contains 4 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   4
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'cap_bsw'
+Circuit cap_bsw contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+Circuit contains 6 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'cap_bsw'
+Circuit cap_bsw contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'cap_bsw'
+Circuit cap_bsw contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+Circuit contains 6 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'ncell_bsw_sw'
+Circuit ncell_bsw_sw contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw_sw'
+Circuit ncell_bsw_sw contains 7 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 14 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'ncell_bsw_sw'
+Circuit ncell_bsw_sw contains 10 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  10
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw_sw'
+Circuit ncell_bsw_sw contains 7 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 14 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 7 devices. *** MISMATCH ***
+Circuit 1 contains 11 nets,    Circuit 2 contains 14 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits ncell_bsw_sw ncell_bsw_sw
+
+Flattening instances of ncell_bsw_sw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of ncell_bsw_sw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'ncell_bsw_dischrg'
+Circuit ncell_bsw_dischrg contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw_dischrg'
+Circuit ncell_bsw_dischrg contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+Circuit contains 9 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'ncell_bsw_dischrg'
+Circuit ncell_bsw_dischrg contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw_dischrg'
+Circuit ncell_bsw_dischrg contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+Circuit contains 9 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 9 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits ncell_bsw_dischrg ncell_bsw_dischrg
+
+Flattening instances of ncell_bsw_dischrg in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of ncell_bsw_dischrg in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'ncell_bsw'
+Circuit ncell_bsw contains 16 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw'
+Circuit ncell_bsw contains 7 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 11 nets, and 1 disconnected pin.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'ncell_bsw'
+Circuit ncell_bsw contains 7 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'ncell_bsw'
+Circuit ncell_bsw contains 7 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 11 nets, and 1 disconnected pin.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 11 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits ncell_bsw ncell_bsw
+
+Flattening instances of ncell_bsw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of ncell_bsw in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cdac_sw_4'
+Circuit cdac_sw_4 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 23 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'cdac_sw_4'
+Circuit cdac_sw_4 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 91 nets.
+
+Circuit 1 contains 36 devices, Circuit 2 contains 36 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 44 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_sw_4 cdac_sw_4
+
+Flattening instances of cdac_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_sw_4 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cdac_sw_16'
+Circuit cdac_sw_16 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 23 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'cdac_sw_16'
+Circuit cdac_sw_16 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 91 nets.
+
+Circuit 1 contains 36 devices, Circuit 2 contains 36 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 44 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_sw_16 cdac_sw_16
+
+Flattening instances of cdac_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_sw_16 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cdac_sw_2'
+Circuit cdac_sw_2 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 24 nets.
+Contents of circuit 2:  Circuit: 'cdac_sw_2'
+Circuit cdac_sw_2 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 91 nets.
+
+Circuit 1 contains 36 devices, Circuit 2 contains 36 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 44 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_sw_2 cdac_sw_2
+
+Flattening instances of cdac_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_sw_2 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'x10b_cap_array'
+Circuit x10b_cap_array contains 1024 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances: 1024
+Circuit contains 12 nets.
+Contents of circuit 2:  Circuit: 'x10b_cap_array'
+Circuit x10b_cap_array contains 11 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:  11
+Circuit contains 12 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'x10b_cap_array'
+Circuit x10b_cap_array contains 11 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:  11
+Circuit contains 12 nets.
+Contents of circuit 2:  Circuit: 'x10b_cap_array'
+Circuit x10b_cap_array contains 11 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:  11
+Circuit contains 12 nets.
+
+Circuit 1 contains 11 devices, Circuit 2 contains 11 devices.
+Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
+
+
+Contents of circuit 1:  Circuit: 'cdac_sw_8'
+Circuit cdac_sw_8 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 24 nets.
+Contents of circuit 2:  Circuit: 'cdac_sw_8'
+Circuit cdac_sw_8 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 91 nets.
+
+Circuit 1 contains 36 devices, Circuit 2 contains 36 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 44 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_sw_8 cdac_sw_8
+
+Flattening instances of cdac_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_sw_8 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cdac_sw_1'
+Circuit cdac_sw_1 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 23 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'cdac_sw_1'
+Circuit cdac_sw_1 contains 36 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 91 nets.
+
+Circuit 1 contains 36 devices, Circuit 2 contains 36 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 44 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_sw_1 cdac_sw_1
+
+Flattening instances of cdac_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_sw_1 in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'phase_detector'
+Circuit phase_detector contains 18 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   4
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'phase_detector'
+Circuit phase_detector contains 18 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   4
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+Circuit contains 28 nets.
+
+Circuit 1 contains 18 devices, Circuit 2 contains 18 devices.
+Circuit 1 contains 14 nets,    Circuit 2 contains 28 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits phase_detector phase_detector
+
+Flattening instances of phase_detector in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of phase_detector in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'delay_element'
+Circuit delay_element contains 6 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   3
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'delay_element'
+Circuit delay_element contains 6 device instances.
+  Class: sky130_fd_pr__nfet_01v8_lvt instances:   3
+  Class: sky130_fd_pr__pfet_01v8_lvt instances:   3
+Circuit contains 9 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'single_10b_cdac'
+Circuit single_10b_cdac contains 722 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 360
+  Class: x10b_cap_array        instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 300
+  Class: sky130_fd_pr__pfet_01v8 instances:  60
+Circuit contains 409 nets.
+Contents of circuit 2:  Circuit: 'single_10b_cdac'
+Circuit single_10b_cdac contains 722 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 360
+  Class: x10b_cap_array        instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 300
+  Class: sky130_fd_pr__pfet_01v8 instances:  60
+Circuit contains 1755 nets.
+
+Circuit 1 contains 722 devices, Circuit 2 contains 722 devices.
+Circuit 1 contains 395 nets,    Circuit 2 contains 815 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits single_10b_cdac single_10b_cdac
+
+Flattening instances of single_10b_cdac in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of single_10b_cdac in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'tdc'
+Circuit tdc contains 24 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  10
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+Circuit contains 19 nets.
+Contents of circuit 2:  Circuit: 'tdc'
+Circuit tdc contains 24 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:  10
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   6
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+Circuit contains 51 nets.
+
+Circuit 1 contains 24 devices, Circuit 2 contains 24 devices.
+Circuit 1 contains 19 nets,    Circuit 2 contains 35 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits tdc tdc
+
+Flattening instances of tdc in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of tdc in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'cdac_10b'
+Circuit cdac_10b contains 1444 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 720
+  Class: x10b_cap_array        instances:   4
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 600
+  Class: sky130_fd_pr__pfet_01v8 instances: 120
+Circuit contains 783 nets.
+Contents of circuit 2:  Circuit: 'cdac_10b'
+Circuit cdac_10b contains 1444 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 720
+  Class: x10b_cap_array        instances:   4
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 600
+  Class: sky130_fd_pr__pfet_01v8 instances: 120
+Circuit contains 3475 nets.
+
+Circuit 1 contains 1444 devices, Circuit 2 contains 1444 devices.
+Circuit 1 contains 755 nets,    Circuit 2 contains 1595 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits cdac_10b cdac_10b
+
+Flattening instances of cdac_10b in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.ext.spc
+Flattening instances of cdac_10b in file /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.sch.spc
+
+Contents of circuit 1:  Circuit: 'analog_block'
+Circuit analog_block contains 1520 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 774
+  Class: x10b_cap_array        instances:   4
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 606
+  Class: sky130_fd_pr__pfet_01v8 instances: 132
+  Class: cap_bsw               instances:   2
+Circuit contains 825 nets.
+Contents of circuit 2:  Circuit: 'analog_block'
+Circuit analog_block contains 1514 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 768
+  Class: x10b_cap_array        instances:   4
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 606
+  Class: sky130_fd_pr__pfet_01v8 instances: 132
+  Class: cap_bsw               instances:   2
+Circuit contains 3596 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'analog_block'
+Circuit analog_block contains 1515 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 769
+  Class: x10b_cap_array        instances:   4
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 606
+  Class: sky130_fd_pr__pfet_01v8 instances: 132
+  Class: cap_bsw               instances:   2
+Circuit contains 825 nets.
+Contents of circuit 2:  Circuit: 'analog_block'
+Circuit analog_block contains 1510 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 764
+  Class: x10b_cap_array        instances:   4
+  Class: delay_element         instances:   2
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 606
+  Class: sky130_fd_pr__pfet_01v8 instances: 132
+  Class: cap_bsw               instances:   2
+Circuit contains 3596 nets.
+
+Circuit 1 contains 1515 devices, Circuit 2 contains 1510 devices. *** MISMATCH ***
+Circuit 1 contains 795 nets,    Circuit 2 contains 1686 nets. *** MISMATCH ***
+
+
+Final result: 
+Top level cell failed pin matching.
+
+Logging to file "/home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/lvs/analog_block/analog_block.lvs.out" disabled
+LVS Done.

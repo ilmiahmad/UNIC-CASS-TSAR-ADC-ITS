@@ -31,4 +31,4 @@ dac_out                                    |dac_out
 Cell pin lists are equivalent.
 Device classes cdac_sw_1 and cdac_sw_1 are equivalent.
 
-Final result: Verify:  cell /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/mag/cdac_sw_1.sch.spc has no elements and/or nodes.  Not checked.
+Final result: Verify:  cell /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/mag/cdac_sw_1.sch.spc has no elements and/or nodes.  Not checked.
