@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Cache PDK
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -36,7 +36,7 @@ jobs:
           tar -cf /tmp/pdk.tar -C $PDK_ROOT .
 
       - name: Upload PDK Tarball
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pdk-tarball
           path: /tmp/pdk.tar
@@ -49,7 +49,7 @@ jobs:
         pdk: ["sky130A", "sky130B"]
     needs: [build-pdk]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -65,7 +65,7 @@ jobs:
 
 
       - name: Download PDK Tarball
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: pdk-tarball
           path: /tmp
@@ -100,7 +100,7 @@ jobs:
 
       - name: Upload Failure Logs
         if: failure()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: error
           path: |
