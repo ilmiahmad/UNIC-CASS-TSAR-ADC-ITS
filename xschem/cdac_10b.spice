@@ -1,4 +1,4 @@
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_10b.sch
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_10b.sch
 **.subckt cdac_10b vdref cf[0],cf[1],cf[2],cf[3],cf[4],cf[5],cf[6],cf[7],cf[8],cf[9]
 *+ swp_in[0],swp_in[1],swp_in[2],swp_in[3],swp_in[4],swp_in[5],swp_in[6],swp_in[7],swp_in[8],swp_in[9] swn_in[0],swn_in[1],swn_in[2],swn_in[3],swn_in[4],swn_in[5],swn_in[6],swn_in[7],swn_in[8],swn_in[9] vcm vsref vcp vcn
 *.ipin vdref
@@ -18,18 +18,18 @@ x1 vdref cf[0] cf[1] cf[2] cf[3] cf[4] cf[5] cf[6] cf[7] cf[8] cf[9] swp_in[0] s
 **.ends
 
 * expanding   symbol:  single_10b_cdac.sym # of pins=8
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/single_10b_cdac.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/single_10b_cdac.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/single_10b_cdac.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/single_10b_cdac.sch
 .subckt single_10b_cdac vdref cf[0] cf[1] cf[2] cf[3] cf[4] cf[5] cf[6] cf[7] cf[8] cf[9] swp_in[0] swp_in[1] swp_in[2] swp_in[3]
 + swp_in[4] swp_in[5] swp_in[6] swp_in[7] swp_in[8] swp_in[9] swn_in[0] swn_in[1] swn_in[2] swn_in[3] swn_in[4] swn_in[5] swn_in[6] swn_in[7]
-+ swn_in[8] swn_in[9] vcm vsref vcn vcp
++ swn_in[8] swn_in[9] vcm vsref VCN VCP
 *.ipin vdref
 *.ipin cf[0],cf[1],cf[2],cf[3],cf[4],cf[5],cf[6],cf[7],cf[8],cf[9]
 *.ipin swp_in[0],swp_in[1],swp_in[2],swp_in[3],swp_in[4],swp_in[5],swp_in[6],swp_in[7],swp_in[8],swp_in[9]
 *.ipin vcm
 *.ipin vsref
-*.iopin vcp
-*.iopin vcn
+*.iopin VCP
+*.iopin VCN
 *.ipin swn_in[0],swn_in[1],swn_in[2],swn_in[3],swn_in[4],swn_in[5],swn_in[6],swn_in[7],swn_in[8],swn_in[9]
 x2 vcm swn[0] swn[1] swn[2] swn[3] swn[4] swn[5] swn[6] swn[7] swn[8] swn[9] vcn x10b_cap_array
 x3[0] vdref cf[0] swn_in[0] vcm vsref swn[0] cdac_sw_16
@@ -57,8 +57,8 @@ x1[9] vdref cf[9] swp_in[9] vcm vsref swp[9] cdac_sw_1
 
 
 * expanding   symbol:  x10b_cap_array.sym # of pins=3
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/x10b_cap_array.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/x10b_cap_array.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/x10b_cap_array.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/x10b_cap_array.sch
 .subckt x10b_cap_array vcm sw[0] sw[1] sw[2] sw[3] sw[4] sw[5] sw[6] sw[7] sw[8] sw[9] vc
 *.ipin sw[0],sw[1],sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9]
 *.ipin vcm
@@ -78,8 +78,8 @@ XC11 vc vcm sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 
 
 * expanding   symbol:  cdac_sw_16.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_16.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_16.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_16.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_16.sch
 .subckt cdac_sw_16 vdda cki bi vcm vssa dac_out
 *.ipin vdda
 *.ipin cki
@@ -94,8 +94,8 @@ x3 vdda bi clk0 clkb0 vssa dac_out dac_sw_16
 
 
 * expanding   symbol:  cdac_sw_8.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_8.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_8.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_8.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_8.sch
 .subckt cdac_sw_8 vdda cki bi vcm vssa dac_out
 *.ipin vdda
 *.ipin cki
@@ -110,8 +110,8 @@ x3 vdda bi clk0 clkb0 vssa dac_out dac_sw_8
 
 
 * expanding   symbol:  cdac_sw_4.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_4.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_4.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_4.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_4.sch
 .subckt cdac_sw_4 vdda cki bi vcm vssa dac_out
 *.ipin vdda
 *.ipin cki
@@ -126,8 +126,8 @@ x3 vdda bi clk0 clkb0 vssa dac_out dac_sw_4
 
 
 * expanding   symbol:  cdac_sw_2.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_2.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_2.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_2.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_2.sch
 .subckt cdac_sw_2 vdda cki bi vcm vssa dac_out
 *.ipin vdda
 *.ipin cki
@@ -142,8 +142,8 @@ x3 vdda bi clk0 clkb0 vssa dac_out dac_sw_2
 
 
 * expanding   symbol:  cdac_sw_1.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_1.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_1.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_1.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/cdac_sw_1.sch
 .subckt cdac_sw_1 vdda cki bi vcm vssa dac_out
 *.ipin vdda
 *.ipin cki
@@ -158,8 +158,8 @@ x3 vdda bi clk0 clkb0 vssa dac_out dac_sw_1
 
 
 * expanding   symbol:  nooverlap_clk.sym # of pins=7
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/nooverlap_clk.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/nooverlap_clk.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/nooverlap_clk.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/nooverlap_clk.sch
 .subckt nooverlap_clk vdda in vssa clk0 clkb0 clk1 clkb1
 *.ipin vdda
 *.ipin in
@@ -185,8 +185,8 @@ x13 clkb1 vssa vssa vdda vdda clk1 sky130_fd_sc_hd__inv_8
 
 
 * expanding   symbol:  tg_sw_16.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_16.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_16.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_16.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_16.sch
 .subckt tg_sw_16 vdda swp swn vssa in out
 *.ipin vdda
 *.ipin swp
@@ -202,8 +202,8 @@ XM2 in swn out vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  dac_sw_16.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_16.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_16.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_16.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_16.sch
 .subckt dac_sw_16 vdda in ck ckb vssa out
 *.ipin vdda
 *.ipin in
@@ -223,8 +223,8 @@ XM4 net2 in vssa vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  tg_sw_8.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_8.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_8.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_8.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_8.sch
 .subckt tg_sw_8 vdda swp swn vssa in out
 *.ipin vdda
 *.ipin swp
@@ -240,8 +240,8 @@ XM2 in swn out vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  dac_sw_8.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_8.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_8.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_8.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_8.sch
 .subckt dac_sw_8 vdda in ck ckb vssa out
 *.ipin vdda
 *.ipin in
@@ -261,8 +261,8 @@ XM4 net2 in vssa vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  tg_sw_4.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_4.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_4.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_4.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_4.sch
 .subckt tg_sw_4 vdda swp swn vssa in out
 *.ipin vdda
 *.ipin swp
@@ -278,8 +278,8 @@ XM2 in swn out vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  dac_sw_4.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_4.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_4.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_4.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_4.sch
 .subckt dac_sw_4 vdda in ck ckb vssa out
 *.ipin vdda
 *.ipin in
@@ -299,8 +299,8 @@ XM4 net2 in vssa vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  tg_sw_2.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_2.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_2.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_2.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_2.sch
 .subckt tg_sw_2 vdda swp swn vssa in out
 *.ipin vdda
 *.ipin swp
@@ -316,8 +316,8 @@ XM2 in swn out vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  dac_sw_2.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_2.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_2.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_2.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_2.sch
 .subckt dac_sw_2 vdda in ck ckb vssa out
 *.ipin vdda
 *.ipin in
@@ -337,8 +337,8 @@ XM4 net2 in vssa vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  tg_sw_1.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_1.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_1.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_1.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tg_sw_1.sch
 .subckt tg_sw_1 vdda swp swn vssa in out
 *.ipin vdda
 *.ipin swp
@@ -354,8 +354,8 @@ XM2 in swn out vssa sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  dac_sw_1.sym # of pins=6
-** sym_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_1.sym
-** sch_path: /home/mthudaa/Documents/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_1.sch
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_1.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/dac_sw_1.sch
 .subckt dac_sw_1 vdda in ck ckb vssa out
 *.ipin vdda
 *.ipin in

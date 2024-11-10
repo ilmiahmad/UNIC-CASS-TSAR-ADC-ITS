@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1730870077
-use sky130_fd_sc_hd__buf_8  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1730246015
+timestamp 1731145668
+use sky130_fd_sc_hd__buf_8  x5 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1704896540
 transform 1 0 442 0 1 383
 box -19 -24 571 296
 << labels >>

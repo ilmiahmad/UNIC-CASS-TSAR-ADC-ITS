@@ -1,5 +1,5 @@
 {
-	"STD_CELL_LIBRARY": "sky130_fd_sc_hvl",
+	"STD_CELL_LIBRARY": "sky130_fd_sc_hd",
 	"INCLUDE_CONFIGS": [
 		"$LVS_ROOT/tech/$PDK/lvs_config.base.json"
 	],
@@ -21,13 +21,13 @@
 		""
 	],
 	"LVS_SPICE_FILES_TO_FIX": [
-		"$UPRJ_ROOT/xschem/TSAR_ADC.spice"
+		""
 	],
 	"LVS_SPICE_FILES": [
-		""
+		"$UPRJ_ROOT/xschem/user_analog_project_wrapper.spice"
 	],
 	"LVS_VERILOG_FILES": [
 		""
 	],
-	"LAYOUT_FILE": "$UPRJ_ROOT/gds/TSAR_ADC.gds"
+	"LAYOUT_FILE": "$UPRJ_ROOT/gds/user_analog_project_wrapper.gds"
 }

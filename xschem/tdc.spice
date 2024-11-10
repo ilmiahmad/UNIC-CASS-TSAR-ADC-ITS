@@ -1,0 +1,44 @@
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/tdc.sch
+.subckt tdc vdda start vinp vinn vssa outp outn
+*.PININFO vinn:I vinp:I vdda:I vssa:I start:I outp:O outn:O
+x1 vdda inp inn vssa outp outn phase_detector
+x4 net1 vssa vssa vdda vdda inn sky130_fd_sc_hd__inv_8
+x5 net2 vssa vssa vdda vdda inp sky130_fd_sc_hd__inv_8
+x2 start net1 vinp vinn vdda vssa delay_element
+x3 start net2 vinn vinp vdda vssa delay_element
+.ends
+
+* expanding   symbol:  phase_detector.sym # of pins=6
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/phase_detector.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/phase_detector.sch
+.subckt phase_detector VDDA INP INN VSSA OUT OUTN
+*.PININFO VDDA:I INP:I INN:I VSSA:I OUT:O OUTN:O
+x1 OUTN net3 VSSA VSSA VDDA VDDA OUT sky130_fd_sc_hd__nand2_1
+x2 net5 OUT VSSA VSSA VDDA VDDA OUTN sky130_fd_sc_hd__nand2_1
+XM1 net1 INN VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 net3 INP net1 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 net2 INP VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM4 net5 INN net2 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM5 net3 net5 VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM6 net3 net5 net4 sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
+XM7 net4 INP VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
+XM8 net5 net3 VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM9 net5 net3 net6 sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
+XM10 net6 INN VSSA sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  delay_element.sym # of pins=6
+** sym_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/delay_element.sym
+** sch_path: /home/ahmadjabar/UNIC-CASS-TSAR-ADC-ITS/xschem/delay_element.sch
+.subckt delay_element IN OUT VIP VIN VDD VSS
+*.PININFO VDD:I VIN:I IN:I VSS:I OUT:O VIP:I
+XM1 net2 VIP VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=6 nf=1 m=1
+XM2 net1 IN net2 VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=6 nf=1 m=1
+XM3 net1 IN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=15 W=2 nf=1 m=1
+XM6 OUT net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=15 W=6 nf=1 m=1
+XM7 OUT net1 net3 VSS sky130_fd_pr__nfet_01v8_lvt L=15 W=2 nf=1 m=1
+XM8 net3 VIN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=15 W=2 nf=1 m=1
+.ends
+
+.end

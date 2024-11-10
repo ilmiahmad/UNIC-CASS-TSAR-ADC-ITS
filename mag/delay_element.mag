@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731085074
+timestamp 1731173062
 << locali >>
 rect -106 1173 9858 1175
 rect -106 1139 26 1173
@@ -44,7 +44,6 @@ rect 3376 -244 3386 956
 rect 6382 -244 6502 956
 rect -11 -463 39 -244
 rect -71 -563 -61 -463
-rect 39 -563 49 -463
 rect -11 -1037 39 -563
 rect 93 -727 143 -285
 rect 6496 -331 6502 -244
@@ -53,16 +52,16 @@ rect 6536 -244 6656 956
 rect 9662 -244 9761 956
 rect 6536 -331 6542 -244
 rect 6496 -343 6542 -331
-rect 6665 -463 6715 -285
+rect 6665 -448 6715 -285
+rect 6610 -454 6730 -448
 rect 9711 -463 9761 -244
-rect 6606 -563 6616 -463
-rect 6715 -563 6725 -463
 rect 9701 -563 9711 -463
 rect 9811 -563 9821 -463
+rect 6610 -580 6730 -574
 rect 83 -827 93 -727
 rect 193 -827 203 -727
 rect 93 -1005 143 -827
-rect 6665 -1005 6715 -563
+rect 6665 -1005 6715 -580
 rect 9711 -1037 9761 -563
 rect -11 -1437 89 -1037
 rect 3095 -1437 3369 -1037
@@ -83,7 +82,7 @@ rect 3376 1037 6376 1097
 rect 3090 -244 3148 956
 rect 3318 -244 3376 956
 rect -61 -563 39 -463
-rect 6616 -563 6715 -463
+rect 6610 -574 6730 -454
 rect 9711 -563 9811 -463
 rect 93 -827 193 -727
 rect 6375 -1437 6433 -1037
@@ -96,9 +95,13 @@ rect -106 1027 6376 1037
 rect 3090 956 3376 966
 rect 3148 -244 3318 956
 rect 3090 -254 3376 -244
-rect -61 -463 6715 -453
-rect 39 -563 6616 -463
-rect -61 -573 6715 -563
+rect -61 -454 39 -453
+rect 6616 -454 6715 -453
+rect -62 -463 6610 -454
+rect -62 -563 -61 -463
+rect 39 -563 6610 -463
+rect -62 -574 6610 -563
+rect 6730 -574 6736 -454
 rect 9711 -463 9858 -453
 rect 9811 -563 9858 -463
 rect 9711 -573 9858 -563
@@ -136,14 +139,16 @@ timestamp 1729870836
 transform 1 0 8161 0 1 -1237
 box -1696 -410 1696 410
 << labels >>
-flabel metal2 -97 1032 -33 1095 0 FreeSans 32 0 0 0 vip
+flabel metal1 -118 1169 -7 1280 0 FreeSans 800 0 0 0 VDD
+port 0 nsew
+flabel viali -107 -1747 -7 -1647 0 FreeSans 800 0 0 0 VSS
 port 1 nsew
-flabel metal2 -92 -1572 -28 -1509 0 FreeSans 32 0 0 0 vin
+flabel metal2 -42 1027 38 1107 0 FreeSans 800 0 0 0 VIP
 port 3 nsew
-flabel viali -92 -1727 -26 -1665 0 FreeSans 32 0 0 0 vss
-port 7 nsew
-flabel metal2 -87 -815 -22 -739 0 FreeSans 32 0 0 0 in
-port 2 nsew
-flabel metal2 9783 -550 9848 -474 0 FreeSans 32 0 0 0 out
-port 8 nsew
+flabel metal2 -38 -1579 42 -1499 0 FreeSans 800 0 0 0 VIN
+port 4 nsew
+flabel metal1 9711 -687 9761 -637 0 FreeSans 800 0 0 0 OUT
+port 5 nsew
+flabel metal2 -107 -837 13 -717 0 FreeSans 800 0 0 0 IN
+port 6 nsew
 << end >>
