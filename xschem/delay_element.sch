@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
@@ -51,7 +51,7 @@ C {devices/ipin.sym} 130 -280 0 0 {name=p12 lab=VIN}
 C {devices/ipin.sym} 130 -370 0 0 {name=p13 lab=IN}
 C {devices/ipin.sym} 130 -220 0 0 {name=p14 lab=VSS}
 C {devices/opin.sym} 110 -340 0 0 {name=p19 lab=OUT}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -430 0 0 {name=M1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -430 0 0 {name=M2
 L=15
 W=6
 nf=1
@@ -65,7 +65,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -350 0 0 {name=M2
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -350 0 0 {name=M1
 L=15
 W=6
 nf=1
@@ -114,7 +114,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -260 0 0 {name=M7
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -260 0 0 {name=M8
 L=15
 W=2
 nf=1
@@ -128,7 +128,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -180 0 0 {name=M8
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 620 -180 0 0 {name=M7
 L=15
 W=2
 nf=1

@@ -1,12 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730971434
+timestamp 1731182005
 << nwell >>
-rect -136 930 674 1226
-rect -136 927 450 930
-rect 560 927 674 930
-rect 199 905 372 927
+rect -1174 918 1367 1956
+rect 199 905 372 918
 << pwell >>
 rect -872 200 1164 864
 << viali >>
@@ -334,11 +332,11 @@ rect -126 1718 786 1804
 rect 862 1718 863 1804
 rect -203 1717 863 1718
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1730246015
+timestamp 1704896540
 transform 1 0 -98 0 1 644
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_1
-timestamp 1730246015
+timestamp 1704896540
 transform 1 0 360 0 1 644
 box -38 -48 314 592
 use sky130_fd_pr__pfet_01v8_R8XU9D  XM1
@@ -382,16 +380,16 @@ timestamp 1730240227
 transform 0 1 1402 -1 0 391
 box -211 -310 211 310
 << labels >>
-flabel metal2 -1166 1739 -1130 1769 0 FreeSans 800 0 0 0 INN
-port 2 nsew
-flabel via1 -1166 1429 -1130 1459 0 FreeSans 800 0 0 0 INP
-port 3 nsew
-flabel metal2 -237 749 -201 779 0 FreeSans 800 0 0 0 OUT
-port 4 nsew
-flabel metal1 -1152 193 -1096 259 0 FreeSans 800 0 0 0 VSSA
-port 1 nsew
-flabel metal1 -1152 1887 -1096 1953 0 FreeSans 800 0 0 0 VDDA
+flabel metal2 -262 735 -210 787 0 FreeSans 800 0 0 0 OUT
 port 0 nsew
-flabel metal2 761 743 787 769 0 FreeSans 800 0 0 0 OUTN
-port 6 nsew
+flabel metal2 750 726 806 782 0 FreeSans 800 0 0 0 OUTN
+port 1 nsew
+flabel metal2 -1118 1728 -1052 1794 0 FreeSans 800 0 0 0 INN
+port 2 nsew
+flabel metal2 -1118 1412 -1052 1478 0 FreeSans 800 0 0 0 INP
+port 3 nsew
+flabel metal1 237 1875 336 1972 0 FreeSans 800 0 0 0 VDD
+port 4 nsew
+flabel metal1 252 180 351 277 0 FreeSans 800 0 0 0 VSS
+port 5 nsew
 << end >>

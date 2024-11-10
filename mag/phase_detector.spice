@@ -1,0 +1,50 @@
+* NGSPICE file created from phase_detector.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_R8XU9D a_n33_n397# a_n73_n300# a_15_n300# w_n211_n519#
+X0 a_15_n300# a_n33_n397# a_n73_n300# w_n211_n519# sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_TGNW9T a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__and2_1 A B VGND VNB VPB VPWR X
+X0 VPWR B a_59_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.16655 pd=1.39 as=0.0567 ps=0.69 w=0.42 l=0.15
+X1 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.475 pd=2.95 as=0.16655 ps=1.39 w=1 l=0.15
+X2 VGND B a_145_75# VNB sky130_fd_pr__nfet_01v8 ad=0.1118 pd=1.04 as=0.0567 ps=0.69 w=0.42 l=0.15
+X3 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.1118 ps=1.04 w=0.65 l=0.15
+X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+.ends
+
+.subckt nand_dummy_phase_detector x2/Y x1/A x5/B x5/A x5/VGND x5/VPWR x5/VPB VSUBS
+Xx1 x1/A x2/Y x5/VGND VSUBS x5/VPB x5/VPWR x3/A sky130_fd_sc_hd__and2_1
+Xx2 x5/X x5/VGND VSUBS x5/VPB x5/VPWR x2/Y sky130_fd_sc_hd__inv_2
+Xx3 x3/A x5/VGND VSUBS x5/VPB x5/VPWR x5/B sky130_fd_sc_hd__inv_2
+Xx5 x5/A x5/B x5/VGND VSUBS x5/VPB x5/VPWR x5/X sky130_fd_sc_hd__and2_1
+.ends
+
+.subckt phase_detector VSS VDD INN INP OUTN OUT
+XXM1 INN VDD m1_n955_1466# VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM2 INP nand_dummy_phase_detector_0/x5/A m1_n955_1466# VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM3 INP VDD m1_1443_1494# VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM4 INN m1_1443_1494# nand_dummy_phase_detector_0/x1/A VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM5 nand_dummy_phase_detector_0/x1/A VDD nand_dummy_phase_detector_0/x5/A VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM6 m1_n814_412# nand_dummy_phase_detector_0/x1/A nand_dummy_phase_detector_0/x5/A
++ VSS sky130_fd_pr__nfet_01v8_TGNW9T
+XXM7 m1_n814_412# INP VSS VSS sky130_fd_pr__nfet_01v8_TGNW9T
+XXM8 nand_dummy_phase_detector_0/x5/A VDD nand_dummy_phase_detector_0/x1/A VDD sky130_fd_pr__pfet_01v8_R8XU9D
+XXM9 nand_dummy_phase_detector_0/x1/A nand_dummy_phase_detector_0/x5/A m1_1302_412#
++ VSS sky130_fd_pr__nfet_01v8_TGNW9T
+Xnand_dummy_phase_detector_0 OUT nand_dummy_phase_detector_0/x1/A OUTN nand_dummy_phase_detector_0/x5/A
++ VSS VDD VDD VSS nand_dummy_phase_detector
+XXM10 m1_1302_412# INN VSS VSS sky130_fd_pr__nfet_01v8_TGNW9T
+.ends
+
