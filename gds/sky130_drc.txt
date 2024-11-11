@@ -5,6 +5,30 @@
  <generator>drc: script='/usr/local/share/pdk/sky130A/libs.tech/klayout/macros/run_drc_full.lydrc'</generator>
  <top-cell>user_analog_project_wrapper</top-cell>
  <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -1552,88 +1576,7 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>tsar_adc</name>
-   <variant/>
-   <layout-name>tsar_adc</layout-name>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>m90 *1 -17964.49,12880.095</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>analog_block</name>
-   <variant/>
-   <layout-name>analog_block</layout-name>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>m45 *1 2054.225,2690.035</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>tdc</name>
-   <variant/>
-   <layout-name>tdc</layout-name>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>r270 *1 2209.95,2662.33</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'nsdm.1'</category>
-   <cell>tdc</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (30.72,-1.035;30.72,-0.735)|(30.495,-0.429;30.495,-1.035)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'nsdm.1'</category>
-   <cell>tdc</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (30.72,-1.94;30.72,-1.935)|(30.495,-1.935;30.495,-2.246)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'nsdm.1'</category>
-   <cell>tdc</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (30.72,-6.555;30.72,-6.255)|(30.495,-6.255;30.495,-6.861)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'nsdm.1'</category>
-   <cell>tdc</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (30.72,-5.355;30.72,-5.35)|(30.495,-5.044;30.495,-5.355)</value>
-   </values>
-  </item>
  </items>
 </report-database>

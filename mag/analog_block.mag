@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731349849
+timestamp 1731351601
 << dnwell >>
 rect -12808 30642 -12778 30984
 rect -12808 30000 -12778 30342
@@ -551,7 +551,7 @@ timestamp 1731349849
 transform 1 0 -18 0 1 30
 box -246 -63 67002 60828
 use tdc  tdc_0
-timestamp 1731349849
+timestamp 1731351586
 transform -1 0 -5541 0 1 31145
 box -4836 -3709 9311 2246
 << labels >>
