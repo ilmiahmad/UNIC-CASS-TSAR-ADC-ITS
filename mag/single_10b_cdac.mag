@@ -1,10 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731145668
-<< error_s >>
-rect 103302 -5307 135479 -4728
-rect 103181 -16298 135358 -15719
+timestamp 1731349849
 << metal1 >>
 rect 119628 19692 119812 19876
 rect 102622 -2422 102628 -2318
@@ -727,85 +724,85 @@ rect 135361 -15275 135362 -15209
 rect 135258 -15276 135362 -15275
 rect 118034 -40902 119832 -40798
 use cdac_sw_1  cdac_sw_1_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 132149 0 1 -11152
-box 12 -5776 3331 -3508
+box 23 -5764 3319 -3508
 use cdac_sw_1  cdac_sw_1_1
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 128929 0 1 -11152
-box 12 -5776 3331 -3508
+box 23 -5764 3319 -3508
 use cdac_sw_1  cdac_sw_1_2
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 106511 0 -1 -9874
-box 12 -5776 3331 -3508
+box 23 -5764 3319 -3508
 use cdac_sw_2  cdac_sw_2_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 125710 0 1 -11152
-box 11 -5776 3330 -2972
+box 22 -5764 3318 -2972
 use cdac_sw_2  cdac_sw_2_1
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 122490 0 1 -11152
-box 11 -5776 3330 -2972
+box 22 -5764 3318 -2972
 use cdac_sw_4  cdac_sw_4_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 119038 0 1 -11239
-box 243 -5689 3562 -1813
+box 254 -5677 3550 -1813
 use cdac_sw_4  cdac_sw_4_1
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 115818 0 1 -11239
-box 243 -5689 3562 -1813
+box 254 -5677 3550 -1813
 use cdac_sw_8  cdac_sw_8_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 112829 0 1 -11460
-box 12 -5468 3331 552
+box 23 -5456 3319 552
 use cdac_sw_8  cdac_sw_8_1
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 109609 0 1 -11460
-box 12 -5468 3331 552
+box 23 -5456 3319 552
 use cdac_sw_16  cdac_sw_16_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 103754 0 1 -14133
-box -573 -2795 2746 7513
+box -562 -2783 2734 7513
 use cdac_sw_16  x2[0]
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 106974 0 1 -14133
-box -573 -2795 2746 7513
+box -562 -2783 2734 7513
 use cdac_sw_16  x3[0]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 134906 0 -1 -6893
-box -573 -2795 2746 7513
+box -562 -2783 2734 7513
 use cdac_sw_16  x3[1]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 131686 0 -1 -6893
-box -573 -2795 2746 7513
+box -562 -2783 2734 7513
 use cdac_sw_8  x4[2]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 129051 0 -1 -9566
-box 12 -5468 3331 552
+box 23 -5456 3319 552
 use cdac_sw_8  x4[3]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 125831 0 -1 -9566
-box 12 -5468 3331 552
+box 23 -5456 3319 552
 use cdac_sw_4  x6[4]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 122842 0 -1 -9787
-box 243 -5689 3562 -1813
+box 254 -5677 3550 -1813
 use cdac_sw_4  x6[5]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 119622 0 -1 -9787
-box 243 -5689 3562 -1813
+box 254 -5677 3550 -1813
 use cdac_sw_2  x8[6]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 116170 0 -1 -9874
-box 11 -5776 3330 -2972
+box 22 -5764 3318 -2972
 use cdac_sw_2  x8[7]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 112950 0 -1 -9874
-box 11 -5776 3330 -2972
+box 22 -5764 3318 -2972
 use cdac_sw_1  x10[8]
-timestamp 1731145668
+timestamp 1731349849
 transform -1 0 109731 0 -1 -9874
-box 12 -5776 3331 -3508
+box 23 -5764 3319 -3508
 use x10b_cap_array  x10b_cap_array_0
 timestamp 1730625751
 transform -1 0 121209 0 -1 -40052

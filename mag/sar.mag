@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731145668
+timestamp 1731350402
 << dnwell >>
 rect -16568 -13698 17660 4966
 << nwell >>
@@ -1112,21 +1112,21 @@ rect -15956 -9658 -15856 -9653
 rect -15546 -9658 -15446 -9653
 rect -10430 -9658 -10327 -9653
 use auto_sampling  auto_sampling_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 -1322 0 1 5806
 box -884 -4024 11778 -1704
 use cdac_ctrl  cdac_ctrl_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 -9316 0 1 -9531
 box -1485 -724 19474 718
 use cyclic_flag  cyclic_flag_0
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 -987 0 1 -2850
 box -169 910 11075 2602
 use out_latch  out_latch_0
-timestamp 1731145668
+timestamp 1731350358
 transform 1 0 -434 0 1 -5175
-box -182 -873 10574 956
+box -182 -873 11046 956
 << labels >>
 flabel metal2 -12304 4530 -12256 4598 0 FreeSans 800 0 0 0 CKO
 port 0 nsew

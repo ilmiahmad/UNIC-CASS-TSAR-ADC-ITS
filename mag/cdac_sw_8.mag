@@ -1,9 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731145668
-<< error_s >>
-rect 12 -4838 3209 -4259
+timestamp 1731349849
 << metal1 >>
 rect 2801 -4034 3281 -3938
 rect 2801 -4158 3281 -4062
@@ -44,9 +42,9 @@ rect 467 -1130 472 -1074
 rect 528 -1130 3281 -1074
 rect 467 -1136 3281 -1130
 use nooverlap_clk  x1
-timestamp 1731145668
+timestamp 1731349849
 transform 1 0 585 0 1 -4673
-box -573 -795 2746 414
+box -562 -783 2734 401
 use tg_sw_8  x2
 timestamp 1730624594
 transform 1 0 1748 0 1 -1986

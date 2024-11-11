@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731145668
+timestamp 1731349849
 << nwell >>
 rect -1201 496 -1138 582
 rect -1201 293 -1111 496
@@ -775,92 +775,92 @@ rect 12981 71 13079 76
 rect 14913 71 15011 76
 rect 16844 71 16944 76
 rect 18775 71 18875 76
-use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_0 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1704896540
+use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1730246015
 transform 1 0 1932 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_1
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 0 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_2
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 5796 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_3
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 3864 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_4
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 9660 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_5
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 7728 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_6
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 13524 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_7
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 11592 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_8
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 17388 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  sky130_fd_sc_hd__dfrtp_2_9
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 15456 0 -1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[0]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 0 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[1]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 1932 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[2]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 3864 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[3]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 5796 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[4]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 7728 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[5]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 9660 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[6]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 11592 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[7]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 13524 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[8]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 15456 0 1 0
 box -38 -48 1970 592
 use sky130_fd_sc_hd__dfrtp_2  x1[9]
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 17388 0 1 0
 box -38 -48 1970 592
-use sky130_fd_sc_hd__buf_8  x1 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1704896540
+use sky130_fd_sc_hd__buf_8  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1730246015
 transform 1 0 -1104 0 1 0
 box -38 -48 1142 592
 use sky130_fd_sc_hd__buf_8  x2
-timestamp 1704896540
+timestamp 1730246015
 transform 1 0 -1104 0 -1 0
 box -38 -48 1142 592
 << labels >>
