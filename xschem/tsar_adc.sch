@@ -1,4 +1,4 @@
-v {xschem version=3.4.6RC file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -48,3 +48,12 @@ C {devices/ipin.sym} 100 -250 0 0 {name=p49 sig_type=std_logic lab=EN}
 C {sar.sym} 970 -270 0 0 {name=x4}
 C {devices/lab_wire.sym} 1120 -210 0 1 {name=p12 sig_type=std_logic lab=CLKSB}
 C {analog_block.sym} 510 -210 0 0 {name=x1}
+C {devices/code.sym} 815 -125 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+* .lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}

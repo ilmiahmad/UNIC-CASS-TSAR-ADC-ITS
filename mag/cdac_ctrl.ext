@@ -1,0 +1,276 @@
+timestamp 1731349849
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_sc_hd__buf_8 x2 1 0 -1104 0 -1 0
+use sky130_fd_sc_hd__buf_8 x1 1 0 -1104 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[9] 1 0 17388 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[8] 1 0 15456 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[7] 1 0 13524 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[6] 1 0 11592 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[5] 1 0 9660 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[4] 1 0 7728 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[3] 1 0 5796 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[2] 1 0 3864 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[1] 1 0 1932 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 x1[0] 1 0 0 0 1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_9 1 0 15456 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_8 1 0 17388 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_7 1 0 11592 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_6 1 0 13524 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_5 1 0 7728 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_4 1 0 9660 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_3 1 0 3864 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_2 1 0 5796 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_1 1 0 0 0 -1 0
+use sky130_fd_sc_hd__dfrtp_2 sky130_fd_sc_hd__dfrtp_2_0 1 0 1932 0 -1 0
+port "CLKS" 0 -1445 109 -1425 129 m3
+port "SWN[9]" 24 19179 -709 19191 -688 m2
+port "SWN[8]" 23 17243 -713 17255 -692 m2
+port "SWN[7]" 22 15312 -715 15324 -694 m2
+port "SWN[6]" 21 13374 -713 13386 -692 m2
+port "SWN[5]" 20 11446 -713 11458 -692 m2
+port "SWN[4]" 19 9509 -713 9521 -692 m2
+port "SWN[3]" 18 7579 -705 7591 -684 m2
+port "SWN[2]" 17 5652 -704 5664 -683 m2
+port "SWN[1]" 16 3720 -713 3732 -692 m2
+port "SWN[0]" 15 1784 -698 1796 -677 m2
+port "COMP_N" 2 -1468 -248 -1456 -227 m1
+port "CF[9]" 14 17381 -634 17393 -613 m2
+port "CF[8]" 13 15451 -632 15463 -611 m2
+port "CF[7]" 12 13521 -636 13533 -615 m2
+port "CF[6]" 11 11588 -628 11600 -607 m2
+port "CF[5]" 10 9654 -632 9666 -611 m2
+port "CF[4]" 9 7724 -638 7736 -617 m2
+port "CF[3]" 8 5793 -634 5805 -613 m2
+port "CF[2]" 7 3859 -628 3871 -607 m2
+port "CF[1]" 6 1928 -626 1940 -605 m2
+port "CF[0]" 5 -4 -638 8 -617 m2
+port "COMP_P" 1 -1464 228 -1444 248 m1
+port "SWP[9]" 34 19175 678 19187 699 m2
+port "SWP[8]" 33 17239 674 17251 695 m2
+port "SWP[7]" 32 15308 678 15320 699 m2
+port "SWP[6]" 31 13378 674 13390 695 m2
+port "SWP[5]" 30 11448 680 11460 701 m2
+port "SWP[4]" 29 9517 674 9529 695 m2
+port "SWP[3]" 28 7581 674 7593 695 m2
+port "SWP[2]" 27 5647 676 5659 697 m2
+port "SWP[1]" 26 3720 674 3732 695 m2
+port "SWP[0]" 25 1784 670 1796 691 m2
+port "VDDD" 36 -1146 524 -1122 570 m1
+port "VSSD" 35 -1076 -19 -1036 17 pw
+node "CLKS" 0 0 -1445 109 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n229_n461#" 0 0 -229 -461 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[9]" 0 0 19179 -709 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[8]" 0 0 17243 -713 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[7]" 0 0 15312 -715 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[6]" 0 0 13374 -713 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[5]" 0 0 11446 -713 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[4]" 0 0 9509 -713 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[3]" 0 0 7579 -705 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[2]" 0 0 5652 -704 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[1]" 0 0 3720 -713 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWN[0]" 0 0 1784 -698 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "COMP_N" 0 0 -1468 -248 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[9]" 0 0 17381 -634 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[8]" 0 0 15451 -632 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[7]" 0 0 13521 -636 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[6]" 0 0 11588 -628 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[5]" 0 0 9654 -632 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[4]" 0 0 7724 -638 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[3]" 0 0 5793 -634 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[2]" 0 0 3859 -628 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[1]" 0 0 1928 -626 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "CF[0]" 0 0 -4 -638 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "COMP_P" 0 0 -1464 228 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[9]" 0 0 19175 678 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[8]" 0 0 17239 674 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[7]" 0 0 15308 678 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[6]" 0 0 13378 674 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[5]" 0 0 11448 680 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[4]" 0 0 9517 674 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[3]" 0 0 7581 674 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[2]" 0 0 5647 676 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[1]" 0 0 3720 674 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "SWP[0]" 0 0 1784 670 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n229_427#" 0 0 -229 427 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n1201_n582#" 0 0 -1201 -582 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_18642_n582#" 0 0 18642 -582 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDDD" 0 0 -1146 524 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSSD" 0 0 -1076 -19 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[9]/VNB" "x1[9]/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[9]/VGND" "sky130_fd_sc_hd__dfrtp_2_8/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_8/VNB" "sky130_fd_sc_hd__dfrtp_2_8/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_8/VGND" "x1[8]/VNB"
+merge "x1[8]/VNB" "x1[8]/VGND"
+merge "x1[8]/VGND" "sky130_fd_sc_hd__dfrtp_2_9/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_9/VNB" "sky130_fd_sc_hd__dfrtp_2_9/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_9/VGND" "x1[7]/VNB"
+merge "x1[7]/VNB" "x1[7]/VGND"
+merge "x1[7]/VGND" "sky130_fd_sc_hd__dfrtp_2_6/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_6/VNB" "sky130_fd_sc_hd__dfrtp_2_6/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_6/VGND" "x1[6]/VNB"
+merge "x1[6]/VNB" "x1[6]/VGND"
+merge "x1[6]/VGND" "sky130_fd_sc_hd__dfrtp_2_7/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_7/VNB" "sky130_fd_sc_hd__dfrtp_2_7/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_7/VGND" "x1[5]/VNB"
+merge "x1[5]/VNB" "x1[5]/VGND"
+merge "x1[5]/VGND" "sky130_fd_sc_hd__dfrtp_2_4/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_4/VNB" "sky130_fd_sc_hd__dfrtp_2_4/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_4/VGND" "x1[4]/VNB"
+merge "x1[4]/VNB" "x1[4]/VGND"
+merge "x1[4]/VGND" "sky130_fd_sc_hd__dfrtp_2_5/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_5/VNB" "sky130_fd_sc_hd__dfrtp_2_5/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_5/VGND" "x1[3]/VNB"
+merge "x1[3]/VNB" "x1[3]/VGND"
+merge "x1[3]/VGND" "sky130_fd_sc_hd__dfrtp_2_2/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_2/VNB" "sky130_fd_sc_hd__dfrtp_2_2/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_2/VGND" "x1[2]/VNB"
+merge "x1[2]/VNB" "x1[2]/VGND"
+merge "x1[2]/VGND" "sky130_fd_sc_hd__dfrtp_2_3/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_3/VNB" "sky130_fd_sc_hd__dfrtp_2_3/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_3/VGND" "x1[1]/VNB"
+merge "x1[1]/VNB" "x1[1]/VGND"
+merge "x1[1]/VGND" "sky130_fd_sc_hd__dfrtp_2_0/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_0/VNB" "sky130_fd_sc_hd__dfrtp_2_0/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_0/VGND" "x1[0]/VNB"
+merge "x1[0]/VNB" "x1[0]/VGND"
+merge "x1[0]/VGND" "sky130_fd_sc_hd__dfrtp_2_1/VGND"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VGND" "sky130_fd_sc_hd__dfrtp_2_1/VNB"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VNB" "x2/VNB"
+merge "x2/VNB" "x2/VGND"
+merge "x2/VGND" "x1/VNB"
+merge "x1/VNB" "x1/VGND"
+merge "x1/VGND" "VSSD"
+merge "x1[3]/CLK" "sky130_fd_sc_hd__dfrtp_2_2/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_2/CLK" "CF[3]"
+merge "x1[9]/D" "x1[8]/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[8]/D" "x1[7]/D"
+merge "x1[7]/D" "x1[6]/D"
+merge "x1[6]/D" "x1[5]/D"
+merge "x1[5]/D" "x1[4]/D"
+merge "x1[4]/D" "x1[3]/D"
+merge "x1[3]/D" "x1[2]/D"
+merge "x1[2]/D" "x1[1]/D"
+merge "x1[1]/D" "x1[0]/D"
+merge "x1[0]/D" "x1/X"
+merge "x1/X" "li_n229_427#"
+merge "x1[9]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_8/RESET_B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_8/RESET_B" "x1[8]/RESET_B"
+merge "x1[8]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_9/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_9/RESET_B" "x1[7]/RESET_B"
+merge "x1[7]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_6/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_6/RESET_B" "x1[6]/RESET_B"
+merge "x1[6]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_7/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_7/RESET_B" "x1[5]/RESET_B"
+merge "x1[5]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_4/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_4/RESET_B" "x1[4]/RESET_B"
+merge "x1[4]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_5/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_5/RESET_B" "x1[3]/RESET_B"
+merge "x1[3]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_2/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_2/RESET_B" "x1[2]/RESET_B"
+merge "x1[2]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_3/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_3/RESET_B" "x1[1]/RESET_B"
+merge "x1[1]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_0/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_0/RESET_B" "x1[0]/RESET_B"
+merge "x1[0]/RESET_B" "sky130_fd_sc_hd__dfrtp_2_1/RESET_B"
+merge "sky130_fd_sc_hd__dfrtp_2_1/RESET_B" "CLKS"
+merge "x1[9]/VPWR" "x1[9]/VPB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[9]/VPB" "x1[8]/VPWR"
+merge "x1[8]/VPWR" "x1[8]/VPB"
+merge "x1[8]/VPB" "x1[7]/VPWR"
+merge "x1[7]/VPWR" "x1[7]/VPB"
+merge "x1[7]/VPB" "x1[6]/VPWR"
+merge "x1[6]/VPWR" "x1[6]/VPB"
+merge "x1[6]/VPB" "x1[5]/VPWR"
+merge "x1[5]/VPWR" "x1[5]/VPB"
+merge "x1[5]/VPB" "x1[4]/VPWR"
+merge "x1[4]/VPWR" "x1[4]/VPB"
+merge "x1[4]/VPB" "x1[3]/VPWR"
+merge "x1[3]/VPWR" "x1[3]/VPB"
+merge "x1[3]/VPB" "x1[2]/VPWR"
+merge "x1[2]/VPWR" "x1[2]/VPB"
+merge "x1[2]/VPB" "x1[1]/VPWR"
+merge "x1[1]/VPWR" "x1[1]/VPB"
+merge "x1[1]/VPB" "x1/VPWR"
+merge "x1/VPWR" "x1[0]/VPWR"
+merge "x1[0]/VPWR" "x1[0]/VPB"
+merge "x1[0]/VPB" "x1/VPB"
+merge "x1/VPB" "VDDD"
+merge "VDDD" "sky130_fd_sc_hd__dfrtp_2_8/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_8/VPWR" "w_18642_n582#"
+merge "w_18642_n582#" "sky130_fd_sc_hd__dfrtp_2_8/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_8/VPB" "sky130_fd_sc_hd__dfrtp_2_9/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_9/VPWR" "sky130_fd_sc_hd__dfrtp_2_9/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_9/VPB" "sky130_fd_sc_hd__dfrtp_2_6/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_6/VPWR" "sky130_fd_sc_hd__dfrtp_2_6/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_6/VPB" "sky130_fd_sc_hd__dfrtp_2_7/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_7/VPWR" "sky130_fd_sc_hd__dfrtp_2_7/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_7/VPB" "sky130_fd_sc_hd__dfrtp_2_4/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_4/VPWR" "sky130_fd_sc_hd__dfrtp_2_4/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_4/VPB" "sky130_fd_sc_hd__dfrtp_2_5/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_5/VPWR" "sky130_fd_sc_hd__dfrtp_2_5/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_5/VPB" "sky130_fd_sc_hd__dfrtp_2_2/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_2/VPWR" "sky130_fd_sc_hd__dfrtp_2_2/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_2/VPB" "sky130_fd_sc_hd__dfrtp_2_3/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_3/VPWR" "sky130_fd_sc_hd__dfrtp_2_3/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_3/VPB" "sky130_fd_sc_hd__dfrtp_2_0/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_0/VPWR" "sky130_fd_sc_hd__dfrtp_2_0/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_0/VPB" "x2/VPWR"
+merge "x2/VPWR" "sky130_fd_sc_hd__dfrtp_2_1/VPWR"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VPWR" "sky130_fd_sc_hd__dfrtp_2_1/VPB"
+merge "sky130_fd_sc_hd__dfrtp_2_1/VPB" "x2/VPB"
+merge "x2/VPB" "w_n1201_n582#"
+merge "x1[5]/Q" "SWP[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[8]/Q" "SWP[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x2/A" "COMP_N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_5/Q" "SWN[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[1]/CLK" "sky130_fd_sc_hd__dfrtp_2_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_0/CLK" "CF[1]"
+merge "sky130_fd_sc_hd__dfrtp_2_8/D" "sky130_fd_sc_hd__dfrtp_2_9/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_9/D" "sky130_fd_sc_hd__dfrtp_2_6/D"
+merge "sky130_fd_sc_hd__dfrtp_2_6/D" "sky130_fd_sc_hd__dfrtp_2_7/D"
+merge "sky130_fd_sc_hd__dfrtp_2_7/D" "sky130_fd_sc_hd__dfrtp_2_4/D"
+merge "sky130_fd_sc_hd__dfrtp_2_4/D" "sky130_fd_sc_hd__dfrtp_2_5/D"
+merge "sky130_fd_sc_hd__dfrtp_2_5/D" "sky130_fd_sc_hd__dfrtp_2_2/D"
+merge "sky130_fd_sc_hd__dfrtp_2_2/D" "sky130_fd_sc_hd__dfrtp_2_3/D"
+merge "sky130_fd_sc_hd__dfrtp_2_3/D" "sky130_fd_sc_hd__dfrtp_2_0/D"
+merge "sky130_fd_sc_hd__dfrtp_2_0/D" "sky130_fd_sc_hd__dfrtp_2_1/D"
+merge "sky130_fd_sc_hd__dfrtp_2_1/D" "x2/X"
+merge "x2/X" "li_n229_n461#"
+merge "x1[6]/CLK" "sky130_fd_sc_hd__dfrtp_2_7/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_7/CLK" "CF[6]"
+merge "x1[2]/CLK" "sky130_fd_sc_hd__dfrtp_2_3/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_3/CLK" "CF[2]"
+merge "x1[9]/CLK" "sky130_fd_sc_hd__dfrtp_2_8/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_8/CLK" "CF[9]"
+merge "sky130_fd_sc_hd__dfrtp_2_3/Q" "SWN[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[7]/CLK" "sky130_fd_sc_hd__dfrtp_2_6/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_6/CLK" "CF[7]"
+merge "sky130_fd_sc_hd__dfrtp_2_1/Q" "SWN[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1/A" "COMP_P" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[8]/CLK" "sky130_fd_sc_hd__dfrtp_2_9/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_9/CLK" "CF[8]"
+merge "x1[0]/Q" "SWP[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[9]/Q" "SWP[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[3]/Q" "SWP[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[6]/Q" "SWP[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[5]/CLK" "sky130_fd_sc_hd__dfrtp_2_4/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_4/CLK" "CF[5]"
+merge "x1[7]/Q" "SWP[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_8/Q" "SWN[9]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[4]/Q" "SWP[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_6/Q" "SWN[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[2]/Q" "SWP[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[4]/CLK" "sky130_fd_sc_hd__dfrtp_2_5/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_5/CLK" "CF[4]"
+merge "x1[1]/Q" "SWP[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_4/Q" "SWN[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_9/Q" "SWN[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_2/Q" "SWN[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_7/Q" "SWN[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[0]/CLK" "sky130_fd_sc_hd__dfrtp_2_1/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__dfrtp_2_1/CLK" "CF[0]"
+merge "sky130_fd_sc_hd__dfrtp_2_0/Q" "SWN[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

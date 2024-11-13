@@ -1,11 +1,13 @@
-timestamp 1731179799
+timestamp 1731349849
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_sc_hd__nand2_1 sky130_fd_sc_hd__nand2_1_0 1 0 -98 0 1 644
 use sky130_fd_pr__nfet_01v8_TGNW9T XM6 0 -1 -864 1 0 707
 use sky130_fd_pr__nfet_01v8_TGNW9T XM7 0 1 -864 -1 0 391
+use sky130_fd_sc_hd__nand2_1 sky130_fd_sc_hd__nand2_1_1 1 0 360 0 1 644
 use sky130_fd_pr__nfet_01v8_TGNW9T XM9 0 1 1402 -1 0 707
 use sky130_fd_pr__nfet_01v8_TGNW9T XM10 0 1 1402 -1 0 391
 use sky130_fd_pr__pfet_01v8_R8XU9D XM2 0 -1 -655 1 0 1445
@@ -14,434 +16,107 @@ use sky130_fd_pr__pfet_01v8_R8XU9D XM4 0 1 1193 -1 0 1445
 use sky130_fd_pr__pfet_01v8_R8XU9D XM8 0 1 1193 -1 0 1129
 use sky130_fd_pr__pfet_01v8_R8XU9D XM1 0 1 -655 -1 0 1761
 use sky130_fd_pr__pfet_01v8_R8XU9D XM3 0 1 1193 -1 0 1761
-use nand_dummy_phase_detector nand_dummy_phase_detector_0 1 0 -290 0 1 290
-port "OUT" 7 743 -31 801 27 m2
-port "OUTN" 6 -265 -38 -207 20 m2
-port "INP" 5 -1118 1412 -1052 1478 m2
-port "INN" 4 -1174 1728 -1108 1794 m2
-port "VSS" 2 -1174 180 -1077 277 m1
-port "VDD" 3 -1174 1875 -1077 1972 m1
-node "m1_1302_412#" 1 55.8017 1302 412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13700 648 0 0 0 0 0 0 0 0 0 0
-node "m1_1214_358#" 0 21.2302 1214 358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "OUT" 1 192.841 743 -31 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6612 344 31494 1202 0 0 0 0 0 0 0 0
-node "m1_n732_358#" 0 23.4877 -732 358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "OUTN" 1 177.997 -265 -38 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6612 344 31146 1190 0 0 0 0 0 0 0 0
-node "m1_1214_674#" 0 23.1292 1214 674 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "m1_796_1096#" 0 18.5523 796 1096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "m1_n732_674#" 0 15.1557 -732 674 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "m1_n814_412#" 1 51.3734 -814 412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13700 648 0 0 0 0 0 0 0 0 0 0
-node "m1_1534_358#" 4 546.116 1534 358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77894 2960 27316 1116 0 0 0 0 0 0 0 0
-node "m1_1534_1728#" 0 28.5616 1534 1728 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "m1_1443_1494#" 1 101.017 1443 1494 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12300 592 0 0 0 0 0 0 0 0 0 0
-node "m1_n314_1096#" 0 0.766381 -314 1096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3696 244 0 0 0 0 0 0 0 0 0 0
-node "m1_n314_1397#" 3 640.296 -314 1397 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10448 590 18804 852 42164 1392 93808 2308 0 0 0 0
-node "m1_n324_1590#" 5 448.319 -324 1590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42546 1542 90892 3180 0 0 0 0 0 0 0 0
-node "m1_n955_1466#" 1 37.7293 -955 1466 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13700 648 0 0 0 0 0 0 0 0 0 0
-node "INP" 5 406.047 -1118 1412 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71440 3008 27316 1116 0 0 0 0 0 0 0 0
-node "INN" 1 66.2028 -1174 1728 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5016 284 12868 528 0 0 0 0 0 0 0 0
-node "VSS" 300 1443.22 -1174 180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24208 1560 289142 6334 0 0 0 0 0 0 0 0 0 0
-node "li_936_520#" 26 790.631 936 520 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 86004 3786 168588 6686 0 0 0 0 0 0 0 0
-node "li_n442_512#" 26 534.96 -442 512 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 112120 4790 144564 5762 0 0 0 0 0 0 0 0
-node "VDD" 620 2234.42 -1174 1875 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52632 3232 468474 10412 81536 3240 0 0 0 0 0 0 0 0
-node "w_n1174_918#" 5277 5471.96 -1174 918 nw 0 0 0 0 1823988 7512 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+port "INP" 3 -1118 1412 -1052 1478 m2
+port "INN" 2 -1118 1728 -1052 1794 m2
+port "VSS" 5 252 180 351 277 m1
+port "OUTN" 1 750 726 806 782 m2
+port "OUT" 0 -262 735 -210 787 m2
+port "VDD" 4 237 1875 336 1972 m1
+node "m1_1302_412#" 0 0 1302 412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1214_358#" 0 0 1214 358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n732_358#" 0 0 -732 358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1214_674#" 0 0 1214 674 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n732_674#" 0 0 -732 674 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n814_412#" 0 0 -814 412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_796_1096#" 0 0 796 1096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1524_1412#" 0 0 1524 1412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1534_1728#" 0 0 1534 1728 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1443_1466#" 0 0 1443 1466 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n314_1096#" 0 0 -314 1096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n324_1412#" 0 0 -324 1412 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n324_1590#" 0 0 -324 1590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n955_1466#" 0 0 -955 1466 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "INP" 0 0 -1118 1412 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "INN" 0 0 -1118 1728 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 252 180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "OUTN" 0 0 750 726 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_564_859#" 0 0 564 859 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "OUT" 0 0 -262 735 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n62_859#" 0 0 -62 859 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_106_859#" 0 0 106 859 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 0 237 1875 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n1174_918#" 0 0 -1174 918 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_796_1096#" "li_936_520#" 29.435
-cap "m1_n324_1590#" "m1_1443_1494#" 10.0788
-cap "VSS" "m1_1302_412#" 23.4043
-cap "VDD" "INN" 45.4284
-cap "w_n1174_918#" "li_n442_512#" 358.851
-cap "w_n1174_918#" "VDD" 393.18
-cap "INP" "m1_n314_1397#" 10.3891
-cap "li_n442_512#" "m1_1443_1494#" 0.649336
-cap "VDD" "m1_1443_1494#" 14.2057
-cap "m1_796_1096#" "VSS" 2.58228
-cap "m1_n314_1397#" "li_936_520#" 9.00021
-cap "m1_n324_1590#" "li_n442_512#" 0.651434
-cap "w_n1174_918#" "m1_n732_674#" 5.86667
-cap "m1_n324_1590#" "VDD" 335.355
-cap "w_n1174_918#" "OUTN" 23.5033
-cap "w_n1174_918#" "m1_n314_1096#" 22.0446
-cap "OUTN" "m1_1214_358#" 0.00851569
-cap "INP" "m1_n814_412#" 33.28
-cap "w_n1174_918#" "OUT" 11.1764
-cap "OUT" "m1_1214_358#" 4.09159
-cap "m1_n732_674#" "m1_n732_358#" 8.21333
-cap "m1_1534_358#" "li_936_520#" 11.3791
-cap "VSS" "m1_n314_1397#" 4.18255
-cap "w_n1174_918#" "m1_1302_412#" 14.4281
-cap "li_936_520#" "m1_n814_412#" 5.4954
-cap "VDD" "li_n442_512#" 735.324
-cap "m1_1534_1728#" "m1_1443_1494#" 5.8022
-cap "INP" "li_936_520#" 214.09
-cap "m1_n732_358#" "OUTN" 0.611513
-cap "m1_1302_412#" "m1_1214_358#" 6.43902
-cap "m1_n324_1590#" "OUTN" 0.424465
-cap "m1_n732_358#" "OUT" 1.14673
-cap "m1_n314_1397#" "m1_n955_1466#" 3.46394
-cap "m1_n324_1590#" "OUT" 2.32068
-cap "m1_796_1096#" "w_n1174_918#" 4.32084
-cap "m1_n732_674#" "li_n442_512#" 27.1389
-cap "m1_1534_358#" "VSS" 67.4569
-cap "li_936_520#" "m1_1214_674#" 16.015
-cap "VSS" "m1_n814_412#" 23.913
-cap "m1_n732_674#" "VDD" 2.07932
-cap "INP" "VSS" 66.5022
-cap "OUTN" "li_n442_512#" 9.58307
-cap "m1_n314_1096#" "li_n442_512#" 33.2532
-cap "OUTN" "VDD" 1.34011
-cap "m1_n314_1096#" "VDD" 23.9284
-cap "OUT" "li_n442_512#" 0.146263
-cap "VSS" "li_936_520#" 33.8539
-cap "VDD" "m1_1534_1728#" 19.6329
-cap "OUT" "VDD" 0.0681729
-cap "INP" "m1_n955_1466#" 8.12045
-cap "m1_n314_1397#" "INN" 1.47161
-cap "m1_1302_412#" "li_n442_512#" 2.27586
-cap "m1_796_1096#" "m1_n324_1590#" 8.64561
-cap "m1_n955_1466#" "li_936_520#" 0.509905
-cap "w_n1174_918#" "m1_n314_1397#" 108.447
-cap "OUTN" "m1_n314_1096#" 0.515431
-cap "m1_n314_1397#" "m1_1443_1494#" 1.53938
-cap "m1_796_1096#" "li_n442_512#" 6.87602
-cap "OUT" "OUTN" 29.3998
-cap "m1_796_1096#" "VDD" 23.9284
-cap "m1_n324_1590#" "m1_n314_1397#" 224.165
-cap "INP" "INN" 40.8739
-cap "VSS" "m1_n955_1466#" 1.77563
-cap "OUTN" "m1_1302_412#" 0.254009
-cap "w_n1174_918#" "m1_n814_412#" 1.10709
-cap "li_936_520#" "INN" 0.0135403
-cap "m1_1534_358#" "m1_1214_358#" 6.16561
-cap "OUT" "m1_1302_412#" 6.23784
-cap "w_n1174_918#" "INP" 104.772
-cap "w_n1174_918#" "li_936_520#" 325.399
-cap "m1_n314_1397#" "li_n442_512#" 80.0062
-cap "li_936_520#" "m1_1214_358#" 0.298738
-cap "m1_n732_358#" "m1_n814_412#" 6.43902
-cap "m1_1534_358#" "m1_n324_1590#" 11.6257
-cap "m1_n314_1397#" "VDD" 142.25
-cap "INP" "m1_n732_358#" 5.88535
-cap "w_n1174_918#" "m1_1214_674#" 8.41408
-cap "m1_796_1096#" "OUT" 0.349897
-cap "VSS" "INN" 0.0123377
-cap "m1_n732_358#" "li_936_520#" 0.298738
-cap "m1_1214_674#" "m1_1214_358#" 8.21333
-cap "m1_n324_1590#" "li_936_520#" 92.507
-cap "w_n1174_918#" "VSS" 104.882
-cap "m1_n955_1466#" "INN" 7.96552
-cap "m1_1534_358#" "li_n442_512#" 213.816
-cap "VSS" "m1_1214_358#" 24.175
-cap "li_n442_512#" "m1_n814_412#" 56.4964
-cap "m1_1534_358#" "VDD" 16.2373
-cap "INP" "li_n442_512#" 10.5991
-cap "OUTN" "m1_n314_1397#" 0.0941017
-cap "w_n1174_918#" "m1_n955_1466#" 70.355
-cap "VSS" "m1_1443_1494#" 1.73639
-cap "m1_n314_1397#" "m1_n314_1096#" 8.64561
-cap "INP" "VDD" 9.40501
-cap "m1_n314_1397#" "m1_1534_1728#" 3.2707
-cap "OUT" "m1_n314_1397#" 0.899593
-cap "VSS" "m1_n732_358#" 25.2482
-cap "li_936_520#" "li_n442_512#" 1189.25
-cap "m1_n324_1590#" "VSS" 0.354464
-cap "li_936_520#" "VDD" 377.193
-cap "m1_1214_674#" "li_n442_512#" 6.41852
-cap "m1_n732_674#" "m1_n814_412#" 6.43902
-cap "m1_n324_1590#" "m1_n955_1466#" 10.46
-cap "m1_1214_674#" "VDD" 2.82038
-cap "OUTN" "m1_n814_412#" 6.32458
-cap "m1_1534_358#" "m1_1534_1728#" 9.42081
-cap "m1_1534_358#" "OUT" 5.43694
-cap "INP" "OUTN" 5.44664
-cap "m1_n732_674#" "li_936_520#" 10.6187
-cap "VSS" "li_n442_512#" 39.6535
-cap "w_n1174_918#" "INN" 32.5258
-cap "OUT" "m1_n814_412#" 0.00204962
-cap "VSS" "VDD" 62.7905
-cap "m1_796_1096#" "m1_n314_1397#" 0.701665
-cap "OUTN" "li_936_520#" 10.5395
-cap "m1_1534_358#" "m1_1302_412#" 33.28
-cap "m1_n314_1096#" "li_936_520#" 3.05776
-cap "OUT" "li_936_520#" 9.35344
-cap "m1_n955_1466#" "VDD" 15.4929
-cap "m1_1302_412#" "li_936_520#" 40.4577
-cap "m1_n324_1590#" "INN" 8.39065
-cap "w_n1174_918#" "m1_n324_1590#" 66.9257
-cap "VSS" "OUTN" 115.48
-cap "m1_1302_412#" "m1_1214_674#" 6.43902
-cap "VSS" "m1_n314_1096#" 2.48101
-cap "VSS" "OUT" 117.396
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x5/VPWR" 0.530852
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/VGND" 111.327
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x3/A" 0.0188936
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/B" -15.7331
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/X" 14.1977
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/a_59_75#" 9.35424
-cap "XM7/a_n73_n100#" "nand_dummy_phase_detector_0/x5/VPWR" -0.361456
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x3/A" 0.0495847
-cap "XM1/a_15_n300#" "nand_dummy_phase_detector_0/x5/A" 4.87029
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x5/VGND" 0.0280056
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x5/VGND" 1.09343
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x1/A" 166.487
-cap "nand_dummy_phase_detector_0/x5/A" "XM1/a_n33_n397#" 1.31858
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VPWR" 50.2643
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x5/X" 0.00954741
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x5/B" 0.366859
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x5/B" 3.06441
-cap "nand_dummy_phase_detector_0/x5/a_145_75#" "nand_dummy_phase_detector_0/x5/VGND" 0.396884
-cap "nand_dummy_phase_detector_0/x5/X" "nand_dummy_phase_detector_0/x5/VGND" 0.990258
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/B" -0.114826
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x5/VGND" 21.8529
-cap "nand_dummy_phase_detector_0/x5/a_145_75#" "nand_dummy_phase_detector_0/x5/B" 0.99059
-cap "XM7/a_n73_n100#" "nand_dummy_phase_detector_0/x5/VGND" -2.44214
-cap "nand_dummy_phase_detector_0/x5/X" "nand_dummy_phase_detector_0/x5/B" 11.6241
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x5/B" 13.2873
-cap "XM7/a_n73_n100#" "nand_dummy_phase_detector_0/x5/B" 0.551794
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x1/A" 0.00202218
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x1/A" 5.49067
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x3/A" 0.231646
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x5/VGND" 53.9981
-cap "nand_dummy_phase_detector_0/x5/a_145_75#" "nand_dummy_phase_detector_0/x1/A" 0.451587
-cap "nand_dummy_phase_detector_0/x1/a_145_75#" "nand_dummy_phase_detector_0/x5/VGND" 0.0224022
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/B" 0.35279
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "XM3/a_n33_n397#" 0.0267219
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x2/Y" 2.25718
-cap "nand_dummy_phase_detector_0/x5/X" "nand_dummy_phase_detector_0/x1/A" 12.4427
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x1/A" 8.65912
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x5/B" 11.207
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/a_145_75#" 0.167682
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VGND" 78.6194
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/B" 1.09107
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/X" 0.662852
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/a_59_75#" 2.07208
-cap "XM7/a_n73_n100#" "nand_dummy_phase_detector_0/x1/A" 0.203402
-cap "XM7/a_n73_n100#" "XM3/a_n33_n397#" 4.00822
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM1/a_n33_n397#" 1.04005
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/A" 199.988
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x1/A" 19.9041
-cap "XM1/a_15_n300#" "nand_dummy_phase_detector_0/x5/VGND" -0.887813
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x5/A" 0.0547258
-cap "nand_dummy_phase_detector_0/x2/Y" "nand_dummy_phase_detector_0/x5/A" 0.201332
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM1/a_n33_n397#" -0.167505
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/B" 16.7726
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/VGND" 94.51
-cap "nand_dummy_phase_detector_0/x5/X" "nand_dummy_phase_detector_0/x5/A" 1.30632
-cap "XM7/a_n73_n100#" "nand_dummy_phase_detector_0/x5/A" -22.2303
-cap "nand_dummy_phase_detector_0/x5/B" "XM1/a_n33_n397#" -0.197323
-cap "nand_dummy_phase_detector_0/x5/X" "XM1/a_n33_n397#" 0.137738
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "XM1/a_n33_n397#" 0.0549264
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x5/A" 5.90829
-cap "XM1/a_15_n300#" "nand_dummy_phase_detector_0/x1/A" 0.627786
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x5/A" 66.037
-cap "nand_dummy_phase_detector_0/x1/A" "XM1/a_n33_n397#" 0.29426
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x3/A" 0.159103
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/A" 5.21008
-cap "nand_dummy_phase_detector_0/x5/B" "nand_dummy_phase_detector_0/x3/A" 1.67348
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x1/A" 106.981
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/A" 21.4927
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x2/Y" 2.55017
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x1/A" 0.41224
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/a_59_75#" 0.0176859
-cap "XM10/a_n73_n100#" "XM1/a_n33_n397#" 0.36087
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM1/a_n33_n397#" 3.42814
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x2/Y" 4.73815
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x1/A" -19.8549
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x1/A" 88.981
-cap "nand_dummy_phase_detector_0/x5/B" "nand_dummy_phase_detector_0/x3/A" -1.42109e-14
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x3/A" 14.1146
-cap "nand_dummy_phase_detector_0/x3/A" "XM3/a_n33_n397#" 0.130609
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/X" 0.140361
-cap "nand_dummy_phase_detector_0/x5/A" "XM3/a_n33_n397#" 1.34649
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/B" 0.118964
-cap "nand_dummy_phase_detector_0/x5/A" "XM3/a_15_n300#" 3.81026
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/VPWR" 183.084
-cap "nand_dummy_phase_detector_0/x5/X" "nand_dummy_phase_detector_0/x2/Y" 2.23073
-cap "nand_dummy_phase_detector_0/x5/B" "nand_dummy_phase_detector_0/x2/Y" 0.896167
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x2/Y" -0.222779
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x1/A" 20.1162
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x1/a_59_75#" 1.55698
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x2/Y" -0.044021
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM3/a_n33_n397#" -0.194622
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/X" 0.158612
-cap "nand_dummy_phase_detector_0/x1/a_145_75#" "nand_dummy_phase_detector_0/x2/Y" 0.990428
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/X" 0.124299
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/VPWR" -6.27293
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/B" 3.22118
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/B" 0.352161
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/VPWR" 96.5437
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM3/a_15_n300#" -0.868193
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x1/a_145_75#" 0.394489
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x1/A" 3.0847
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x1/a_59_75#" 9.22567
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "XM3/a_n33_n397#" 0.0509797
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x3/A" 0.865426
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x5/X" 1.26712
-cap "nand_dummy_phase_detector_0/x5/B" "nand_dummy_phase_detector_0/x1/A" 12.102
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VPWR" 9.56838
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/B" 0.0208389
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/X" 0.00766163
-cap "nand_dummy_phase_detector_0/x3/A" "nand_dummy_phase_detector_0/x2/Y" 9.49466
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x1/A" 498.841
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x1/a_145_75#" 0.16671
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x3/A" 0.675882
-cap "nand_dummy_phase_detector_0/x1/A" "XM3/a_n33_n397#" 0.426783
-cap "XM3/a_15_n300#" "nand_dummy_phase_detector_0/x1/A" 1.97365
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x3/A" 0.740343
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x1/a_145_75#" 0.451587
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x5/a_59_75#" 0.0290695
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x2/Y" 0.12281
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "nand_dummy_phase_detector_0/x2/Y" 0.531264
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/A" -2.54123
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/A" 25.6947
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/a_59_75#" 0.0279302
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x5/a_59_75#" 0.0266678
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x2/Y" 0.842326
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x2/Y" -4.71305
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x5/a_145_75#" 0.0209311
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM10/a_n73_n100#" -2.4973
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM3/a_n33_n397#" 0.724737
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/B" 1.01867
-cap "nand_dummy_phase_detector_0/x5/A" "nand_dummy_phase_detector_0/x1/a_59_75#" 0.938255
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "nand_dummy_phase_detector_0/x2/Y" 7.90204
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x3/A" 19.3677
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x3/A" 0.16816
-cap "XM10/a_n73_n100#" "nand_dummy_phase_detector_0/x1/a_59_75#" 0.698289
-cap "nand_dummy_phase_detector_0/x5/VGND" "nand_dummy_phase_detector_0/x1/a_59_75#" 21.5888
-cap "XM8/a_n33_n397#" "XM4/a_n33_n397#" -1.42109e-14
-cap "nand_dummy_phase_detector_0/x3/VNB" "nand_dummy_phase_detector_0/x1/A" 0.498113
-cap "nand_dummy_phase_detector_0/x3/VPB" "XM4/a_n33_n397#" 96.4437
-cap "nand_dummy_phase_detector_0/x3/VNB" "XM8/a_n33_n397#" 2.42163
-cap "nand_dummy_phase_detector_0/x1/A" "nand_dummy_phase_detector_0/x3/VPB" 0.420677
-cap "nand_dummy_phase_detector_0/x3/VNB" "nand_dummy_phase_detector_0/x3/VPB" 16.9889
-cap "nand_dummy_phase_detector_0/x3/VPB" "XM8/a_n33_n397#" 3.66337
-cap "XM10/a_n73_n100#" "XM4/a_n33_n397#" 3.64735
-cap "nand_dummy_phase_detector_0/x3/VNB" "XM10/a_n73_n100#" 0.563955
-cap "nand_dummy_phase_detector_0/x3/VNB" "XM4/a_n33_n397#" 76.9783
-cap "nand_dummy_phase_detector_0/x2/Y" "XM3/a_n33_n397#" 1.25853
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/B" -0.634006
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/VGND" -3.2908
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM1/a_15_n300#" -25.4072
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM3/a_n33_n397#" -17.938
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/B" 1.7223
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/A" 29.4834
-cap "XM1/a_15_n300#" "nand_dummy_phase_detector_0/x5/VGND" -0.887813
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VGND" 1.6982
-cap "XM1/a_15_n300#" "XM3/a_n33_n397#" 22.593
-cap "nand_dummy_phase_detector_0/x5/A" "XM3/a_n33_n397#" 25.6384
-cap "XM3/a_n33_n397#" "XM3/a_15_n300#" 1.4625
-cap "nand_dummy_phase_detector_0/x1/A" "XM1/a_n33_n397#" 0.0837565
-cap "nand_dummy_phase_detector_0/x5/a_59_75#" "XM3/a_n33_n397#" 2.24452
-cap "nand_dummy_phase_detector_0/x5/X" "XM3/a_n33_n397#" 3.10679
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM7/a_n73_n100#" 0.00261155
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x1/A" -1.13752
-cap "XM1/a_15_n300#" "nand_dummy_phase_detector_0/x1/A" -0.0790231
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x1/A" 6.57356
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM1/a_n33_n397#" 9.52803
-cap "nand_dummy_phase_detector_0/x5/B" "XM1/a_n33_n397#" -0.199456
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM1/a_n33_n397#" -0.161409
-cap "XM1/a_15_n300#" "XM1/a_n33_n397#" 17.4321
-cap "XM3/a_n33_n397#" "XM1/a_n33_n397#" 24.323
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x2/Y" -1.16034
-cap "XM3/a_15_n300#" "nand_dummy_phase_detector_0/x5/A" -0.110706
-cap "nand_dummy_phase_detector_0/x3/A" "XM3/a_n33_n397#" 2.98421
-cap "XM3/a_n33_n397#" "XM3/a_15_n300#" 9.87095
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x2/Y" 1.77641
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM1/a_n33_n397#" 0.179737
-cap "nand_dummy_phase_detector_0/x1/A" "XM1/a_n33_n397#" 24.3557
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VGND" 0.397363
-cap "nand_dummy_phase_detector_0/x1/a_59_75#" "XM3/a_n33_n397#" 2.04559
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM3/a_15_n300#" 45.7909
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x1/A" 0.468222
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM1/a_15_n300#" 0.481498
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/VGND" -5.19466
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x1/a_145_75#" 0.300291
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x1/A" 45.1111
-cap "nand_dummy_phase_detector_0/x5/VGND" "XM3/a_15_n300#" -0.868193
-cap "XM3/a_n33_n397#" "XM1/a_n33_n397#" 13.7146
-cap "XM1/a_n33_n397#" "nand_dummy_phase_detector_0/x5/A" 5.95827
-cap "nand_dummy_phase_detector_0/x5/B" "XM3/a_n33_n397#" 1.71364
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/A" 0.204521
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM1/a_n33_n397#" 154.715
-cap "nand_dummy_phase_detector_0/x5/VPWR" "XM10/a_n73_n100#" 0.00261155
-cap "XM3/a_15_n300#" "XM1/a_n33_n397#" 27.0835
-cap "XM3/a_n33_n397#" "nand_dummy_phase_detector_0/x5/VPWR" 41.6245
-cap "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/A" -1.22382
-cap "XM4/a_n33_n397#" "nand_dummy_phase_detector_0/x3/VNB" 1.02185
-cap "nand_dummy_phase_detector_0/x3/VPB" "nand_dummy_phase_detector_0/x1/A" 0.00379757
-cap "XM4/a_n33_n397#" "nand_dummy_phase_detector_0/x3/VPB" 58.5287
-cap "XM3/a_15_n300#" "nand_dummy_phase_detector_0/x3/VPB" 1.5995
-cap "XM4/a_n33_n397#" "nand_dummy_phase_detector_0/x1/A" 1.95197
-merge "nand_dummy_phase_detector_0/x3/VPB" "nand_dummy_phase_detector_0/x3/VPWR" -10159 0 0 0 0 -2035252 -17930 0 0 -131376 -8000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -184008 -11232 -19520 -1200 0 0 0 0 0 0 0 0 0 0
-merge "nand_dummy_phase_detector_0/x3/VPWR" "nand_dummy_phase_detector_0/x2/VPB"
-merge "nand_dummy_phase_detector_0/x2/VPB" "nand_dummy_phase_detector_0/x2/VPWR"
-merge "nand_dummy_phase_detector_0/x2/VPWR" "nand_dummy_phase_detector_0/x1/VPB"
-merge "nand_dummy_phase_detector_0/x1/VPB" "nand_dummy_phase_detector_0/x5/VPWR"
-merge "nand_dummy_phase_detector_0/x5/VPWR" "nand_dummy_phase_detector_0/x5/VPB"
-merge "nand_dummy_phase_detector_0/x5/VPB" "XM3/a_n73_n300#"
-merge "XM3/a_n73_n300#" "XM3/w_n211_n519#"
-merge "XM3/w_n211_n519#" "XM1/a_n73_n300#"
-merge "XM1/a_n73_n300#" "XM1/w_n211_n519#"
-merge "XM1/w_n211_n519#" "XM8/a_n73_n300#"
-merge "XM8/a_n73_n300#" "XM5/a_n73_n300#"
-merge "XM5/a_n73_n300#" "VDD"
-merge "VDD" "XM8/w_n211_n519#"
-merge "XM8/w_n211_n519#" "XM4/w_n211_n519#"
-merge "XM4/w_n211_n519#" "XM5/w_n211_n519#"
-merge "XM5/w_n211_n519#" "XM2/w_n211_n519#"
-merge "XM2/w_n211_n519#" "w_n1174_918#"
-merge "nand_dummy_phase_detector_0/VSUBS" "nand_dummy_phase_detector_0/x3/VGND" -1963.21 0 0 0 0 0 0 0 0 0 0 -35224 -2174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59432 -3734 -145812 -3516 0 0 0 0 0 0 0 0 0 0
-merge "nand_dummy_phase_detector_0/x3/VGND" "nand_dummy_phase_detector_0/x2/VGND"
-merge "nand_dummy_phase_detector_0/x2/VGND" "nand_dummy_phase_detector_0/x1/VGND"
-merge "nand_dummy_phase_detector_0/x1/VGND" "nand_dummy_phase_detector_0/x5/VGND"
-merge "nand_dummy_phase_detector_0/x5/VGND" "XM3/VSUBS"
-merge "XM3/VSUBS" "XM1/VSUBS"
-merge "XM1/VSUBS" "XM8/VSUBS"
+merge "XM3/VSUBS" "XM8/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "XM8/VSUBS" "XM4/VSUBS"
-merge "XM4/VSUBS" "XM5/VSUBS"
-merge "XM5/VSUBS" "XM2/VSUBS"
-merge "XM2/VSUBS" "XM10/a_15_n100#"
+merge "XM4/VSUBS" "XM10/a_15_n100#"
 merge "XM10/a_15_n100#" "XM10/a_n175_n274#"
 merge "XM10/a_n175_n274#" "XM9/a_n175_n274#"
-merge "XM9/a_n175_n274#" "XM7/a_15_n100#"
+merge "XM9/a_n175_n274#" "sky130_fd_sc_hd__nand2_1_1/VNB"
+merge "sky130_fd_sc_hd__nand2_1_1/VNB" "sky130_fd_sc_hd__nand2_1_1/VGND"
+merge "sky130_fd_sc_hd__nand2_1_1/VGND" "XM1/VSUBS"
+merge "XM1/VSUBS" "XM5/VSUBS"
+merge "XM5/VSUBS" "XM2/VSUBS"
+merge "XM2/VSUBS" "XM7/a_15_n100#"
 merge "XM7/a_15_n100#" "XM7/a_n175_n274#"
-merge "XM7/a_n175_n274#" "VSS"
+merge "XM7/a_n175_n274#" "sky130_fd_sc_hd__nand2_1_0/VGND"
+merge "sky130_fd_sc_hd__nand2_1_0/VGND" "VSS"
 merge "VSS" "XM6/a_n175_n274#"
-merge "XM6/a_n175_n274#" "VSUBS"
-merge "nand_dummy_phase_detector_0/x1/A" "XM8/a_15_n300#" -752.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 -16260 -1358 0 0 0 0 0 0 0 0 0 0
-merge "XM8/a_15_n300#" "XM4/a_15_n300#"
-merge "XM4/a_15_n300#" "XM5/a_n33_n397#"
-merge "XM5/a_n33_n397#" "m1_n314_1096#"
-merge "m1_n314_1096#" "XM9/a_n73_n100#"
-merge "XM9/a_n73_n100#" "XM6/a_n33_n188#"
-merge "XM6/a_n33_n188#" "m1_n732_674#"
-merge "m1_n732_674#" "li_936_520#"
-merge "XM1/a_n33_n397#" "INN" -468.796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16008 -1248 0 0 0 0 0 0 0 0 0 0
+merge "XM6/a_n175_n274#" "sky130_fd_sc_hd__nand2_1_0/VNB"
+merge "sky130_fd_sc_hd__nand2_1_0/VNB" "VSUBS"
+merge "XM3/a_n73_n300#" "XM1/a_n73_n300#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "XM1/a_n73_n300#" "XM3/w_n211_n519#"
+merge "XM3/w_n211_n519#" "XM8/a_n73_n300#"
+merge "XM8/a_n73_n300#" "sky130_fd_sc_hd__nand2_1_1/VPWR"
+merge "sky130_fd_sc_hd__nand2_1_1/VPWR" "XM5/a_n73_n300#"
+merge "XM5/a_n73_n300#" "sky130_fd_sc_hd__nand2_1_0/VPWR"
+merge "sky130_fd_sc_hd__nand2_1_0/VPWR" "VDD"
+merge "VDD" "XM8/w_n211_n519#"
+merge "XM8/w_n211_n519#" "XM4/w_n211_n519#"
+merge "XM4/w_n211_n519#" "sky130_fd_sc_hd__nand2_1_1/VPB"
+merge "sky130_fd_sc_hd__nand2_1_1/VPB" "XM1/w_n211_n519#"
+merge "XM1/w_n211_n519#" "XM5/w_n211_n519#"
+merge "XM5/w_n211_n519#" "XM2/w_n211_n519#"
+merge "XM2/w_n211_n519#" "sky130_fd_sc_hd__nand2_1_0/VPB"
+merge "sky130_fd_sc_hd__nand2_1_0/VPB" "w_n1174_918#"
+merge "XM1/a_n33_n397#" "INN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "INN" "XM4/a_n33_n397#"
 merge "XM4/a_n33_n397#" "m1_n324_1590#"
 merge "m1_n324_1590#" "XM10/a_n33_n188#"
-merge "XM10/a_n33_n188#" "m1_1534_358#"
-merge "m1_1534_358#" "m1_1214_358#"
-merge "nand_dummy_phase_detector_0/x5/A" "XM8/a_n33_n397#" -719.038 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 -16260 -1358 0 0 0 0 0 0 0 0 0 0
-merge "XM8/a_n33_n397#" "m1_796_1096#"
-merge "m1_796_1096#" "XM5/a_15_n300#"
-merge "XM5/a_15_n300#" "XM2/a_n73_n300#"
-merge "XM2/a_n73_n300#" "XM9/a_n33_n188#"
+merge "XM10/a_n33_n188#" "m1_1524_1412#"
+merge "m1_1524_1412#" "m1_1214_358#"
+merge "sky130_fd_sc_hd__nand2_1_1/Y" "OUTN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "OUTN" "sky130_fd_sc_hd__nand2_1_0/A"
+merge "sky130_fd_sc_hd__nand2_1_0/A" "li_106_859#"
+merge "XM8/a_n33_n397#" "m1_796_1096#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "m1_796_1096#" "XM9/a_n33_n188#"
 merge "XM9/a_n33_n188#" "m1_1214_674#"
-merge "m1_1214_674#" "XM6/a_15_n100#"
-merge "XM6/a_15_n100#" "li_n442_512#"
-merge "XM10/a_n73_n100#" "XM9/a_15_n100#" -114.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4600 -384 0 0 0 0 0 0 0 0 0 0
+merge "m1_1214_674#" "XM5/a_15_n300#"
+merge "XM5/a_15_n300#" "XM2/a_n73_n300#"
+merge "XM2/a_n73_n300#" "XM6/a_15_n100#"
+merge "XM6/a_15_n100#" "sky130_fd_sc_hd__nand2_1_0/B"
+merge "sky130_fd_sc_hd__nand2_1_0/B" "li_n62_859#"
+merge "XM10/a_n73_n100#" "XM9/a_15_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "XM9/a_15_n100#" "m1_1302_412#"
-merge "XM7/a_n73_n100#" "XM6/a_n73_n100#" -111.753 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4600 -384 0 0 0 0 0 0 0 0 0 0
+merge "XM7/a_n73_n100#" "XM6/a_n73_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "XM6/a_n73_n100#" "m1_n814_412#"
-merge "XM3/a_n33_n397#" "m1_1534_1728#" -353.908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16008 -1248 0 0 0 0 0 0 0 0 0 0
+merge "XM3/a_n33_n397#" "m1_1534_1728#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "m1_1534_1728#" "XM2/a_n33_n397#"
-merge "XM2/a_n33_n397#" "m1_n314_1397#"
-merge "m1_n314_1397#" "XM7/a_n33_n188#"
+merge "XM2/a_n33_n397#" "m1_n324_1412#"
+merge "m1_n324_1412#" "XM7/a_n33_n188#"
 merge "XM7/a_n33_n188#" "m1_n732_358#"
 merge "m1_n732_358#" "INP"
-merge "nand_dummy_phase_detector_0/x5/B" "OUTN" -91.9051 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5800 -316 0 0 0 0 0 0 0 0 0 0
-merge "XM3/a_15_n300#" "XM4/a_n73_n300#" -275.622 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -328 0 0 0 0 0 0 0 0 0 0
-merge "XM4/a_n73_n300#" "m1_1443_1494#"
-merge "XM1/a_15_n300#" "XM2/a_15_n300#" -210.262 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4600 -384 0 0 0 0 0 0 0 0 0 0
+merge "XM8/a_15_n300#" "XM4/a_15_n300#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "XM4/a_15_n300#" "XM9/a_n73_n100#"
+merge "XM9/a_n73_n100#" "sky130_fd_sc_hd__nand2_1_1/A"
+merge "sky130_fd_sc_hd__nand2_1_1/A" "XM5/a_n33_n397#"
+merge "XM5/a_n33_n397#" "m1_n314_1096#"
+merge "m1_n314_1096#" "XM6/a_n33_n188#"
+merge "XM6/a_n33_n188#" "m1_n732_674#"
+merge "m1_n732_674#" "li_564_859#"
+merge "XM3/a_15_n300#" "XM4/a_n73_n300#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "XM4/a_n73_n300#" "m1_1443_1466#"
+merge "XM1/a_15_n300#" "XM2/a_15_n300#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "XM2/a_15_n300#" "m1_n955_1466#"
-merge "nand_dummy_phase_detector_0/x2/Y" "OUT" -90.1476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5684 -312 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__nand2_1_1/B" "sky130_fd_sc_hd__nand2_1_0/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__nand2_1_0/Y" "OUT"
