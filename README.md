@@ -15,6 +15,10 @@ All team members are from the Electrical Engineering Department at **Institut Te
 5. Raditya Eka Putra
 6. Astria Nur Irfansyah, S.T., M.Eng., Ph.D. **(Mentor)**
 
+## Institution Profile
+**Institut Teknologi Sepuluh Nopember (ITS)** is a prominent public technological university located in Surabaya, Indonesia. Established on November 10, 1957, ITS is renowned for its strong emphasis on science, technology, engineering, and mathematics (STEM) education. The university is committed to advancing technological innovation and fostering academic excellence, making it one of the leading institutions in Indonesia for engineering and technological studies.
+
+The **Department of Electrical Engineering** at ITS is one of the university's flagship departments, offering comprehensive undergraduate and graduate programs. The department is dedicated to educating students in various fields of electrical engineering, including power systems, electronics, telecommunications, control systems, and renewable energy. With a focus on research and practical application, the department provides state-of-the-art facilities and collaborates with industry partners to prepare students for the challenges of the modern technological landscape. The faculty comprises experienced educators and researchers who are committed to mentoring students and contributing to advancements in electrical engineering.
 
 ## Introduction
 
