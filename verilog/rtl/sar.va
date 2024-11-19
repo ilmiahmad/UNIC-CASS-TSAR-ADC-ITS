@@ -1,0 +1,241 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module sar_controller (
+    input  electrical ENABLE,
+    input  electrical CLK,
+    input  electrical COMP_P,
+    input  electrical COMP_N,
+    output electrical CLKS,
+    output electrical CLK_S,
+    output electrical CLK_NS,
+    output electrical EOC,
+    output electrical CF[0:9],
+    output electrical DOUT[0:9],
+    output electrical CDAC_P[0:9],
+    output electrical CDAC_N[0:9]
+);
+
+    // Instantiate auto_sampling module
+    auto_sampling auto_samp_inst (
+        .CLK_S (CLK),
+        .CLKS  (CLKS)
+    );
+
+    // Instantiate cyclic_flag module
+    cyclic_flag cyclic_flag_inst (
+        .CLK (CLK),
+        .RST (CLKS),
+        .CF  (CF)
+    );
+
+    // Instantiate cdac_controller module
+    cdac_controller cdac_ctrl_inst (
+        .CH     (CF),
+        .CLK_NS (CLK),
+        .COMP_P (COMP_P),
+        .COMP_N (COMP_N),
+        .CLKS   (CLKS),
+        .CDAC_P (CDAC_P),
+        .CDAC_N (CDAC_N)
+    );
+
+    // Instantiate data_latch module
+    data_latch data_latch_inst (
+        .EOC     (CF[9]),
+        .DATA_IN (CDAC_P),
+        .DOUT    (DOUT)
+    );
+
+    // Assign EOC = CF[9]
+    analog begin
+        V(EOC) <+ V(CF[9]);
+    end
+
+endmodule
+
+module auto_sampling (
+    input  electrical CLK_S,
+    output electrical CLKS
+);
+
+    parameter real v_high = 1.8; // Logic high voltage
+    parameter real v_low  = 0.0; // Logic low voltage
+    parameter real td     = 1n;  // Delay time
+    parameter real tr     = 1n;  // Rise time
+    parameter real tf     = 1n;  // Fall time
+
+    integer COUNTER;
+    real CLKS_val;
+
+    analog begin
+        @(initial_step) begin
+            COUNTER = 0;
+            CLKS_val = v_low;
+            V(CLKS) <+ CLKS_val;
+        end
+
+        @(cross(V(CLK_S) - v_high/2, 1)) begin
+            if (COUNTER < 15) begin
+                COUNTER = COUNTER + 1;
+            end else begin
+                COUNTER = 0;
+                // Toggle CLKS
+                CLKS_val = (CLKS_val < v_high/2) ? v_high : v_low;
+                V(CLKS) <+ transition(CLKS_val, td, tr, tf);
+            end
+        end
+    end
+
+endmodule
+
+module cdac_controller (
+    input  electrical CH[0:9],
+    input  electrical CLK_NS,
+    input  electrical COMP_P,
+    input  electrical COMP_N,
+    input  electrical CLKS,
+    output electrical CDAC_P[0:9],
+    output electrical CDAC_N[0:9]
+);
+
+    parameter real v_high = 1.8;
+    parameter real v_low  = 0.0;
+    parameter real td     = 1n;
+    parameter real tr     = 1n;
+    parameter real tf     = 1n;
+
+    real CDAC_P_val[0:9];
+    real CDAC_N_val[0:9];
+    integer i;
+
+    analog begin
+        @(initial_step) begin
+            for (i = 0; i <= 9; i = i + 1) begin
+                CDAC_P_val[i] = v_low;
+                CDAC_N_val[i] = v_low;
+                V(CDAC_P[i]) <+ CDAC_P_val[i];
+                V(CDAC_N[i]) <+ CDAC_N_val[i];
+            end
+        end
+
+        @(cross(V(CLK_NS) - v_high/2, -1)) begin // On negative edge of CLK_NS
+            if (V(CLKS) > v_high/2) begin
+                // Shift CDAC_P and CDAC_N, append COMP_P and COMP_N, and AND with CH
+                for (i = 0; i <= 9; i = i + 1) begin
+                    if (i < 9) begin
+                        CDAC_P_val[i] = CDAC_P_val[i+1];
+                        CDAC_N_val[i] = CDAC_N_val[i+1];
+                    end else begin
+                        CDAC_P_val[i] = V(COMP_P);
+                        CDAC_N_val[i] = V(COMP_N);
+                    end
+                    // AND with CH
+                    if (V(CH[i]) > v_high/2) begin
+                        CDAC_P_val[i] = CDAC_P_val[i];
+                        CDAC_N_val[i] = CDAC_N_val[i];
+                    end else begin
+                        CDAC_P_val[i] = v_low;
+                        CDAC_N_val[i] = v_low;
+                    end
+                    V(CDAC_P[i]) <+ transition(CDAC_P_val[i], td, tr, tf);
+                    V(CDAC_N[i]) <+ transition(CDAC_N_val[i], td, tr, tf);
+                end
+            end else begin
+                // Set CDAC_P and CDAC_N to 0
+                for (i = 0; i <= 9; i = i + 1) begin
+                    CDAC_P_val[i] = v_low;
+                    CDAC_N_val[i] = v_low;
+                    V(CDAC_P[i]) <+ transition(CDAC_P_val[i], td, tr, tf);
+                    V(CDAC_N[i]) <+ transition(CDAC_N_val[i], td, tr, tf);
+                end
+            end
+        end
+    end
+
+endmodule
+
+module data_latch (
+    input  electrical EOC,
+    input  electrical DATA_IN[0:9],
+    output electrical DOUT[0:9]
+);
+
+    parameter real v_high = 1.8;
+    parameter real v_low  = 0.0;
+    parameter real td     = 1n;
+    parameter real tr     = 1n;
+    parameter real tf     = 1n;
+
+    real DOUT_val[0:9];
+    integer i;
+
+    analog begin
+        @(initial_step) begin
+            for (i = 0; i <= 9; i = i + 1) begin
+                DOUT_val[i] = v_low;
+                V(DOUT[i]) <+ DOUT_val[i];
+            end
+        end
+
+        @(cross(V(EOC) - v_high/2, 1)) begin // On positive edge of EOC
+            for (i = 0; i <= 9; i = i + 1) begin
+                DOUT_val[i] = V(DATA_IN[i]);
+                V(DOUT[i]) <+ transition(DOUT_val[i], td, tr, tf);
+            end
+        end
+    end
+
+endmodule
+
+module cyclic_flag (
+    input  electrical CLK,
+    input  electrical RST,
+    output electrical CF[0:9]
+);
+
+    parameter real v_high = 1.8;
+    parameter real v_low  = 0.0;
+    parameter real td     = 1n;
+    parameter real tr     = 1n;
+    parameter real tf     = 1n;
+
+    real CF_val[0:9];
+    integer i;
+
+    analog begin
+        @(initial_step) begin
+            for (i = 0; i <= 9; i = i + 1) begin
+                CF_val[i] = v_low;
+                V(CF[i]) <+ CF_val[i];
+            end
+        end
+
+        // On positive edge of RST
+        @(cross(V(RST) - v_high/2, 1)) begin
+            for (i = 0; i <= 9; i = i + 1) begin
+                CF_val[i] = v_low;
+                V(CF[i]) <+ transition(CF_val[i], td, tr, tf);
+            end
+        end
+
+        // On positive edge of CLK
+        @(cross(V(CLK) - v_high/2, 1)) begin
+            if (CF_val[0] < v_high/2) begin
+                for (i = 9; i >= 1; i = i - 1) begin
+                    CF_val[i] = CF_val[i-1];
+                end
+                CF_val[0] = v_high;
+                for (i = 0; i <= 9; i = i + 1) begin
+                    V(CF[i]) <+ transition(CF_val[i], td, tr, tf);
+                end
+            end else begin
+                // CF remains the same
+                for (i = 0; i <= 9; i = i + 1) begin
+                    V(CF[i]) <+ transition(CF_val[i], td, tr, tf);
+                end
+            end
+        end
+    end
+
+endmodule

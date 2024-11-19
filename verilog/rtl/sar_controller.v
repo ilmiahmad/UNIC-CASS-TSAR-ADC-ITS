@@ -1,140 +1,117 @@
 module sar_controller (
-    input        ENABLE,
+    input        RST,
     input        CLK,
     input        COMP_P,
     input        COMP_N,
-    output reg   CLKS,
-    output reg   CLK_S,
-    output reg   CLK_NS,
-    output reg   EOC,
-    output reg [0:11] CF,
-    output reg [0:11] DOUT,
-    output reg [0:11] CDAC_P,
-    output reg [0:11] CDAC_N
+    output       CLKS,
+    output       CLKSB,
+    output       EOC,
+    output [0:9] CF,
+    output [0:9] DOUT,
+    output [0:9] CDAC_P,
+    output [0:9] CDAC_N
   );
 
-  wire COMP;
-
-  // Instantiate the clock divider
-  clkdiv clk_div_inst (
-           .CLK    (CLK),
-           .CLK_S  (CLK_S),
-           .CLK_NS (CLK_NS)
-         );
-
-  // Instantiate auto sampling module
+  // Instantiate auto_sampling module
   auto_sampling auto_samp_inst (
-                  .CLK_S (CLK_S),
-                  .CLKS  (CLKS)
+                  .RST  (RST),
+                  .CLK_S (CLK),
+                  .CLKS  (CLKS),
+                  .CLKSB (CLKSB)
                 );
 
-  // Instantiate comparator value extractor
-  comp_val_extractor comp_ext_inst (
-                       .CLK_NS (CLK_NS),
-                       .CLK_S  (CLK_S),
-                       .COMP_P (COMP_P),
-                       .COMP_N (COMP_N),
-                       .COMP   (COMP)
-                     );
-
-  // Instantiate cyclic flag
+  // Instantiate cyclic_flag module
   cyclic_flag cyclic_flag_inst (
-                .CLK (CLK_NS),
-                .RST (CLKS),
-                .CF  (CF)
+                .CLK (CLK),
+                .RST (CLKSB),
+                .CF  (CF),
+                .EOC (EOC)
               );
 
-  // Instantiate CDAC controller
+  // Instantiate cdac_controller module
   cdac_controller cdac_ctrl_inst (
                     .CH     (CF),
-                    .CLK_NS (CLK_NS),
-                    .COMP   (COMP),
+                    .CLK_NS (CLK),
+                    .COMP_P (COMP_P),
+                    .COMP_N (COMP_N),
                     .CLKS   (CLKS),
                     .CDAC_P (CDAC_P),
                     .CDAC_N (CDAC_N)
                   );
 
-  // Instantiate data latch
+  // Instantiate data_latch module
   data_latch data_latch_inst (
-               .EOC     (CF[11]),
+               .EOC     (EOC),
                .DATA_IN (CDAC_P),
                .DOUT    (DOUT)
              );
 
-  assign EOC = CF[11];
-
 endmodule
 
-
 module auto_sampling (
+    input RST,
     input  CLK_S,
-    output reg CLKS
+    output reg CLKS,
+    output reg CLKSB
   );
 
   reg [3:0] COUNTER;
 
   always @(posedge CLK_S)
   begin
-    if (COUNTER < 4'b1111)
-    begin
-      COUNTER <= COUNTER + 1;
-    end
-    else
+    if(RST)
     begin
       COUNTER <= 4'b0000;
-      CLKS    <= ~CLKS;
-    end
-  end
-
-endmodule
-
-
-module cdac_controller (
-    input      [0:11] CH,
-    input             CLK_NS,
-    input             COMP,
-    input             CLKS,
-    output reg [0:11] CDAC_P,
-    output reg [0:11] CDAC_N
-  );
-
-  always @(negedge CLK_NS)
-  begin
-    if (CLKS)
-    begin
-      CDAC_P <= ({CDAC_P[1:11], COMP} & CH);
-      CDAC_N <= ({CDAC_N[1:11], ~COMP} & CH);
+      CLKS    <= 0;
+      CLKSB   <= 1;
     end
     else
     begin
-      CDAC_P <= 12'b0;
-      CDAC_N <= 12'b0;
+      if (COUNTER < 4'b1111)
+      begin
+        COUNTER <= COUNTER + 1;
+      end
+      else
+      begin
+        COUNTER <= 4'b0000;
+        CLKS    <= ~CLKS;
+        CLKSB   <= ~CLKSB;
+      end
     end
   end
 
 endmodule
 
-
-
-module comp_val_extractor (
-    input  CLK_S,
-    input  CLK_NS,
-    input  COMP_P,
-    input  COMP_N,
-    output reg COMP
+module cdac_controller (
+    input      [0:9] CH,
+    input             CLK_NS,
+    input             COMP_P,
+    input             COMP_N,
+    input             CLKS,
+    output reg [0:9] CDAC_P,
+    output reg [0:9] CDAC_N
   );
+  
+  reg [3:0] COUNTER; // 4-bit counter untuk menghitung dari 0 hingga 10
 
-  always @(posedge CLK_S)
+  always @(negedge CLK_NS or negedge CLKS)
   begin
-    if (CLK_NS == 1'b0)
+    if (!CLKS) // Reset ketika CLKS rendah
     begin
-      if (COMP_P == 1'b0 && COMP_N == 1'b0)
+      COUNTER <= 4'd10;
+      CDAC_P  <= 10'b0;
+      CDAC_N  <= 10'b0;
+    end
+    else
+    begin
+      if (COUNTER > 0)
       begin
-        COMP <= 1'b1;
-      end
-      else if (COMP_P == 1'b0 && COMP_N == 1'b1)
-      begin
-        COMP <= 1'b0;
+        COUNTER <= COUNTER - 1;
+        if (COUNTER <= 10)
+        begin
+          CDAC_P[COUNTER] <= COMP_P & CH[COUNTER];
+          CDAC_N[COUNTER] <= COMP_N & CH[COUNTER];
+        end
       end
     end
   end
@@ -144,8 +121,8 @@ endmodule
 
 module data_latch (
     input        EOC,
-    input  [0:11] DATA_IN,
-    output reg [0:11] DOUT
+    input  [0:9] DATA_IN,
+    output reg [0:9] DOUT
   );
 
   always @(posedge EOC)
@@ -155,49 +132,28 @@ module data_latch (
 
 endmodule
 
-
 module cyclic_flag (
     input  CLK,
     input  RST,
-    output reg [0:11] CF
+    output reg [0:9] CF,
+    output reg EOC
   );
 
-  always @(posedge CLK or posedge RST)
+  always @(posedge CLK)
   begin
     if (RST)
     begin
-      CF <= 12'b0;
+      CF <= 10'b0;
     end
     else if (CF[0] == 1'b0)
     begin
-      CF <= {CF[1:11], 1'b1}; // Shift left and set LSB to '1'
+      CF <= {CF[1:9], 1'b1}; // Shift left and set LSB to '1'
     end
     else
     begin
       CF <= CF;
     end
+    EOC <= CF[0];
   end
 
 endmodule
-
-
-
-module clkdiv (
-    input  CLK,
-    output reg CLK_NS,
-    output reg CLK_S
-  );
-
-  reg [1:0] counter;
-
-  always @(posedge CLK)
-  begin
-    counter <= counter + 1;
-    if (counter == 2'b01)
-      CLK_NS <= ~CLK_NS;
-    if (counter == 2'b11)
-      CLK_S <= ~CLK_S;
-  end
-
-endmodule
-

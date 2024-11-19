@@ -166,7 +166,7 @@ C {devices/vsource.sym} 860 -260 0 0 {name=VCLK value="PULSE(0 1.8 10n 50p 50p 1
 C {devices/lab_wire.sym} 860 -290 0 0 {name=p23 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 860 -230 2 1 {name=p24 sig_type=std_logic lab=VSSD}
 C {sky130_fd_pr/corner.sym} 40 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {TSAR_ADC.sym} 690 -500 0 0 {name=x1}
+C {tsar_adc.sym} 690 -500 0 0 {name=x1}
 C {devices/launcher.sym} 1180 -580 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/adc_tb.raw tran"

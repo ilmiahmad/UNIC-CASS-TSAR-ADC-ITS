@@ -1,64 +1,82 @@
 `timescale 1ns / 1ps
 
-module cyclic_flag_tb;
+module sar_controller_tb;
 
-    reg CLK;
-    reg RST;
-    wire [11:0] shift_reg;
+  // Sinyal Testbench
+  reg        RST;
+  reg        CLK;
+  reg        COMP_P;
+  reg        COMP_N;
+  wire       CLKS;
+  wire       CLKSB;
+  wire       EOC;
+  wire [0:9] CF;
+  wire [0:9] DOUT;
+  wire [0:9] CDAC_P;
+  wire [0:9] CDAC_N;
 
-    // Instantiate the cyclic_flag module
-    cyclic_flag uut (
-        .CLK(CLK),
-        .RST(RST),
-        .shift_reg(shift_reg)
-    );
+  // Instansiasi SAR controller
+  sar_controller uut (
+                   .RST (RST),
+                   .CLK    (CLK),
+                   .COMP_P (COMP_P),
+                   .COMP_N (COMP_N),
+                   .CLKS   (CLKS),
+                   .CLKSB  (CLKSB),
+                   .EOC    (EOC),
+                   .CF     (CF),
+                   .DOUT   (DOUT),
+                   .CDAC_P (CDAC_P),
+                   .CDAC_N (CDAC_N)
+                 );
 
-    // Clock generation: 50 MHz clock with a period of 20ns
-    initial begin
-        CLK = 0;
-        forever #10 CLK = ~CLK; // Toggle clock every 10ns
+  // Pembuatan sinyal clock
+  initial
+  begin
+    CLK = 0;
+    forever
+      #5 CLK = ~CLK; // Periode clock 10ns (100 MHz)
+  end
+
+  // Sinyal RST
+  initial
+  begin
+    RST = 1;
+    #15 RST = 0; // Aktifkan setelah 15ns
+  end
+
+  // Simulasi input komparator
+  initial
+  begin
+    COMP_P = 0;
+    COMP_N = 0;
+    // Tunggu hingga sistem diaktifkan
+    wait (RST == 0);
+    #10; // Delay kecil setelah diaktifkan
+
+    // Simulasikan output komparator untuk konversi 10-bit
+    repeat (1000)
+    begin
+      @(negedge CLK);
+      // Berikan nilai uji ke COMP_P dan COMP_N
+      // Sebagai contoh, kita gunakan nilai acak 0 dan 1
+      COMP_P = $random % 2;
+      COMP_N = ~COMP_P;
     end
+  end
 
-    // Test sequence
-    initial begin
-        // Initialize inputs
-        RST = 1;
-        #25;
-        RST = 0;
-        #500; // Run simulation for 500ns
-        $finish;
-    end
+  // Dump waveform ke file
+  initial
+  begin
+    $dumpfile("sar_controller_tb.vcd"); // Nama file waveform
+    $dumpvars(0, sar_controller_tb);    // Dump semua variabel dalam modul ini
+  end
 
-    // Monitor outputs
-    initial begin
-        $monitor("Time=%0t ns | RST=%b | shift_reg=%b", $time, RST, shift_reg);
-    end
-
-    // Dump waveforms for GTKWave
-    initial begin
-        $dumpfile("cyclic_flag_tb.vcd"); // Name of the dump file
-        $dumpvars(0, cyclic_flag_tb);    // Dump all variables in this module
-    end
-
-endmodule
-
-module cyclic_flag (
-    input CLK,
-    input RST,
-    output reg [0:11] shift_reg
-);
-
-    always @(posedge CLK) begin
-        if (RST) begin
-            // Initialize the shift register with '1' at the least significant bit
-            shift_reg <= 12'b000000000000;
-        end else if (shift_reg[0] == 1'b0) begin
-            // Shift left by one position and set LSB to '1' to accumulate ones
-            shift_reg <= (shift_reg << 1) | 1'b1;
-        end else begin
-            // Hold the value when all bits are '1'
-            shift_reg <= shift_reg;
-        end
-    end
+  // Mengakhiri simulasi
+  initial
+  begin
+    #2000;
+    $finish;
+  end
 
 endmodule

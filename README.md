@@ -6,6 +6,8 @@
 
 ## Team Members
 
+All team members are from the Electrical Engineering Department at **Institut Teknologi Sepuluh Nopember (ITS)** in Surabaya, Indonesia.
+
 1. M. Taufiqul Huda **(Leader)**
 2. Nahwan Faza Assaify
 3. Yohanes Stefanus
@@ -18,16 +20,7 @@
 
 The ADC was proposed for photoplethysmogram signal acquisition that works on a low-frequency domain. A photoplethysmogram signal or PPG signal is a biomedical signal obtained from a change in light intensity caused by a fingertip blood volume change [1]. PPG signal can be detected using red and infrared LED spectrum and recorded using photodiode then converted A/D using ADC. SAR ADC matches the specification of the signal that will be recorded (PPG signal) that works in low frequency (0 Hz to 25 Hz, average bandwidth 0.25 Hz to 10 Hz) [2]. Thus, the challenge is how to design low-power ADC for PPG recording purposes that have specific applications for wearable devices (smartwatches, oximeters, etc).  
 
-The innovation with this design is to replace the comparator (the old one still using Dynamic Latch Comparator) with time-based comparison processing. The comparator that will be used is EPC (Edge Pursuit Comparator) which works with a time delay caused by the comparator input voltage difference based on inverter logic delay block (containing 2 PMOS and 2 NMOS) [3].
-
-The design contains several block modules:
-1. Op-Amp [ref: https://tinytapeout.com/runs/tt06/490/ & https://github.com/RTimothyEdwards/sky130_ef_ip__opamp ]
-2. DAC [ref : https://tinytapeout.com/runs/tt06/229/ ]
-3. Logic Level Shifter [ref: https://github.com/RTimothyEdwards/sky130_ef_ip__analog_switches ]
-4. SAR Logic
-5. Sample Hold Circuit (S/H Circuit)
-6. Edge Pursuit Comparator Circuit
-7. Clock Generator [ref: https://github.com/RTimothyEdwards/sky130_ef_ip__rc_osc_500k ]
+The innovation with this design is to replace the comparator (the old one still using Dynamic Latch Comparator) with time-based comparison processing. The comparator that will be used is Time Domain Comparator which works with a time delay caused by the comparator input voltage difference based on inverter logic delay block and to do phase different detection [5].
 
 The purpose of this design is to create a time-based SAR ADC design for PPG signal recording. The specifications will be broken down below.
 
@@ -93,6 +86,7 @@ The purpose of this design is to create a time-based SAR ADC design for PPG sign
 
 [4] M. Shim et al., “Edge-Pursuit Comparator: An Energy-Scalable Oscillator Collapse-Based Comparator with Application in a 74.1 dB SNDR and 20 kS/s 15 b SAR ADC,” IEEE J. Solid-State Circuits, vol. 52, no. 4, pp. 1077–1090, 2017, doi: 10.1109/JSSC.2016.2631299.
 
+[5] R. Sanati, F. Khatib, M. J. Sarraf, and R. K. Moghaddam, "Low-power bulk-driven time-domain comparator with high voltage-to-time gain for ADC applications," Microelectronics Journal, vol. 128, p. 105555, 2022. doi: 10.1016/j.mejo.2022.105555
 
 ---
 
