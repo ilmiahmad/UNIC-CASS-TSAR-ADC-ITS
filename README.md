@@ -4,6 +4,9 @@
 
 ---
 
+<img width="580" height="320" alt="SAR" src="https://github.com/user-attachments/assets/f65aa63c-2b9e-4309-9995-c4fecadb9e5f" />
+
+---
 ## Team Members
 
 All team members are from the Electrical Engineering Department at **Institut Teknologi Sepuluh Nopember (ITS)** in Surabaya, Indonesia.
